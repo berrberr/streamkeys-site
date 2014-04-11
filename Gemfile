@@ -1,6 +1,6 @@
 # A sample Gemfile
 source "https://rubygems.org"
-gem 'jekyll'
+gem 'jekyll', '1.2.1'
 gem 'guard'
 gem 'guard-jekyll-plus'
 gem 'guard-livereload'

@@ -1,3 +1,8 @@
+body {
+  background-image: url("../img/squared_metal.png");
+  background-repeat: repeat;
+}
+
 .navbar-default {
   background: #332C2F;
   border-color: #181416;

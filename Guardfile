@@ -6,7 +6,6 @@ guard "jekyll-plus", :serve => true do
   ignore /^_site/
 end
 
-
 guard 'livereload' do
   watch /.*/
 end

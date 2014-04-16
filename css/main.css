@@ -1,27 +1,46 @@
 body {
-  background-image: url("../img/squared_metal.png");
+  background-color: #D4D4D4;
   background-repeat: repeat;
 }
 
-.navbar-default {
-  background: #332C2F;
-  border-color: #181416;
+.navbar-main {
+  background-color: rgba(255,0,0,0);
 }
 
-.navbar-default .navbar-brand {
-  color: #AA9A66;
+.navbar-main .navbar-brand {
+  color: #7F7F7F;
 }
 
-.navbar-default .navbar-brand:hover {
-  color: #B74934;
+.navbar-main .navbar-brand:hover {
+  color: #D9A626;
 }
 
 .navbar-nav > .active > a {
-  background: #AA9A66;
+  color: #D9A626;
+  border-bottom: 3px solid #8A6445;
+  margin-bottom: -3px;
+}
+
+.navbar-links > li > a {
+  margin-right: 1px;
+  color: #7F7F7F;
+}
+
+.navbar-links > li > a:hover {
+  color: #D9A626;
+  background-color: rgba(255,0,0,0);
+  border-bottom: 3px solid #8A6445;
+  margin-bottom: -3px;
 }
 
 .help-alert {
   font-size: 16px;
+}
+
+#pictureguide > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

@@ -4,20 +4,28 @@ title: "Streamkeys - Help"
 ---
 
 <div class="container">
-  <div class="alert alert-danger alert-dismissable">
+  <div id="installed" style="display: none;" class="alert alert-danger alert-dismissable">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <h1>A new version of Streamkeys has been installed!</h1>
     <h3>Note: This page will only be loaded once on update or install</h3>
   </div>
   <div class="alert alert-warning help-alert">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
     <h1 name="install">Install</h1>
     <p>Installing is simple! You can add the extension to Chrome from the <a href="https://chrome.google.com/webstore/detail/streamkeys-global-music-p/ekpipjofdicppbepocohdlgenahaneen" target="_blank">Chrome Webstore</a></p>
 
     <h1 name="configuration">Configuration</h1>
-    <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing - <a href="#">STEP BY STEP PICTURE GUIDE</a></p>
+    <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing<br><br><a href="#" id="showguide">Click here for a step by step picture guide</a></p>
+    <div id="pictureguide" style="display:none;">
+      <br><p><b>Step 1</b></p>
+      <img src="img/step1.png" alt="Step 1">
+      <br><p><b>Step 2</b></p>
+      <img src="img/step2.png" alt="Step 2">
+      <br><p><b>Step 3</b></p>
+      <img src="img/step3.png" alt="Step 3">
+    </div>
+    <br>
     <p><b>Mac users:</b> Currently there is an issue with capturing media key presses in chrome on macs. This issue is slated to be fixed in the next Chrome release, but until then you will have to use other keys, sorry!</p>
-    <h2>Default Hotkeys</h2>
+    <h1>Default Hotkeys</h1>
     <div class="row">
       <div class="col-xs-4">
       <h3>Mac:</h3>
@@ -34,30 +42,9 @@ title: "Streamkeys - Help"
       <b>Mute: </b>Alt + Shift + M <br><br>
       </div>
     </div>
-
-
-    Thanks for using Streamkeys!<br>
-    If you find this extension useful, or have any feedback, please leave a rating or review.
-    <br/><br/>
-    <b>Supported media players:</b>
-    <ul>  
-      <li>8track</li>
-      <li>Bankcamp</li>
-      <li>Deezer</li>
-      <li>Google Music</li>
-      <li>Grooveshark</li>
-      <li>TheHypeMachine</li>
-      <li>Jango</li>
-      <li>MySpace</li>
-      <li>Pandora</li>
-      <li>Rdio</li>
-      <li>Spotify</li>
-      <li>Soundcloud</li>
-      <li>Slacker</li>
-      <li>TheSixtyOne</li>
-    </ul>
-    <br>
-    <b>Changelog:</b>
+    <h1>Global Hotkeys</h1>
+    <p>By default, all hotkeys will work across the chrome browser.</p>
+    <h1>Changelog</h1>
     <ul>
       <li>
         v1.2.0<br>-Reworked the whole extension so that capturing works much better and from anywhere on the chrome window<br>

@@ -2,7 +2,7 @@ require 'sinatra'
 require 'mandrill'
 
 post '/contact' do
-  #MANDILL_APIKEY env var must be set
+  #MANDRILL_APIKEY env var must be set
   m = Mandrill::API.new
   message = {
     :subject => 'Streamkeys contact form',

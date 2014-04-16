@@ -2,3 +2,4 @@ name: Streamkeys
 markdown: redcarpet
 pygments: true
 url: http://localhost:4000
+exclude: ['sinatra', 'Guardfile', 'Gemfile', 'Gemfile.lock']

@@ -24,6 +24,9 @@ $(function() {
     case "/contact.html":
       $("#contact").attr("class", "active");
       break;
+    default:
+      $("#navbar-main-brand").attr("class", "active navbar-brand");
+      break;
   }
 
   $("#showguide").click(function() {

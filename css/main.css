@@ -15,6 +15,10 @@ body {
   color: #D9A626;
 }
 
+.active-brand {
+  color: #D9A626 !important;
+}
+
 .navbar-nav > .active > a {
   color: #D9A626;
   border-bottom: 3px solid #8A6445;
@@ -41,6 +45,9 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.panel-heading {
 }
 
 

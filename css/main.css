@@ -3,6 +3,11 @@ body {
   background-repeat: repeat;
 }
 
+a {
+  font-weight: bold;
+  color: #8A6445;
+}
+
 .navbar-main {
   background-color: rgba(255,0,0,0);
 }
@@ -47,8 +52,7 @@ body {
   margin-right: auto;
 }
 
-.panel-heading {
+.contact-link > a {
+  font-weight: bold;
+  color: #7F7F7F;
 }
-
-
-

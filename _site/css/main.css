@@ -8,6 +8,10 @@ a {
   color: #8A6445;
 }
 
+h1 {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #8A6445;
+}
 .navbar-main {
   background-color: rgba(255,0,0,0);
 }

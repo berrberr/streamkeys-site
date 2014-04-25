@@ -8,7 +8,6 @@ function getParameterByName(name) {
 
 $(function() {
   var pageName = window.location.href.toString().split(window.location.host)[1].split('?')[0];
-  
   if(getParameterByName('installed')) $("#installed").toggle();
   
   switch(pageName) {
@@ -32,5 +31,25 @@ $(function() {
   $("#showguide").click(function() {
     event.preventDefault();
     $("#pictureguide").toggle();
-  })
+  });
+
+  document.getElementById("contact_button").onclick = function() {
+    var data = {
+      url: $("#site_url").val(),
+      message: $("#comments").val()
+    };
+    postMessage(data);
+  };
+
+  var postMessage = function(message) {
+    $.ajax({
+      type: "POST",
+      url: "http://localhost:4567/message",
+      data: message
+    })
+      .done(function( msg ) {
+        console.log( "Data Saved: " + msg );
+      });
+  }
+
 });

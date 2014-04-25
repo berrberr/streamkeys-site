@@ -3,7 +3,8 @@ require 'mandrill'
 
 post '/contact' do
   #MANDRILL_APIKEY env var must be set
-  m = Mandrill::API.new
+  m = Mandrill::API.new ENV['MANDRILL_APIKEY']
+  puts "HEADER: #{request.inspect}"
   message = {
     :subject => 'Streamkeys contact form',
     :from_name => 'Streamkeys',

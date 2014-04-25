@@ -44,7 +44,7 @@ $(function() {
   var postMessage = function(message) {
     $.ajax({
       type: "POST",
-      url: "http://localhost:4567/message",
+      url: "http://localhost:4567/contact",
       data: message
     })
       .done(function( msg ) {

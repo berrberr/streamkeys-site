@@ -33,13 +33,14 @@ $(function() {
     $("#pictureguide").toggle();
   });
 
-  document.getElementById("contact_button").onclick = function() {
+  $("#contact_button").click(function() {
+    event.preventDefault();
     var data = {
       url: $("#site_url").val(),
       message: $("#comments").val()
     };
     postMessage(data);
-  };
+  });
 
   var postMessage = function(message) {
     $.ajax({
@@ -47,8 +48,9 @@ $(function() {
       url: "http://localhost:4567/contact",
       data: message
     })
-      .done(function( msg ) {
-        console.log( "Data Saved: " + msg );
+      .always(function(jqXHR, textStatus) {
+        console.log( "textStatus: ", textStatus );
+        console.log( "response: ", jqXHR);
       });
   }
 

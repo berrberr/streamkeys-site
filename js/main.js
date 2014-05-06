@@ -45,13 +45,13 @@ $(function() {
   var postMessage = function(message) {
     $.ajax({
       type: "POST",
-      url: "http://localhost:4567/contact",
+      url: "http://contact.streamkeys.com",
       data: message
     })
       .always(function(jqXHR, textStatus) {
         console.log( "textStatus: ", textStatus );
         console.log( "response: ", jqXHR);
       });
-  }
+  };
 
 });

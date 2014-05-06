@@ -9,7 +9,8 @@ function getParameterByName(name) {
 $(function() {
   var pageName = window.location.href.toString().split(window.location.host)[1].split('?')[0];
   if(getParameterByName('installed')) $("#installed").toggle();
-  
+  if(getParameterByName('updated')) $("#updated").toggle();
+
   switch(pageName) {
     case "/about.html":
       $("#about").attr("class", "active");

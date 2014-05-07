@@ -1,15 +1,16 @@
 //From: http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript/901144#901144
 function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
-    var results = regex.exec(location.search);
-    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+  var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+  var results = regex.exec(location.search);
+  return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
 $(function() {
   var pageName = window.location.href.toString().split(window.location.host)[1].split('?')[0];
   if(getParameterByName('installed')) $("#installed").toggle();
   if(getParameterByName('updated')) $("#updated").toggle();
+  if(getParameterByName('sentmessage')) $("#sentmessage").toggle();
 
   switch(pageName) {
     case "/about.html":
@@ -52,6 +53,7 @@ $(function() {
       .always(function(jqXHR, textStatus) {
         console.log( "textStatus: ", textStatus );
         console.log( "response: ", jqXHR);
+        window.location.href = "sites.html?sentmessage=true";
       });
   };
 

@@ -1,6 +1,30 @@
 ---
 layout: default
 title: Streamkeys - Supported Sites
+sitelist:
+  8tracks: www.8tracks.com
+  Bandcamp: www.bandcamp.com
+  Deezer: www.deezer.com
+  Di.fm: www.di.fm
+  Earbits: www.earbits.com
+  Google Music: play.google.com
+  Grooveshark: www.grooveshark.com
+  TheHypeMachine: www.hypem.com
+  iHeartRadio: www.iheart.com
+  Jango: www.jango.com
+  MixCloud: www.mixcloud.com
+  Pandora: www.pandora.com
+  RadioParadise: www.radioparadise.com
+  Rdio: www.rdio.com
+  Seesu: www.seesu.me
+  Spotify: www.spotify.com
+  Songstr: www.songstr.com
+  Songza: www.songza.com
+  Stitcher: www.stitcher.com
+  Soundcloud: www.soundcloud.com
+  Slacker: www.slacker.com
+  TheSixtyOne: www.thesixtyone.com
+  VK: www.vk.com
 ---
 
 <div id="sentmessage" style="display: none;" class="alert alert-danger alert-dismissable">
@@ -18,27 +42,10 @@ title: Streamkeys - Supported Sites
   </form>
   <h1>Supported Sites</h1><br>
   <div class="sites">
-    <ul class="list-group">  
-      <li class="list-group-item"><a href="http://www.8tracks.com" target="_blank">8track</a></li>
-      <li class="list-group-item"><a href="http://www.bandcamp.com" target="_blank">Bandcamp</a></li>
-      <li class="list-group-item"><a href="http://www.deezer.com" target="_blank">Deezer</a></li>
-      <li class="list-group-item"><a href="http://www.earbits.com" target="_blank">Earbits</a></li>
-      <li class="list-group-item"><a href="http://play.google.com/music" target="_blank">Google Music</a></li>
-      <li class="list-group-item"><a href="http://www.grooveshark.com" target="_blank">Grooveshark</a></li>
-      <li class="list-group-item"><a href="http://www.hypem.com" target="_blank">TheHypeMachine</a></li>
-      <li class="list-group-item"><a href="http://www.iheart.com" target="_blank">iHeartRadio</a></li>
-      <li class="list-group-item"><a href="http://www.jango.com" target="_blank">Jango</a></li>
-      <li class="list-group-item"><a href="http://www.mixcloud.com" target="_blank">Mixcloud</a></li>
-      <li class="list-group-item"><a href="http://www.myspace.com" target="_blank">MySpace</a></li>
-      <li class="list-group-item"><a href="http://www.pandora.com" target="_blank">Pandora</a></li>
-      <li class="list-group-item"><a href="http://www.rdio.com" target="_blank">Rdio</a></li><li class="list-group-item"><a href="http://www.seesu.me" target="_blank">Seesu</a></li>
-      <li class="list-group-item"><a href="http://www.spotify.com" target="_blank">Spotify</a></li>
-      <li class="list-group-item"><a href="http://www.songza.com" target="_blank">Songza</a></li>
-      <li class="list-group-item"><a href="http://app.stitcher.com" target="_blank">Stitcher</a></li>
-      <li class="list-group-item"><a href="http://www.soundcloud.com" target="_blank">Soundcloud</a></li>
-      <li class="list-group-item"><a href="http://www.slacker.com" target="_blank">Slacker</a></li>
-      <li class="list-group-item"><a href="http://www.thesixtyone.com" target="_blank">TheSixtyOne</a></li>
-      <li class="list-group-item"><a href="http://www.vk.com" target="_blank">VK</a></li>
+    <ul class="list-group">
+      {% for site in page.sitelist order:ascending %}
+        <li class="list-group-item"><a href="http://{{ site[1] }}" target="_blank">{{ site[0] }}</a></li>
+      {% endfor %}
     </ul>
   </div>
 </div>

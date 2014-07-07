@@ -34,6 +34,22 @@ h1 {
     color: #036564;
     text-decoration: none; }
 
+#footer {
+  height: 160px;
+  margin-bottom: -20px;
+  background-color: #036564;
+  position: relative;
+  bottom: 0;
+  color: #FFF; }
+  #footer .footer-row {
+    margin-top: 40px; }
+    #footer .footer-row div {
+      text-align: center; }
+      #footer .footer-row div a {
+        color: #FFF; }
+        #footer .footer-row div a:hover {
+          text-decoration: none; }
+
 .help-alert {
   font-size: 16px; }
 
@@ -42,15 +58,11 @@ h1 {
   margin-left: auto;
   margin-right: auto; }
 
-.contact-link > a {
-  font-weight: bold;
-  color: #7F7F7F; }
-
 .main-jumbo {
   background-color: #FFF;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  border-color: black; }
+  border-color: #000; }
 
 #supported-sites h1 {
   text-align: center;
@@ -66,3 +78,8 @@ h1 {
   height: 96px;
   border-radius: 3px;
   margin-bottom: 5px; }
+
+.main-content {
+  margin-bottom: 20px;
+  overflow: auto;
+  min-height: 100%; }

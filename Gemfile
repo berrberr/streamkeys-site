@@ -1,8 +1,9 @@
 # A sample Gemfile
 source "https://rubygems.org"
-gem 'jekyll', '1.2.1'
+gem 'listen', '~> 2.7.9'
+gem 'jekyll', '~> 2.1.0'
 gem 'guard'
-gem 'guard-jekyll-plus'
+gem 'guard-jekyll-plus', :git => 'https://github.com/berrberr/guard-jekyll-plus.git'
 gem 'guard-livereload'
 gem 'sinatra'
 gem 'pony'

@@ -93,22 +93,27 @@ h1 {
 }
 
 #supported-sites {
+  text-align: center;
   h1 {
-    text-align: center;
     margin-top: 0;
+  }
+  p {
     margin-bottom: 20px;
+  }
+  button {
+    padding-right: 35px;
+    padding-left: 35px;
   }
 }
 
 .icon-row {
-  margin-top: 5px;
-  margin-bottom: 25px;
+  margin: 5px 14% 25px 14%;
 }
 
 .icon-image {
   width: 96px;
   height: 96px;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-bottom: 5px;
 }
 
@@ -116,4 +121,53 @@ h1 {
   margin-bottom: 20px;
   overflow: auto;
   min-height: 100%;
+}
+
+//-- Install Button --//
+.btn-install { 
+  color: #FFFFFF; 
+  background-color: #036564; 
+  border-color: #000000;
+  margin-top: 10px;
+  padding: 15px 25px 15px 25px;
+} 
+ 
+.btn-install:hover, 
+.btn-install:focus, 
+.btn-install:active, 
+.btn-install.active, 
+.open .dropdown-toggle.btn-install { 
+  color: #FFFFFF; 
+  background-color: #037271; 
+  border-color: #000000; 
+} 
+ 
+.btn-install:active, 
+.btn-install.active, 
+.open .dropdown-toggle.btn-install { 
+  background-image: none; 
+} 
+ 
+.btn-install.disabled, 
+.btn-install[disabled], 
+fieldset[disabled] .btn-install, 
+.btn-install.disabled:hover, 
+.btn-install[disabled]:hover, 
+fieldset[disabled] .btn-install:hover, 
+.btn-install.disabled:focus, 
+.btn-install[disabled]:focus, 
+fieldset[disabled] .btn-install:focus, 
+.btn-install.disabled:active, 
+.btn-install[disabled]:active, 
+fieldset[disabled] .btn-install:active, 
+.btn-install.disabled.active, 
+.btn-install[disabled].active, 
+fieldset[disabled] .btn-install.active { 
+  background-color: #036564; 
+  border-color: #000000; 
+} 
+ 
+.btn-install .badge { 
+  color: #036564; 
+  background-color: #FFFFFF; 
 }

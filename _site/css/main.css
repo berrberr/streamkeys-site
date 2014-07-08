@@ -64,22 +64,69 @@ h1 {
   border-bottom: 1px solid;
   border-color: #000; }
 
-#supported-sites h1 {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px; }
+#supported-sites {
+  text-align: center; }
+  #supported-sites h1 {
+    margin-top: 0; }
+  #supported-sites p {
+    margin-bottom: 20px; }
+  #supported-sites button {
+    padding-right: 35px;
+    padding-left: 35px; }
 
 .icon-row {
-  margin-top: 5px;
-  margin-bottom: 25px; }
+  margin: 5px 14% 25px 14%; }
 
 .icon-image {
   width: 96px;
   height: 96px;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-bottom: 5px; }
 
 .main-content {
   margin-bottom: 20px;
   overflow: auto;
   min-height: 100%; }
+
+.btn-install {
+  color: #FFFFFF;
+  background-color: #036564;
+  border-color: #000000;
+  margin-top: 10px;
+  padding: 15px 25px 15px 25px; }
+
+.btn-install:hover,
+.btn-install:focus,
+.btn-install:active,
+.btn-install.active,
+.open .dropdown-toggle.btn-install {
+  color: #FFFFFF;
+  background-color: #037271;
+  border-color: #000000; }
+
+.btn-install:active,
+.btn-install.active,
+.open .dropdown-toggle.btn-install {
+  background-image: none; }
+
+.btn-install.disabled,
+.btn-install[disabled],
+fieldset[disabled] .btn-install,
+.btn-install.disabled:hover,
+.btn-install[disabled]:hover,
+fieldset[disabled] .btn-install:hover,
+.btn-install.disabled:focus,
+.btn-install[disabled]:focus,
+fieldset[disabled] .btn-install:focus,
+.btn-install.disabled:active,
+.btn-install[disabled]:active,
+fieldset[disabled] .btn-install:active,
+.btn-install.disabled.active,
+.btn-install[disabled].active,
+fieldset[disabled] .btn-install.active {
+  background-color: #036564;
+  border-color: #000000; }
+
+.btn-install .badge {
+  color: #036564;
+  background-color: #FFFFFF; }

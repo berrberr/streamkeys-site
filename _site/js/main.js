@@ -6,8 +6,30 @@ function getParameterByName(name) {
   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 };
 
+var InstallState = (function() {
+
+  //Check for injected div from extension contenscript
+  var installCheck = function() {
+    if(this.count < 10) {
+      console.log("Install checking..");
+      // if(checkFor)
+      setTimeout(installCheck.bind({count: this.count + 1}), 200);
+    } else {
+      $(".btn-install-cta").each(function() {
+        this.innerHTML = "<i class=\"fa fa-check\"></i>&nbsp;&nbsp;Installed!</button>";
+      });
+    }
+    return false;
+  };
+
+  return {
+    initInstallCheck: function() { installCheck.apply({count: 0}); }
+  }
+})();
 
 $(function() {
+
+  InstallState.initInstallCheck();
 
   $(".btn-install").click(function(e) {
     console.log("installing...");

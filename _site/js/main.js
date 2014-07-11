@@ -6,7 +6,13 @@ function getParameterByName(name) {
   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 };
 
+document.addEventListener("streamkeys-installed", function(e) {
+  InstallState.setInstalled();
+})
+
 var InstallState = (function() {
+
+  var installed = false;
 
   //Check for injected div from extension contenscript
   var installCheck = function() {
@@ -23,7 +29,12 @@ var InstallState = (function() {
   };
 
   return {
-    initInstallCheck: function() { installCheck.apply({count: 0}); }
+    initInstallCheck: function() {
+      installCheck.apply({count: 0});
+    },
+    setInstalled: function() {
+      this.installed = true;
+    }
   }
 })();
 
@@ -31,7 +42,7 @@ $(function() {
 
   InstallState.initInstallCheck();
 
-  $(".btn-install").click(function(e) {
+  $(".btn-install-cta").click(function(e) {
     console.log("installing...");
     chrome.webstore.install(undefined,
       function() {

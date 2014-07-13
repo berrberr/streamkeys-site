@@ -12,7 +12,15 @@ document.addEventListener("streamkeys-installed", function(e) {
 
 var InstallState = (function() {
 
-  var installed = false;
+  var installed = false,
+      buttons = $(".btn-install-cta"),
+      unsupported = $("#unsupported-browser");
+
+  var setButtons = function(text) {
+    buttons.each(function (index, el) {
+      el.innerHTML = text;
+    });
+  };
 
   //Check for injected div from extension contenscript
   var installCheck = function() {
@@ -32,28 +40,46 @@ var InstallState = (function() {
     initInstallCheck: function() {
       installCheck.apply({count: 0});
     },
+    setDefault: function() {
+      setButtons("<i class=\"fa fa-download\"></i>&nbsp;&nbsp;Download for Chrome");
+    },
     setInstalled: function() {
-      this.installed = true;
+      installed = true;
+      setButtons("<i class=\"fa fa-check\"></i>&nbsp;&nbsp;Installed!");
+    },
+    setInstalling: function() {
+      console.log("set installin" + installed);
+      setButtons("Installing...");
+    },
+    setCustom: function(msg) {
+      setButtons(msg);
+    },
+    setUnsupported: function() {
+      buttons.each(function(index, el) {
+        el.hide();
+      });
+      unsupported.show();
     }
   }
 })();
 
+var onClickInstall = function() {
+  InstallState.setInstalling();
+  chrome.webstore.install(undefined,
+    function() {
+      console.log('success');
+    },
+    function(msg) {
+      InstallState.setCustom(msg);
+    }
+  );
+}
+
+$(".btn-install-cta").click(function(e) {
+  onClickInstall();
+});
+
 $(function() {
-
-  InstallState.initInstallCheck();
-
-  $(".btn-install-cta").click(function(e) {
-    console.log("installing...");
-    chrome.webstore.install(undefined,
-      function() {
-        console.log('success');
-      },
-      function(msg) {
-        console.log('failed, ' + msg);
-      }
-    );
-  });
-
   $("#showguide").click(function() {
     event.preventDefault();
     $("#pictureguide").toggle();

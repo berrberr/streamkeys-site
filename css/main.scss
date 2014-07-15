@@ -113,6 +113,10 @@ h1 {
     padding-right: 35px;
     padding-left: 35px;
   }
+  a, a:hover {
+    color: #000;
+    text-decoration: none;
+  }
 }
 
 .logo-image {
@@ -141,22 +145,29 @@ h1 {
   margin: 0;
 }
 
-.btn-main {
+.btn-main, .btn-main[disabled] {
   @include button-variant(#FFF, $primary, #000);
 }
 
 .btn-install-lg {
   margin-top: 10px;
-  width: 200px;
   padding: 15px 25px 15px 25px;
 }
 
-.btn-request-site {
-  margin-top: 10px;
-  padding: 15px 25px 15px 25px;
+.btn-install-homepage {
+  width: 300px;
+}
+
+.btn-install-header {
+  width: 190px;
 }
 
 .btn-install-sm {
   margin-top: 12px;
   padding: 5px 10px 5px 10px;
+}
+
+.form-textarea {
+  resize: none;
+  width: 100%;
 }

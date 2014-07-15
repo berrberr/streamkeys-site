@@ -31,11 +31,23 @@ var InstallState = (function() {
     },
     setInstalled: function() {
       installed = true;
+      $(".btn-install-cta").each(function (index, el) {
+        $(el).attr("disabled", "disabled");
+      });
       setButtons("<i class=\"fa fa-check\"></i>&nbsp;&nbsp;Installed!");
     },
     setInstalling: function() {
       console.log("set installin" + installed);
       setButtons("<i class=\"fa fa-circle-o-notch fa-spin\"></i>&nbsp;&nbsp;Installing...");
+    },
+    setError: function() {
+      $(".btn-install-cta").each(function (index, el) {
+        $(el)
+          .attr("disabled", "disabled")
+          .removeClass("btn-install-homepage")
+          .removeClass("btn-install-header")
+          .html("<i class=\"fa fa-exclamation\"></i>&nbsp;&nbsp;Install failed. Refresh to try again.");
+      })
     },
     setCustom: function(msg) {
       setButtons(msg);
@@ -58,7 +70,7 @@ var onClickInstall = function() {
     },
     function(msg) {
       console.log("Streamkeys installed failed. Error: ", msg);
-      InstallState.setCustom("<i class=\"fa fa-exclamation\"></i>&nbsp;&nbsp;Install failed. Refresh to try again.");
+      InstallState.setError();
     }
   );
 }
@@ -77,6 +89,7 @@ $(function() {
     event.preventDefault();
     var data = {
       url: $("#site_url").val(),
+      email: $("#email").val(),
       message: $("#comments").val()
     };
     postMessage(data);

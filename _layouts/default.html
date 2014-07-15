@@ -23,13 +23,15 @@
           <li id="sites"><a href="sites.html">Supported Sites</a></li>
           <li id="contact"><a href="contact.html">Contact</a></li>
         </ul>
-        <button class="btn btn-sm btn-main btn-install-sm btn-install-cta pull-right"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
+        <button class="btn btn-sm btn-main btn-install-sm btn-install-header btn-install-cta pull-right"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
       </div>
     </div>
 
     <div class="main-content">
       {{ content }}
     </div>
+
+    {% include request_modal.html %}
 
     <footer id="footer">
       <div class="container">

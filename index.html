@@ -1,6 +1,70 @@
 ---
 layout: default
 title: Streamkeys - Global Music Player Hotkeys for Chrome
+sitelist:
+  - name: 8tracks
+    image: 8tracks.png
+    url: www.8tracks.com
+  - name: Bandcamp
+    image: bandcamp.png
+    url: www.bandcamp.com
+  - name: Deezer
+    image: deezer.png
+    url: www.deezer.com
+  - name: Di.fm
+    image: difm.png
+    url: www.di.fm
+  - name: Earbits
+    image: earbits.png
+    url: www.earbits.com
+  - name: Google Play
+    image: googleplay.png
+    url:: play.google.com
+  - name: Grooveshark
+    image: grooveshark.png
+    url: www.grooveshark.com
+  - name: TheHypeMachine
+    image: hypemachine.png
+    url: www.hypem.com
+  - name: iHeartRadio
+    image: iheart.png
+    url: www.iheart.com
+  - name: Jango
+    image: jango.png
+    url: www.jango.com
+  - name: MixCloud
+    url: www.mixcloud.com
+  - name: Pandora
+    image: pandora.png
+    url: www.pandora.com
+  - name: RadioParadise
+    image: radioparadise.png
+    url: www.radioparadise.com
+  - name: Rdio
+    image: rdio.png
+    url: www.rdio.com
+  - name: Spotify
+    image: spotify.png
+    url: www.spotify.com
+  - name: Songstr
+    url: www.songstr.com
+  - name: Songza
+    image: songza.png
+    url: www.songza.com
+  - name: Stitcher
+    image: stitcher.png
+    url: www.stitcher.com
+  - name: Soundcloud
+    image: soundcloud.png
+    url: www.soundcloud.com
+  - name: Slacker
+    image: slacker.png
+    url: www.slacker.com
+  - name: TheSixtyOne
+    url: www.thesixtyone.com
+  - name: VK
+    image: vk.png
+    url: www.vk.com
 ---
 
 <div class="jumbotron main-jumbo">
@@ -9,7 +73,7 @@ title: Streamkeys - Global Music Player Hotkeys for Chrome
       <h1>Global hotkeys for your favourite music players</h1>
       <h3>...control players from anywhere on your computer</h3>
       <p>
-        <button type="button" class="btn btn-lg btn-main btn-install-lg btn-install-cta">
+        <button type="button" class="btn btn-lg btn-main btn-install-lg btn-install-homepage btn-install-cta">
           <i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome
         </button>
       </p>
@@ -21,29 +85,19 @@ title: Streamkeys - Global Music Player Hotkeys for Chrome
 </div>
 
 <div class="container" id="supported-sites">
-  <h1>Supported Sites</h1>
-  <p><button type="button" id="btn-req" class="btn btn-lg btn-main btn-request-site">Is there a site missing? Request a site to be added here.</button></p>
+  <h1>Works With</h1>
+  <p><button type="button" id="btn-req" class="btn btn-lg btn-main btn-install-lg" data-toggle="modal" data-target="#requestModal">Is there a site missing? Request a site to be added here.</button></p>
   <div class="row icon-row">
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/8tracks.png" alt="8tracks" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/bandcamp.png" alt="Bandcamp" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/deezer.png" alt="Deezer" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/difm.png" alt="Di.fm" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/earbits.png" alt="Earbits" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/googleplay.png" alt="Google Play" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/grooveshark.png" alt="Grooveshark" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/hypemachine.png" alt="TheHypeMachine" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/iheart.png" alt="iHeart" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/jango.png" alt="Jango" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/myspace.png" alt="Myspace" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/pandora.png" alt="Pandora" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/radioparadise.png" alt="RadioParadise" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/rdio.png" alt="Rdio" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/slacker.png" alt="Slacker" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/songza.png" alt="Songza" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/soundcloud.png" alt="Soundcloud" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/spotify.png" alt="Spotify" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/stitcher.png" alt="Stitcher" class="icon-image"></div>
-    <div class="col-md-2 col-sm-3 col-xs-4"><img src="img/icons/vk.png" alt="VK" class="icon-image"></div>
+    {% for site in page.sitelist %}
+      {% if site.image %}
+        <div class="col-md-2 col-sm-3 col-xs-4">
+          <a href="http://{{ site.url }}" target="_blank">
+            <img src="img/icons/{{ site.image }}" alt="{{ site.name }}" class="icon-image">
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
+  <h4><a href="sites.html"><em>...and more. See the full sitelist.</em></a></h4>
 </div>
 

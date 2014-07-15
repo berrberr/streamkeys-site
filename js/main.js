@@ -22,20 +22,6 @@ var InstallState = (function() {
     });
   };
 
-  //Check for injected div from extension contenscript
-  var installCheck = function() {
-    if(this.count < 10) {
-      console.log("Install checking..");
-      // if(checkFor)
-      setTimeout(installCheck.bind({count: this.count + 1}), 200);
-    } else {
-      $(".btn-install-cta").each(function() {
-        this.innerHTML = "<i class=\"fa fa-check\"></i>&nbsp;&nbsp;Installed!</button>";
-      });
-    }
-    return false;
-  };
-
   return {
     initInstallCheck: function() {
       installCheck.apply({count: 0});
@@ -49,7 +35,7 @@ var InstallState = (function() {
     },
     setInstalling: function() {
       console.log("set installin" + installed);
-      setButtons("Installing...");
+      setButtons("<i class=\"fa fa-circle-o-notch fa-spin\"></i>&nbsp;&nbsp;Installing...");
     },
     setCustom: function(msg) {
       setButtons(msg);
@@ -67,10 +53,12 @@ var onClickInstall = function() {
   InstallState.setInstalling();
   chrome.webstore.install(undefined,
     function() {
-      console.log('success');
+      console.log("Streamkeys installed!");
+      InstallState.setInstalled();
     },
     function(msg) {
-      InstallState.setCustom(msg);
+      console.log("Streamkeys installed failed. Error: ", msg);
+      InstallState.setCustom("<i class=\"fa fa-exclamation\"></i>&nbsp;&nbsp;Install failed. Refresh to try again.");
     }
   );
 }

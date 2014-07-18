@@ -175,3 +175,10 @@ h1 {
   resize: none;
   width: 100%;
 }
+
+.guide-image-row {
+  @include make-row();
+  > div {
+    @include make-sm-column(4);
+  }
+}

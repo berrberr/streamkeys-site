@@ -178,7 +178,13 @@ h1 {
 
 .guide-image-row {
   @include make-row();
-  > div {
+
+  .guide-thumbnail {
     @include make-sm-column(4);
+    img {
+      height: 220px;
+      width: 100%;
+      overflow: hidden;
+    }
   }
 }

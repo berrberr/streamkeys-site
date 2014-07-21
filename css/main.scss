@@ -17,9 +17,6 @@ body {
   background-color: #FFF;
 }
 
-#wrapper {
-}
-
 a, a:hover {
   font-weight: bold;
   color: #000;
@@ -56,7 +53,7 @@ h1 {
 }
 
 .navbar-links {
-  padding: 16px 0 16px 100px;
+  padding: 16px 0 16px 80px;
   li > a {
     margin-right: 20px;
     color: $primary;
@@ -93,42 +90,11 @@ h1 {
   font-size: 16px;
 }
 
-.new-version-alert {
-  @extend .alert, .alert-danger, .alert-dismissable;
-  margin-top: -20px; //Removes some of the padding from main-jumbo;
-  background-color: $primary;
-  color: #FFFFFF;
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    font-size: 2em;
-  }
-}
-
 .main-jumbo {
+  @extend .jumbotron;
   background-color: #FFF;
   border-top: 1px solid;
-  border-bottom: 1px solid;
   border-color: #000;
-}
-
-#supported-sites {
-  text-align: center;
-  h1 {
-    margin: 0;
-  }
-  p {
-    margin-bottom: 20px;
-  }
-  button {
-    padding-right: 35px;
-    padding-left: 35px;
-  }
-  a, a:hover {
-    color: #000;
-    text-decoration: none;
-  }
 }
 
 .logo-image {
@@ -159,11 +125,14 @@ h1 {
 
 .btn-main, .btn-main[disabled] {
   @include button-variant(#FFF, $primary, #000);
+  border-radius: 4px;
+  border: 1px solid #000;
 }
 
 .btn-install-lg {
   margin-top: 10px;
   padding: 15px 25px 15px 25px;
+  font-size: 1.2em;
 }
 
 .btn-install-homepage {
@@ -171,10 +140,8 @@ h1 {
 }
 
 .btn-install-header {
+  @extend .pull-right;
   width: 190px;
-}
-
-.btn-install-sm {
   margin-top: 12px;
   padding: 5px 10px 5px 10px;
 }
@@ -184,6 +151,53 @@ h1 {
   width: 100%;
 }
 
+//** Homepage **//
+#supported-sites {
+  text-align: center;
+  h1 {
+    margin: 0;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  button {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  a, a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+//** Setup guide page **//
+.new-version-alert {
+  @extend .alert, .alert-danger, .alert-dismissable;
+  margin-top: -20px; //Removes some of the padding from main-jumbo;
+  background-color: $primary;
+  color: #FFFFFF;
+  h1 {
+    font-size: 3em;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 2em;
+  }
+
+  ul {
+    @extend .list-group;
+    li {
+      @extend .list-group-item;
+      background-color: $primary-faded;
+      border-color: $primary-faded;
+      font-size: 1.2em;
+      h2 {
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
 .guide-image-row {
   @include make-row();
 
@@ -191,8 +205,18 @@ h1 {
     @include make-sm-column(4);
     img {
       height: 220px;
-      width: 100%;
+      max-width: 100%;
       overflow: hidden;
     }
+  }
+}
+
+.hotkey-row {
+  @include make-row();
+  div {
+    @include make-xs-column(3);
+  }
+  .first {
+    @include make-xs-column-offset(3);
   }
 }

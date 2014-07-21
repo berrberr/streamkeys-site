@@ -67,13 +67,13 @@ sitelist:
     url: www.vk.com
 ---
 
-<div class="jumbotron main-jumbo">
+<div class="main-jumbo">
   <div class="row">
     <div class="col-xs-6">
       <h1>Global hotkeys for your favourite music players</h1>
       <h3>...control players from anywhere on your computer</h3>
       <p>
-        <button type="button" class="btn btn-lg btn-main btn-install-lg btn-install-homepage btn-install-cta">
+        <button type="button" class="btn-main btn-install-lg btn-install-homepage btn-install-cta">
           <i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome
         </button>
       </p>
@@ -84,9 +84,9 @@ sitelist:
   </div>
 </div>
 
-<div class="container" id="supported-sites">
+<div class="main-jumbo" id="supported-sites">
   <h1>Works With</h1>
-  <p><button type="button" id="btn-req" class="btn btn-lg btn-main btn-install-lg" data-toggle="modal" data-target="#requestModal">Is there a site missing? Request a site to be added here.</button></p>
+  <p><button type="button" id="btn-req" class="btn-main btn-install-lg" data-toggle="modal" data-target="#requestModal">Is there a site missing? Request a site to be added here.</button></p>
   <div class="row icon-row">
     {% for site in page.sitelist %}
       {% if site.image %}

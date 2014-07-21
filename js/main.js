@@ -6,6 +6,13 @@ function getParameterByName(name) {
   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 };
 
+//Lightbox setup
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+}); 
+
+//Message from extension
 document.addEventListener("streamkeys-installed", function(e) {
   InstallState.setInstalled();
 })
@@ -80,10 +87,6 @@ $(".btn-install-cta").click(function(e) {
 });
 
 $(function() {
-  $("#showguide").click(function() {
-    event.preventDefault();
-    $("#pictureguide").toggle();
-  });
 
   $("#contact_button").click(function() {
     event.preventDefault();
@@ -107,5 +110,8 @@ $(function() {
         window.location.href = "sites.html?sentmessage=true";
       });
   };
+
+  //$.fn.ekkoLightbox.defaults.right_arrow_class = ".fa .fa-arrow-right";
+  //$.fn.ekkoLightbox.defaults.left_arrow_class = ".fa .fa-arrow-left";
 
 });

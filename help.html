@@ -3,77 +3,69 @@ layout: default
 title: "Streamkeys - Help"
 ---
 
-<div id="installed" style="display: none;" class="alert alert-danger alert-dismissable">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  <h1>Streamkeys has been installed!</h1>
-  <h3>Note: This page will only be loaded once on update or install. Read the section below for a quick start guide.</h3>
-</div>
-<div id="updated" style="display: none;" class="alert alert-danger alert-dismissable">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  <h1>Streamkeys has been updated.</h1>
-  <h3>New Version:</h3>
-  <ul class="list-group">
-    <li class="list-group-item">
-      <h3>v1.3.4</h3>-Fixed bugs with Songza and Slacker Radio<br>
-      -Added support for di.fm, player.edge.ca, RadioParadise, Songstr
-    </li>
-  </ul>
-  <h3>Note: This page will only be loaded once on update or install</h3>
-</div>
-
 <div class="jumbotron main-jumbo">
-  <h1 id="configuration">Configuration</h1>
-  <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing. In this menu you can also set the hotkeys to be global across either Chrome or your system (see <a href="#global">Global Hotkeys section</a> for more info).</p>
-  <div class="guide-image-row">
-      <div class="guide-thumbnail">
-        <a href="#" class="thumbnail"><img src="img/step1.png" alt="Step 1"></a>
-        <div class="caption text-center">
-          <h4>Go to extensions page</h4>
-        </div>
-      </div>
-      <div class="guide-thumbnail">
-        <a href="#" class="thumbnail"><img src="img/step2.png" alt="Step 1"></a>
-        <div class="caption text-center">
-          <h4>Click keyboard shortcuts</h4>
-        </div>
-      </div>
-      <div class="guide-thumbnail">
-        <a href="#" class="thumbnail"><img src="img/step3.png" alt="Step 1"></a>
-        <div class="caption text-center">
-          <h4>Set new shortcuts</h4>
-        </div>
-      </div>
+
+  <div id="installed" style="display: block;" class="new-version-alert">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <h1>Streamkeys has been installed!</h1>
+    <h2>Note: This page will only be loaded once on update or install. You will need to refresh any currently open media player tabs. Read the section below for a quick start guide.</h2>
   </div>
-  <div id="pictureguide" style="display:none;">
-    <br><p><b>Step 1</b></p>
-    <img src="img/step1.png" alt="Step 1">
-    <br><p><b>Step 2</b></p>
-    <img src="img/step2.png" alt="Step 2">
-    <br><p><b>Step 3</b></p>
-    <img src="img/step3.png" alt="Step 3">
+  
+  <div id="updated" style="display: block;" class="new-version-alert">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <h1>Streamkeys has been updated.</h1>
+    <h2>New Version:</h2>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h2>v1.3.4</h2>-Fixed bugs with Songza and Slacker Radio<br>
+        -Added support for di.fm, player.edge.ca, RadioParadise, Songstr
+      </li>
+    </ul>
+    <h2>Note: This page will only be loaded once on update or install</h2>
+  </div>
+
+  <h1 id="configuration">Configuration</h1>
+  <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing. In this menu you can also set the hotkeys to be global across either Chrome or your system.</p>
+  <div class="guide-image-row">
+    <div class="guide-thumbnail">
+      <a href="img/step1.png" class="thumbnail" data-toggle="lightbox" data-title="Extensions Page" data-footer="<b>Step 1.</b> Go to Chrome extensions page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="img/step1.png" alt="Step 1"></a>
+      <div class="caption text-center">
+        <h4>Go to extensions page</h4>
+      </div>
+    </div>
+    <div class="guide-thumbnail">
+      <a href="img/step2.png" class="thumbnail" data-toggle="lightbox" data-title="Keyboard Shortcuts" data-footer="<b>Step 2.</b> Click keyboard shortcuts at bottom of extension page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="img/step2.png" alt="Step 2"></a>
+      <div class="caption text-center">
+        <h4>Click keyboard shortcuts</h4>
+      </div>
+    </div>
+    <div class="guide-thumbnail">
+      <a href="img/step3.png" class="thumbnail" data-toggle="lightbox" data-title="Shortcuts Popup" data-footer="<b>Step 3.</b> Set new shortcuts" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="img/step3.png" alt="Step 3"></a>
+      <div class="caption text-center">
+        <h4>Set new shortcuts</h4>
+      </div>
+    </div>
   </div>
   <br>
-  <p><b>Mac users:</b> Currently there is an issue with capturing media key presses in chrome on macs. This issue is slated to be fixed in the next Chrome release, but until then you will have to use other keys, sorry!</p>
+  <p><b>Mac users:</b> Currently there is an issue with capturing media key presses in Chrome on macs. This issue is slated to be fixed in the next Chrome release, but until then you will have to use other keys, sorry!</p>
   <h1>Default Hotkeys</h1>
   <div class="row">
-    <div class="col-xs-4">
-    <h3>Mac:</h3>
+    <div class="col-xs-3 col-xs-offset-3">
+    <h2>Mac:</h2>
     <b>Play/Pause: </b>Ctrl + Shift + 2 <br>
     <b>Next Song: </b>Ctrl + Shift + 3 <br>
     <b>Previous Song: </b>Ctrl + Shift + 1 <br>
     <b>Mute: </b>Ctrl + Shift + M <br>
     </div>
-    <div class="col-xs-4">
-    <h3>Windows:</h3>
+    <div class="col-xs-3">
+    <h2>Windows:</h2>
     <b>Play/Pause: </b>Media Key Play<br>
     <b>Next Song: </b>Media Key Next<br>
     <b>Previous Song: </b>Media Key Previous<br>
     <b>Mute: </b>Alt + Shift + M <br><br>
     </div>
   </div>
-  <h1 id="global">Global Hotkeys</h1>
-  <p>By default, all hotkeys will work across the chrome browser. As of <a href="http://www.google.com/intl/en/chrome/browser/beta.html" target="_blank">Chrome Beta 35</a> (verified on v35.0.1916.27 and above), extension hotkeys will now work globally across <b>your whole computer.</b> To get Streamkeys working from anywhere <a href="http://www.google.com/intl/en/chrome/browser/beta.html" target="_blank">install Google Chrome Beta</a> and restart your browser. The hotkeys should be enabled globally by default, if that doesn't work check the hotkey settings using the steps outlined in the <a href="#configuration">Configuration section</a></p>
   <h1 id="options">Options</h1>
-  <p>You can enable/disable all sites. To do this go to the Chrome extension tab, find the StreamKeys extension in the list, and click on the 'options' link. This feature is useful if you have multiple media sites open, and want StreamKeys to ignore any number of them.</p>
+  <p>On the options page you can enable/disable Streamkeys for any site. To do this, go to the Chrome extension tab, find the Streamkeys extension in the list, and click on the 'options' link. This feature is useful if you have multiple different media sites open, and want Streamkeys to ignore any number of them.</p>
 
 </div>

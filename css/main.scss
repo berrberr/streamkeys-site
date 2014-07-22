@@ -136,7 +136,7 @@ h1 {
 }
 
 .btn-install-homepage {
-  width: 300px;
+  width: 330px;
 }
 
 .btn-install-header {
@@ -176,6 +176,8 @@ h1 {
   margin-top: -20px; //Removes some of the padding from main-jumbo;
   background-color: $primary;
   color: #FFFFFF;
+  border: none;
+
   h1 {
     font-size: 3em;
     margin-top: 0;

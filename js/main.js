@@ -17,6 +17,7 @@ document.addEventListener("streamkeys-installed", function(e) {
   InstallState.setInstalled();
 })
 
+//Install button states
 var InstallState = (function() {
 
   var installed = false,
@@ -68,6 +69,7 @@ var InstallState = (function() {
   }
 })();
 
+//Install the extension
 var onClickInstall = function() {
   InstallState.setInstalling();
   chrome.webstore.install(undefined,
@@ -86,7 +88,17 @@ $(".btn-install-cta").click(function(e) {
   onClickInstall();
 });
 
+//Parse query string and toggle any hidden divs
+var toggleDivs = function() {
+  var pageName = window.location.href.toString().split(window.location.host)[1].split('?')[0];
+  if(getParameterByName("installed")) $("#installed").toggle();
+  if(getParameterByName("updated")) $("#updated").toggle();
+  if(getParameterByName("sentmessage")) $("#sentmessage").toggle();
+}
+
 $(function() {
+
+  toggleDivs();
 
   $("#contact_button").click(function() {
     event.preventDefault();

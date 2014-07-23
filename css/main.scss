@@ -19,6 +19,7 @@ body {
 
 a, a:hover {
   font-weight: bold;
+  text-decoration: none;
   color: #000;
 }
 
@@ -57,7 +58,6 @@ h1 {
   li > a {
     margin-right: 20px;
     color: $primary;
-    text-decoration: none;
     &:hover {
       //color: #033649;
     }
@@ -220,5 +220,30 @@ h1 {
   }
   .first {
     @include make-xs-column-offset(3);
+  }
+}
+
+//** Supported Sites page **//
+#sitelist {
+  .request {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .sites {
+    @include make-row();
+    div {
+      @include make-xs-column(4);
+      img {
+        width: 45px;
+        height: 45px;
+        border-radius: 4px;
+      }
+      font-size: 1.2em;
+      padding: 5px;
+    }
+  }
+  button {
+    padding-right: 35px;
+    padding-left: 35px;
   }
 }

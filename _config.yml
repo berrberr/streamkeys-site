@@ -6,3 +6,67 @@ exclude: ['sinatra', 'Guardfile', 'Gemfile', 'Gemfile.lock']
 sass:
   sass_dir: css/_sass
   style: compressed
+sitelist:
+  - name: 8tracks
+    image: img/icons/8tracks.png
+    url: www.8tracks.com
+  - name: Bandcamp
+    image: img/icons/bandcamp.png
+    url: www.bandcamp.com
+  - name: Deezer
+    image: img/icons/deezer.png
+    url: www.deezer.com
+  - name: Di.fm
+    image: img/icons/difm.png
+    url: www.di.fm
+  - name: Earbits
+    image: img/icons/earbits.png
+    url: www.earbits.com
+  - name: Google Play
+    image: img/icons/googleplay.png
+    url:: play.google.com
+  - name: Grooveshark
+    image: img/icons/grooveshark.png
+    url: www.grooveshark.com
+  - name: TheHypeMachine
+    image: img/icons/hypemachine.png
+    url: www.hypem.com
+  - name: iHeartRadio
+    image: img/icons/iheart.png
+    url: www.iheart.com
+  - name: Jango
+    image: img/icons/jango.png
+    url: www.jango.com
+  - name: MixCloud
+    url: www.mixcloud.com
+  - name: Pandora
+    image: img/icons/pandora.png
+    url: www.pandora.com
+  - name: RadioParadise
+    image: img/icons/radioparadise.png
+    url: www.radioparadise.com
+  - name: Rdio
+    image: img/icons/rdio.png
+    url: www.rdio.com
+  - name: Spotify
+    image: img/icons/spotify.png
+    url: www.spotify.com
+  - name: Songstr
+    url: www.songstr.com
+  - name: Songza
+    image: img/icons/songza.png
+    url: www.songza.com
+  - name: Stitcher
+    image: img/icons/stitcher.png
+    url: www.stitcher.com
+  - name: Soundcloud
+    image: img/icons/soundcloud.png
+    url: www.soundcloud.com
+  - name: Slacker
+    image: img/icons/slacker.png
+    url: www.slacker.com
+  - name: TheSixtyOne
+    url: www.thesixtyone.com
+  - name: VK
+    image: img/icons/vk.png
+    url: www.vk.com

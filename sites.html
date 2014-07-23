@@ -1,51 +1,21 @@
 ---
 layout: default
 title: Streamkeys - Supported Sites
-sitelist:
-  8tracks: www.8tracks.com
-  Bandcamp: www.bandcamp.com
-  Deezer: www.deezer.com
-  Di.fm: www.di.fm
-  Earbits: www.earbits.com
-  Google Music: play.google.com
-  Grooveshark: www.grooveshark.com
-  TheHypeMachine: www.hypem.com
-  iHeartRadio: www.iheart.com
-  Jango: www.jango.com
-  MixCloud: www.mixcloud.com
-  Pandora: www.pandora.com
-  RadioParadise: www.radioparadise.com
-  Rdio: www.rdio.com
-  Seesu: www.seesu.me
-  Spotify: www.spotify.com
-  Songstr: www.songstr.com
-  Songza: www.songza.com
-  Stitcher: www.stitcher.com
-  Soundcloud: www.soundcloud.com
-  Slacker: www.slacker.com
-  TheSixtyOne: www.thesixtyone.com
-  VK: www.vk.com
 ---
 
-<div id="sentmessage" style="display: none;" class="alert alert-danger alert-dismissable">
+<div id="sentmessage" style="display: none;" class="new-version-alert">
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
   <h1>Message Received</h1>
   <h3>Thanks for your interest, your request has been sent! <a href="contact.html">Contact me</a> with any further questions!</h3>
 </div>
-<div class="alert alert-warning help-alert">
-  <h1>Suggest a Site</h1>
-  <p>Have a site that you want added? Submit the URL below</p><br>
-  <form role="form">
-      <input type="text" class="form-control" placeholder="Site URL(s)" id="site_url"><br>
-      <textarea class="form-control" name="comments" id="comments" rows="3" placeholder="Additional Comments (optional)"></textarea><br>
-      <button type="submit" class="btn btn-default pull-right" id="contact_button">Request</button>
-  </form>
-  <h1>Supported Sites</h1><br>
+<div class="main-jumbo" id="sitelist">
+  <h1>Supported Sites</h1>
+  <div class="request"><button type="button" id="btn-req" class="btn-main btn-install-lg" data-toggle="modal" data-target="#requestModal">Is there a site missing? Request a site to be added here.</button></div>
   <div class="sites">
-    <ul class="list-group">
-      {% for site in page.sitelist order:ascending %}
-        <li class="list-group-item"><a href="http://{{ site[1] }}" target="_blank">{{ site[0] }}</a></li>
-      {% endfor %}
-    </ul>
+    {% for _site in site.sitelist order:ascending %}
+      <div>
+        <a href="http://{{ _site.url }}" target="_blank"><img src="{{ _site.image }}" alt="{{ _site.name }}">{{ _site.name }}</a>
+      </div>
+    {% endfor %}
   </div>
 </div>

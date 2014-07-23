@@ -19,7 +19,7 @@
         <div class="navbar navbar-main" role="navigation">
           <a id="navbar-main-brand" class="navbar-brand" href="index.html">StreamKeys</a>
           <ul class="navbar-nav navbar-links list-inline">
-            <li id="help"><a href="help.html">Setup Guide</a></li>
+            <li id="help"><a href="guide.html">Setup Guide</a></li>
             <li id="help"><a href="faq.html">FAQ</a></li>
             <li id="sites"><a href="sites.html">Supported Sites</a></li>
             <li id="contact"><a href="contact.html">Contact</a></li>
@@ -29,70 +29,104 @@
       </div>
 
       <div class="main-content">
-        <div id="sentmessage" style="display: none;" class="alert alert-danger alert-dismissable">
+        <div id="sentmessage" style="display: none;" class="new-version-alert">
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
   <h1>Message Received</h1>
   <h3>Thanks for your interest, your request has been sent! <a href="contact.html">Contact me</a> with any further questions!</h3>
 </div>
-<div class="alert alert-warning help-alert">
-  <h1>Suggest a Site</h1>
-  <p>Have a site that you want added? Submit the URL below</p><br>
-  <form role="form">
-      <input type="text" class="form-control" placeholder="Site URL(s)" id="site_url"><br>
-      <textarea class="form-control" name="comments" id="comments" rows="3" placeholder="Additional Comments (optional)"></textarea><br>
-      <button type="submit" class="btn btn-default pull-right" id="contact_button">Request</button>
-  </form>
-  <h1>Supported Sites</h1><br>
+<div class="main-jumbo" id="sitelist">
+  <h1>Supported Sites</h1>
+  <div class="request"><button type="button" id="btn-req" class="btn-main btn-install-lg" data-toggle="modal" data-target="#requestModal">Is there a site missing? Request a site to be added here.</button></div>
   <div class="sites">
-    <ul class="list-group">
-      
-        <li class="list-group-item"><a href="http://www.8tracks.com" target="_blank">8tracks</a></li>
-      
-        <li class="list-group-item"><a href="http://www.bandcamp.com" target="_blank">Bandcamp</a></li>
-      
-        <li class="list-group-item"><a href="http://www.deezer.com" target="_blank">Deezer</a></li>
-      
-        <li class="list-group-item"><a href="http://www.di.fm" target="_blank">Di.fm</a></li>
-      
-        <li class="list-group-item"><a href="http://www.earbits.com" target="_blank">Earbits</a></li>
-      
-        <li class="list-group-item"><a href="http://play.google.com" target="_blank">Google Music</a></li>
-      
-        <li class="list-group-item"><a href="http://www.grooveshark.com" target="_blank">Grooveshark</a></li>
-      
-        <li class="list-group-item"><a href="http://www.hypem.com" target="_blank">TheHypeMachine</a></li>
-      
-        <li class="list-group-item"><a href="http://www.iheart.com" target="_blank">iHeartRadio</a></li>
-      
-        <li class="list-group-item"><a href="http://www.jango.com" target="_blank">Jango</a></li>
-      
-        <li class="list-group-item"><a href="http://www.mixcloud.com" target="_blank">MixCloud</a></li>
-      
-        <li class="list-group-item"><a href="http://www.pandora.com" target="_blank">Pandora</a></li>
-      
-        <li class="list-group-item"><a href="http://www.radioparadise.com" target="_blank">RadioParadise</a></li>
-      
-        <li class="list-group-item"><a href="http://www.rdio.com" target="_blank">Rdio</a></li>
-      
-        <li class="list-group-item"><a href="http://www.seesu.me" target="_blank">Seesu</a></li>
-      
-        <li class="list-group-item"><a href="http://www.spotify.com" target="_blank">Spotify</a></li>
-      
-        <li class="list-group-item"><a href="http://www.songstr.com" target="_blank">Songstr</a></li>
-      
-        <li class="list-group-item"><a href="http://www.songza.com" target="_blank">Songza</a></li>
-      
-        <li class="list-group-item"><a href="http://www.stitcher.com" target="_blank">Stitcher</a></li>
-      
-        <li class="list-group-item"><a href="http://www.soundcloud.com" target="_blank">Soundcloud</a></li>
-      
-        <li class="list-group-item"><a href="http://www.slacker.com" target="_blank">Slacker</a></li>
-      
-        <li class="list-group-item"><a href="http://www.thesixtyone.com" target="_blank">TheSixtyOne</a></li>
-      
-        <li class="list-group-item"><a href="http://www.vk.com" target="_blank">VK</a></li>
-      
-    </ul>
+    
+      <div>
+        <a href="http://www.8tracks.com" target="_blank"><img src="img/icons/8tracks.png" alt="8tracks">8tracks</a>
+      </div>
+    
+      <div>
+        <a href="http://www.bandcamp.com" target="_blank"><img src="img/icons/bandcamp.png" alt="Bandcamp">Bandcamp</a>
+      </div>
+    
+      <div>
+        <a href="http://www.deezer.com" target="_blank"><img src="img/icons/deezer.png" alt="Deezer">Deezer</a>
+      </div>
+    
+      <div>
+        <a href="http://www.di.fm" target="_blank"><img src="img/icons/difm.png" alt="Di.fm">Di.fm</a>
+      </div>
+    
+      <div>
+        <a href="http://www.earbits.com" target="_blank"><img src="img/icons/earbits.png" alt="Earbits">Earbits</a>
+      </div>
+    
+      <div>
+        <a href="http://" target="_blank"><img src="img/icons/googleplay.png" alt="Google Play">Google Play</a>
+      </div>
+    
+      <div>
+        <a href="http://www.grooveshark.com" target="_blank"><img src="img/icons/grooveshark.png" alt="Grooveshark">Grooveshark</a>
+      </div>
+    
+      <div>
+        <a href="http://www.hypem.com" target="_blank"><img src="img/icons/hypemachine.png" alt="TheHypeMachine">TheHypeMachine</a>
+      </div>
+    
+      <div>
+        <a href="http://www.iheart.com" target="_blank"><img src="img/icons/iheart.png" alt="iHeartRadio">iHeartRadio</a>
+      </div>
+    
+      <div>
+        <a href="http://www.jango.com" target="_blank"><img src="img/icons/jango.png" alt="Jango">Jango</a>
+      </div>
+    
+      <div>
+        <a href="http://www.mixcloud.com" target="_blank"><img src="" alt="MixCloud">MixCloud</a>
+      </div>
+    
+      <div>
+        <a href="http://www.pandora.com" target="_blank"><img src="img/icons/pandora.png" alt="Pandora">Pandora</a>
+      </div>
+    
+      <div>
+        <a href="http://www.radioparadise.com" target="_blank"><img src="img/icons/radioparadise.png" alt="RadioParadise">RadioParadise</a>
+      </div>
+    
+      <div>
+        <a href="http://www.rdio.com" target="_blank"><img src="img/icons/rdio.png" alt="Rdio">Rdio</a>
+      </div>
+    
+      <div>
+        <a href="http://www.spotify.com" target="_blank"><img src="img/icons/spotify.png" alt="Spotify">Spotify</a>
+      </div>
+    
+      <div>
+        <a href="http://www.songstr.com" target="_blank"><img src="" alt="Songstr">Songstr</a>
+      </div>
+    
+      <div>
+        <a href="http://www.songza.com" target="_blank"><img src="img/icons/songza.png" alt="Songza">Songza</a>
+      </div>
+    
+      <div>
+        <a href="http://www.stitcher.com" target="_blank"><img src="img/icons/stitcher.png" alt="Stitcher">Stitcher</a>
+      </div>
+    
+      <div>
+        <a href="http://www.soundcloud.com" target="_blank"><img src="img/icons/soundcloud.png" alt="Soundcloud">Soundcloud</a>
+      </div>
+    
+      <div>
+        <a href="http://www.slacker.com" target="_blank"><img src="img/icons/slacker.png" alt="Slacker">Slacker</a>
+      </div>
+    
+      <div>
+        <a href="http://www.thesixtyone.com" target="_blank"><img src="" alt="TheSixtyOne">TheSixtyOne</a>
+      </div>
+    
+      <div>
+        <a href="http://www.vk.com" target="_blank"><img src="img/icons/vk.png" alt="VK">VK</a>
+      </div>
+    
   </div>
 </div>
 
@@ -127,7 +161,7 @@
           <div class="row footer-row">
             <div class="col-xs-12">
               <a href="index.html">Streamkeys</a>&nbsp;|&nbsp;
-              <a href="help.html">Setup Guide</a>&nbsp;|&nbsp;
+              <a href="guide.html">Setup Guide</a>&nbsp;|&nbsp;
               <a href="faq.html">FAQ</a>&nbsp;|&nbsp;
               <a href="sites.html">Supported Sites</a>&nbsp;|&nbsp;
               <a href="changelog.html">Changelog</a>&nbsp;|&nbsp;

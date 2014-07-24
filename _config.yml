@@ -38,6 +38,7 @@ sitelist:
     image: img/icons/jango.png
     url: www.jango.com
   - name: MixCloud
+    image: img/icons/mixcloud.png
     url: www.mixcloud.com
   - name: Pandora
     image: img/icons/pandora.png
@@ -52,6 +53,7 @@ sitelist:
     image: img/icons/spotify.png
     url: www.spotify.com
   - name: Songstr
+    image: img/icons/songstr.png
     url: www.songstr.com
   - name: Songza
     image: img/icons/songza.png
@@ -66,6 +68,7 @@ sitelist:
     image: img/icons/slacker.png
     url: www.slacker.com
   - name: TheSixtyOne
+    image: img/icons/thesixtyone.png
     url: www.thesixtyone.com
   - name: VK
     image: img/icons/vk.png

@@ -231,15 +231,35 @@ h1 {
   }
   .sites {
     @include make-row();
-    div {
+    padding-top: 10px;
+    vertical-align: top;
+    .site {
       @include make-xs-column(4);
-      img {
-        width: 45px;
-        height: 45px;
-        border-radius: 4px;
-      }
-      font-size: 1.2em;
       padding: 5px;
+
+      .site-image {
+        float: left;
+        width: 45px;
+        img {
+          width: 45px;
+          height: 45px;
+          border-radius: 4px;
+        }
+      }
+
+      .site-text {
+        clear: right;
+        position: relative;
+        margin-left: 50px;
+        h1 {
+          font-size: 1.2em;
+          margin: 0;
+        }
+        h2 {
+          font-size: 1em;
+          margin: 0;
+        }
+      }
     }
   }
   button {

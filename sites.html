@@ -13,8 +13,11 @@ title: Streamkeys - Supported Sites
   <div class="request"><button type="button" id="btn-req" class="btn-main btn-install-lg" data-toggle="modal" data-target="#requestModal">Is there a site missing? Request a site to be added here.</button></div>
   <div class="sites">
     {% for _site in site.sitelist order:ascending %}
-      <div>
-        <a href="http://{{ _site.url }}" target="_blank"><img src="{{ _site.image }}" alt="{{ _site.name }}">{{ _site.name }}</a>
+      <div class="site">
+        <a href="http://{{ _site.url }}" target="_blank">
+        <div class="site-image"><img src="{{ _site.image }}" alt="{{ _site.name }}"></div>
+        <div class="site-text"><h1>{{ _site.name }}</h1><h2>{{ _site.url }}</h2></div>
+        </a>
       </div>
     {% endfor %}
   </div>

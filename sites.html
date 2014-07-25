@@ -3,12 +3,8 @@ layout: default
 title: Streamkeys - Supported Sites
 ---
 
-<div id="sentmessage" style="display: none;" class="new-version-alert">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  <h1>Message Received</h1>
-  <h3>Thanks for your interest, your request has been sent! <a href="contact.html">Contact me</a> with any further questions!</h3>
-</div>
 <div class="main-jumbo" id="sitelist">
+  {% include request_success_modal.html %}
   <h1>Supported Sites</h1>
   <div class="sites">
     {% for _site in site.sitelist order:ascending %}

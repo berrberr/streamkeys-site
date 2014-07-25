@@ -12,6 +12,7 @@
 
 $primary: #036564;
 $primary-faded: #5B9B9A;
+$footer-height: 160px;
 
 body {
   background-color: #FFF;
@@ -64,12 +65,16 @@ h1 {
   }
 }
 
+#wrapper {
+  min-height: calc(100vh - #{$footer-height});
+  margin-bottom: $footer-height;
+}
+
 #footer {
-  height: 160px;
-  margin-bottom: -20px;
+  height: $footer-height;
+  margin-top: -$footer-height;
+  width: 100%;
   background-color: $primary;
-  position: relative;
-  bottom: 0;
   color: #FFF;
 
   .footer-row {
@@ -97,21 +102,7 @@ h1 {
   border-color: #000;
 }
 
-.logo-image {
-  width: 48px;
-  height: 48px;
-}
 
-.icon-row {
-  margin: 5px 14% 25px 14%;
-}
-
-.icon-image {
-  width: 96px;
-  height: 96px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
 
 .main-content {
   margin-bottom: 20px;
@@ -152,6 +143,22 @@ h1 {
 }
 
 //** Homepage **//
+.logo-image {
+  width: 48px;
+  height: 48px;
+}
+
+.icon-row {
+  margin: 5px 14% 25px 14%;
+}
+
+.icon-image {
+  width: 96px;
+  height: 96px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
 #supported-sites {
   text-align: center;
   h1 {
@@ -177,6 +184,11 @@ h1 {
   background-color: $primary;
   color: #FFFFFF;
   border: none;
+
+  a, a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+  }
 
   h1 {
     font-size: 3em;

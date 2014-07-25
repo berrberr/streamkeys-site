@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-bottom"
+			],
+			[
 				"marg",
 				"margin-bottom"
 			],
@@ -136,10 +140,26 @@
 	"buffers":
 	[
 		{
-			"file": "sites.html",
+			"file": "changelog.html",
 			"settings":
 			{
-				"buffer_size": 1843,
+				"buffer_size": 2411,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 1909,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1349,
 				"line_ending": "Unix"
 			}
 		},
@@ -152,13 +172,27 @@
 			}
 		},
 		{
-			"contents": "\n\nSearching 184 files for \"help.html\"\n\n/Users/alexg/Documents/scripts/sk/changelog.html:\n   19      </li>\n   20      <li class=\"list-group-item\">\n   21:       <h3>v1.3.0</h3>-Added support for global hotkeys across entire system. <a href=\"help.html#global\">Read here for more info</a><br>\n   22        -Added support for: Earbits, Songza<br>\n   23        -Fixed Google Music support (thanks <a href=\"https://github.com/findmory-livefyre\" target=\"_blank\">findmory</a>!)\n\n/Users/alexg/Documents/scripts/sk/_layouts/default.html:\n   20            <a id=\"navbar-main-brand\" class=\"navbar-brand\" href=\"index.html\">StreamKeys</a>\n   21            <ul class=\"navbar-nav navbar-links list-inline\">\n   22:             <li id=\"help\"><a href=\"help.html\">Setup Guide</a></li>\n   23              <li id=\"help\"><a href=\"faq.html\">FAQ</a></li>\n   24              <li id=\"sites\"><a href=\"sites.html\">Supported Sites</a></li>\n   ..\n   40              <div class=\"col-xs-12\">\n   41                <a href=\"index.html\">Streamkeys</a>&nbsp;|&nbsp;\n   42:               <a href=\"help.html\">Setup Guide</a>&nbsp;|&nbsp;\n   43                <a href=\"faq.html\">FAQ</a>&nbsp;|&nbsp;\n   44                <a href=\"sites.html\">Supported Sites</a>&nbsp;|&nbsp;\n\n/Users/alexg/Documents/scripts/sk/_site/changelog.html:\n   19      </li>\n   20      <li class=\"list-group-item\">\n   21:       <h3>v1.3.0</h3>-Added support for global hotkeys across entire system. <a href=\"help.html#global\">Read here for more info</a><br>\n   22        -Added support for: Earbits, Songza<br>\n   23        -Fixed Google Music support (thanks <a href=\"https://github.com/findmory-livefyre\" target=\"_blank\">findmory</a>!)\n\n/Users/alexg/Documents/scripts/sk/_site/contact.html:\n   20            <a id=\"navbar-main-brand\" class=\"navbar-brand\" href=\"index.html\">StreamKeys</a>\n   21            <ul class=\"navbar-nav navbar-links list-inline\">\n   22:             <li id=\"help\"><a href=\"help.html\">Setup Guide</a></li>\n   23              <li id=\"help\"><a href=\"faq.html\">FAQ</a></li>\n   24              <li id=\"sites\"><a href=\"sites.html\">Supported Sites</a></li>\n   ..\n   66              <div class=\"col-xs-12\">\n   67                <a href=\"index.html\">Streamkeys</a>&nbsp;|&nbsp;\n   68:               <a href=\"help.html\">Setup Guide</a>&nbsp;|&nbsp;\n   69                <a href=\"faq.html\">FAQ</a>&nbsp;|&nbsp;\n   70                <a href=\"sites.html\">Supported Sites</a>&nbsp;|&nbsp;\n\n/Users/alexg/Documents/scripts/sk/_site/help.html:\n   20            <a id=\"navbar-main-brand\" class=\"navbar-brand\" href=\"index.html\">StreamKeys</a>\n   21            <ul class=\"navbar-nav navbar-links list-inline\">\n   22:             <li id=\"help\"><a href=\"help.html\">Setup Guide</a></li>\n   23              <li id=\"help\"><a href=\"faq.html\">FAQ</a></li>\n   24              <li id=\"sites\"><a href=\"sites.html\">Supported Sites</a></li>\n   ..\n  130              <div class=\"col-xs-12\">\n  131                <a href=\"index.html\">Streamkeys</a>&nbsp;|&nbsp;\n  132:               <a href=\"help.html\">Setup Guide</a>&nbsp;|&nbsp;\n  133                <a href=\"faq.html\">FAQ</a>&nbsp;|&nbsp;\n  134                <a href=\"sites.html\">Supported Sites</a>&nbsp;|&nbsp;\n\n/Users/alexg/Documents/scripts/sk/_site/index.html:\n   20            <a id=\"navbar-main-brand\" class=\"navbar-brand\" href=\"index.html\">StreamKeys</a>\n   21            <ul class=\"navbar-nav navbar-links list-inline\">\n   22:             <li id=\"help\"><a href=\"help.html\">Setup Guide</a></li>\n   23              <li id=\"help\"><a href=\"faq.html\">FAQ</a></li>\n   24              <li id=\"sites\"><a href=\"sites.html\">Supported Sites</a></li>\n   ..\n  246              <div class=\"col-xs-12\">\n  247                <a href=\"index.html\">Streamkeys</a>&nbsp;|&nbsp;\n  248:               <a href=\"help.html\">Setup Guide</a>&nbsp;|&nbsp;\n  249                <a href=\"faq.html\">FAQ</a>&nbsp;|&nbsp;\n  250                <a href=\"sites.html\">Supported Sites</a>&nbsp;|&nbsp;\n\n/Users/alexg/Documents/scripts/sk/_site/sites.html:\n   20            <a id=\"navbar-main-brand\" class=\"navbar-brand\" href=\"index.html\">StreamKeys</a>\n   21            <ul class=\"navbar-nav navbar-links list-inline\">\n   22:             <li id=\"help\"><a href=\"help.html\">Setup Guide</a></li>\n   23              <li id=\"help\"><a href=\"faq.html\">FAQ</a></li>\n   24              <li id=\"sites\"><a href=\"sites.html\">Supported Sites</a></li>\n   ..\n  128              <div class=\"col-xs-12\">\n  129                <a href=\"index.html\">Streamkeys</a>&nbsp;|&nbsp;\n  130:               <a href=\"help.html\">Setup Guide</a>&nbsp;|&nbsp;\n  131                <a href=\"faq.html\">FAQ</a>&nbsp;|&nbsp;\n  132                <a href=\"sites.html\">Supported Sites</a>&nbsp;|&nbsp;\n\n12 matches across 7 files\n",
+			"file": "sites.html",
 			"settings":
 			{
-				"buffer_size": 4739,
-				"line_ending": "Unix",
-				"name": "Find Results",
-				"scratch": true
+				"buffer_size": 1067,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/main.scss",
+			"settings":
+			{
+				"buffer_size": 3934,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 3417,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -278,6 +312,7 @@
 	},
 	"file_history":
 	[
+		"/Users/alexg/Documents/scripts/sk/streamkeys-site.sublime-project",
 		"/Users/alexg/Documents/scripts/sk/css/main.scss",
 		"/Users/alexg/Documents/scripts/sk/Gemfile",
 		"/Users/alexg/Documents/scripts/sk/Guardfile",
@@ -404,12 +439,11 @@
 		"/Users/alexg/nna/nna-nissan-mobile-tests/.editorconfig",
 		"/Users/alexg/nna/nna-nissan-mobile-tests/tests/infiniti/base/lead.coffee",
 		"/Users/alexg/nna/nna-nissan-mobile-tests/tests/infiniti/quote.coffee",
-		"/Users/alexg/nna/nna-nissan-mobile-tests/tests/infiniti/build.coffee",
-		"/Users/alexg/nna/nna-nissan-mobile-tests/tests/infiniti/inventory.coffee"
+		"/Users/alexg/nna/nna-nissan-mobile-tests/tests/infiniti/build.coffee"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 45.0
 	},
 	"find_in_files":
 	{
@@ -431,6 +465,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"border-rad",
+			"image",
+			"li",
+			"p",
+			"include",
+			"span",
+			"site",
+			"musicsite",
+			"site",
 			"help.html",
 			"Ctrl + Shift",
 			"block",
@@ -549,16 +592,7 @@
 			"current_playing_song",
 			"details['mode",
 			"config.apiData",
-			"modelCnt",
-			"@test",
-			"activeTest",
-			"config",
-			"baseMobileURL",
-			"activeTest",
-			"getTitle",
-			"vehicleName",
-			"getSubmittedLead",
-			"apiType"
+			"modelCnt"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -566,6 +600,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"guide.html",
 			"require('tests/base/lead').LeadTest",
 			"this.test",
 			"JMLTest",
@@ -581,16 +616,144 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "changelog.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1349,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1185,
+								1114
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "guide.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3779,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 277.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "sites.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1843,
+						"buffer_size": 1067,
 						"regions":
 						{
 						},
@@ -613,24 +776,56 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "guide.html",
-					"semi_transient": true,
+					"buffer": 5,
+					"file": "css/main.scss",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3779,
+						"buffer_size": 3934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								809,
-								809
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_layouts/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								220,
+								220
 							]
 						],
 						"settings":
@@ -645,102 +840,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4739,
-						"regions":
-						{
-							"match":
-							{
-								"flags": 112,
-								"regions":
-								[
-									[
-										239,
-										248
-									],
-									[
-										732,
-										741
-									],
-									[
-										1058,
-										1067
-									],
-									[
-										1441,
-										1450
-									],
-									[
-										1931,
-										1940
-									],
-									[
-										2257,
-										2266
-									],
-									[
-										2690,
-										2699
-									],
-									[
-										3016,
-										3025
-									],
-									[
-										3450,
-										3459
-									],
-									[
-										3776,
-										3785
-									],
-									[
-										4210,
-										4219
-									],
-									[
-										4536,
-										4545
-									],
-									[
-										4739,
-										4739
-									]
-								],
-								"scope": ""
-							}
-						},
-						"selection":
-						[
-							[
-								2,
-								2
-							]
-						],
-						"settings":
-						{
-							"detect_indentation": false,
-							"line_numbers": false,
-							"output_tag": 3,
-							"result_base_dir": "",
-							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
-							"result_line_regex": "^ +([0-9]+):",
-							"scroll_past_end": true,
-							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1728.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -797,6 +897,18 @@
 		"selected_items":
 		[
 			[
+				"main.sc",
+				"css/main.scss"
+			],
+			[
+				"defa",
+				"_layouts/default.html"
+			],
+			[
+				"_confi",
+				"_config.yml"
+			],
+			[
 				"sites",
 				"sites.html"
 			],
@@ -839,10 +951,6 @@
 			[
 				"main.",
 				"css/main.scss"
-			],
-			[
-				"defa",
-				"_layouts/default.html"
 			],
 			[
 				"privacy",

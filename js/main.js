@@ -96,6 +96,20 @@ var toggleDivs = function() {
   if(getParameterByName("sentmessage")) $("#sentmessage").toggle();
 }
 
+//Post requested site to contact backend
+var postMessage = function(message) {
+  $.ajax({
+    type: "POST",
+    url: "http://contact.streamkeys.com",
+    data: message
+  })
+    .always(function(jqXHR, textStatus) {
+      console.log( "textStatus: ", textStatus );
+      console.log( "response: ", jqXHR);
+      window.location.href = "sites.html?sentmessage=true";
+    });
+};
+
 $(function() {
 
   toggleDivs();
@@ -110,18 +124,7 @@ $(function() {
     postMessage(data);
   });
 
-  var postMessage = function(message) {
-    $.ajax({
-      type: "POST",
-      url: "http://contact.streamkeys.com",
-      data: message
-    })
-      .always(function(jqXHR, textStatus) {
-        console.log( "textStatus: ", textStatus );
-        console.log( "response: ", jqXHR);
-        window.location.href = "sites.html?sentmessage=true";
-      });
-  };
+  
 
   //$.fn.ekkoLightbox.defaults.right_arrow_class = ".fa .fa-arrow-right";
   //$.fn.ekkoLightbox.defaults.left_arrow_class = ".fa .fa-arrow-left";

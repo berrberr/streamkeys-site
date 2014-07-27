@@ -1,10 +1,27 @@
 ---
 layout: default
-title: "Streamkeys - FAQ"
+title: "Streamkeys - Frequently Asked Questions"
+questions:
+  - question: I just installed the extension and the hotkeys don't work?
+    answer: Make sure that you have restarted any music tabs that you previously had open before you installed the extension.
+  - question: Can you add support for a new streaming site?
+    answer: Probably! <a href="sites.html">Submit a request on the Supported Sites page.</a>
+  - question: Can I change the hotkeys?
+    answer: Yes. You can change all of the hotkeys on the Chrome extension's page. <a href="guide.html">See the guide here for more information.</a>
+  - question: Why are my new hotkeys not working?
+    answer: It is possible that you have set the hotkeys to ones that are already reserved by Chrome. For example, on Mac the hotkey Command + Y is already reserved by chrome to open the history panel and so it cannot be used by extensions. Make sure that the hotkeys you are trying to use are not already Chrome defaults.
+  - question: I am trying to set a new hotkey in the keyboard shortcuts popup. Why will it not let me set a hotkey combination?
+    answer: You are probably trying to set a hotkey that is not valid. All hotkey combinations must include either Ctrl (Command on Macs) OR Alt, but NOT both. The list of supported keys are&#58; A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). <a href="https://developer.chrome.com/apps/commands" target="_blank">Read the official Chrome documentation here for more information.</a>
 ---
 
 <div class="jumbotron main-jumbo">
 
-  <h1 id="faq">FAQ</h1>
+  <h1 id="faq">Frequently Asked Questions</h1>
+  <p id="faq-questions">
+    {% for q in page.questions %}
+      <h2>{{ q.question }}</h2>
+      <p>{{ q.answer }}</p>
+    {% endfor %}
+  </p>
   
 </div>

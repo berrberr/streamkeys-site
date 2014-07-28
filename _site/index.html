@@ -17,7 +17,7 @@
     <div id="wrapper">
       <div class="container nav-container">
         <div class="navbar navbar-main" role="navigation">
-          <a id="navbar-main-brand" class="navbar-brand" href="index.html">StreamKeys</a>
+          <a id="navbar-main-brand" class="navbar-brand" href="index.html">Streamkeys</a>
           <ul class="navbar-nav navbar-links list-inline">
             <li id="help"><a href="guide.html">Setup Guide</a></li>
             <li id="help"><a href="faq.html">FAQ</a></li>
@@ -241,18 +241,26 @@
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h4 class="modal-title" id="myModalLabel">Request A Site</h4>
       </div>
-      <form role="form">
+      <div id="request-form">
+        <form role="form">
+          <div class="modal-body">
+            
+                <input type="text" class="form-control" placeholder="Site URL(s)" id="site_url"><br>
+                <input type="text" class="form-control" placeholder="Your Email (optional)" id="email"><br>
+                <textarea class="form-control form-textarea" name="comments" id="comments" rows="4" placeholder="Additional Comments (optional)"></textarea><br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-main" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-main" id="contact_button">Request</button>
+          </div>
+        </form>
+      </div>
+      <div id="request-success" style="display:none">
         <div class="modal-body">
-          
-              <input type="text" class="form-control" placeholder="Site URL(s)" id="site_url"><br>
-              <input type="text" class="form-control" placeholder="Your Email (optional)" id="email"><br>
-              <textarea class="form-control form-textarea" name="comments" id="comments" rows="4" placeholder="Additional Comments (optional)"></textarea><br>
+          <h1>Message Received</h1>
+          <h3>Thanks for your interest, your request has been sent! <a href="contact.html">Contact me</a> with any further questions.</h3>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-main" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-main" id="contact_button">Request</button>
-        </div>
-      </form>
+      </div>
     </div>
   </div>
 </div>

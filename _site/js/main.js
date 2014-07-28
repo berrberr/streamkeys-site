@@ -84,7 +84,8 @@ var onClickInstall = function() {
   );
 }
 
-$(".btn-install-cta").click(function(e) {
+//Install button click handler
+$(document).on("click", ".btn-install-cta", function(e) {
   onClickInstall();
 });
 
@@ -93,7 +94,6 @@ var toggleDivs = function() {
   var pageName = window.location.href.toString().split(window.location.host)[1].split('?')[0];
   if(getParameterByName("installed")) $("#installed").toggle();
   if(getParameterByName("updated")) $("#updated").toggle();
-  if(getParameterByName("sentmessage")) $("#sentmessage").toggle();
 }
 
 //Post requested site to contact backend
@@ -106,9 +106,16 @@ var postMessage = function(message) {
     .always(function(jqXHR, textStatus) {
       console.log( "textStatus: ", textStatus );
       console.log( "response: ", jqXHR);
-      window.location.href = "sites.html?sentmessage=true";
+      $("#request-form").hide();
+      $("#request-success").show();
+      //window.location.href = "sites.html?sentmessage=true";
     });
 };
+
+$("#requestModal").on("shown", function() {
+  $("#request-form").show();
+  $("#request-success").hide();
+});
 
 $(function() {
 
@@ -123,8 +130,6 @@ $(function() {
     };
     postMessage(data);
   });
-
-  
 
   //$.fn.ekkoLightbox.defaults.right_arrow_class = ".fa .fa-arrow-right";
   //$.fn.ekkoLightbox.defaults.left_arrow_class = ".fa .fa-arrow-left";

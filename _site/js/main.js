@@ -14,7 +14,7 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
 
 //Message from extension
 document.addEventListener("streamkeys-installed", function(e) {
-  InstallState.setInstalled();
+  InstallState.setInstalled(false);
 })
 
 //Install button states
@@ -31,17 +31,15 @@ var InstallState = (function() {
   };
 
   return {
-    initInstallCheck: function() {
-      installCheck.apply({count: 0});
-    },
     setDefault: function() {
       setButtons("<i class=\"fa fa-download\"></i>&nbsp;&nbsp;Download for Chrome");
     },
-    setInstalled: function() {
+    setInstalled: function(fromExtension) {
       installed = true;
       $(".btn-install-cta").each(function (index, el) {
         $(el).attr("disabled", "disabled");
       });
+      if(fromExtension) $(".btn-install-header").hide();
       setButtons("<i class=\"fa fa-check\"></i>&nbsp;&nbsp;Installed!");
     },
     setInstalling: function() {

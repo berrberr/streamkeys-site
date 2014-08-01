@@ -15,7 +15,7 @@ post '/contact' do
   message = {
     :subject => 'Streamkeys contact form',
     :from_name => 'Streamkeys',
-    :text => "Url: #{params[:url]}\nMessage: #{params[:message]}",
+    :text => "Url: #{params[:url]}\nEmail: #{params[:email]}\nMessage: #{params[:message]}",
     :to => [
       {
         :email => 'minilogo@gmail.com',

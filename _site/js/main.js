@@ -59,10 +59,8 @@ var InstallState = (function() {
       setButtons(msg);
     },
     setUnsupported: function() {
-      buttons.each(function(index, el) {
-        el.hide();
-      });
-      unsupported.show();
+      this.setCustom("Unsupported!");
+      //unsupported.show();
     }
   }
 })();
@@ -117,6 +115,7 @@ $("#requestModal").on("shown", function() {
 
 $(function() {
 
+  if(!(window.chrome != null && window.navigator.vendor === "Gogle Inc.")) InstallState.setUnsupported();
   toggleDivs();
 
   $("#contact_button").click(function() {

@@ -59,7 +59,7 @@ var InstallState = (function() {
       setButtons(msg);
     },
     setUnsupported: function() {
-      this.setCustom("Unsupported!");
+      this.setCustom("Google Chrome Required");
       //unsupported.show();
     }
   }

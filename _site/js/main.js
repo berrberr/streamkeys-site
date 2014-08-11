@@ -1,3 +1,5 @@
+
+
 //From: http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript/901144#901144
 function getParameterByName(name) {
   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
@@ -25,15 +27,20 @@ var InstallState = (function() {
     });
   };
 
+  var disableButtons = function() {
+    $(".btn-install-cta").each(function (index, el) {
+      $(el).attr("disabled", "disabled");
+    });
+  }
+
   return {
     setDefault: function() {
       setButtons("<i class=\"fa fa-download\"></i>&nbsp;&nbsp;Download for Chrome");
+      $(".btn-install-header").show();
     },
     setInstalled: function(fromExtension) {
       installed = true;
-      $(".btn-install-cta").each(function (index, el) {
-        $(el).attr("disabled", "disabled");
-      });
+      disableButtons();
       if(fromExtension) $(".btn-install-header").hide();
       setButtons("<i class=\"fa fa-check\"></i>&nbsp;&nbsp;Installed!");
     },
@@ -42,11 +49,10 @@ var InstallState = (function() {
       setButtons("<i class=\"fa fa-circle-o-notch fa-spin\"></i>&nbsp;&nbsp;Installing...");
     },
     setError: function() {
+      disableButtons();
       $(".btn-install-cta").each(function (index, el) {
         $(el)
-          .attr("disabled", "disabled")
           .removeClass("btn-install-homepage")
-          .removeClass("btn-install-header")
           .html("<i class=\"fa fa-exclamation\"></i>&nbsp;&nbsp;Install failed. Refresh to try again.");
       })
     },
@@ -54,6 +60,7 @@ var InstallState = (function() {
       setButtons(msg);
     },
     setUnsupported: function() {
+      disableButtons();
       this.setCustom("Google Chrome Required!");
     }
   }
@@ -124,7 +131,6 @@ $("#requestModal").on("shown", function() {
 
 $(function() {
 
-  checkInstalled();
   toggleDivs();
 
   $("#contact_button").click(function() {
@@ -180,3 +186,5 @@ var docCookies = {
     return aKeys;
   }
 };
+
+checkInstalled();

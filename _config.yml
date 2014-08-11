@@ -2,10 +2,14 @@ name: Streamkeys
 markdown: redcarpet
 highlighter: pygments
 url: http://localhost:4000
-exclude: ['sinatra', 'Guardfile', 'Gemfile', 'Gemfile.lock']
+exclude: ['sinatra', 'Guardfile', 'Gemfile', 'Gemfile.lock', 'bower_components', 'streamkeys-site.sublime-project']
 sass:
   sass_dir: css/_sass
   style: compressed
+assets:
+  sources:
+    - js/
+  js_compressor: yui
 sitelist:
   - name: 8tracks
     image: img/icons/8tracks.png

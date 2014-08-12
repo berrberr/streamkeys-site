@@ -3,13 +3,11 @@ markdown: redcarpet
 highlighter: pygments
 url: http://localhost:4000
 exclude: ['sinatra', 'Guardfile', 'Gemfile', 'Gemfile.lock', 'bower_components', 'streamkeys-site.sublime-project']
-sass:
-  sass_dir: css/_sass
-  style: compressed
 assets:
-  sources:
-    - js/
+  cache: true
   js_compressor: yui
+  css_compressor: sass
+  gzip: []
 sitelist:
   - name: 8tracks
     image: img/icons/8tracks.png

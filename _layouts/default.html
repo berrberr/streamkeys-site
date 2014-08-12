@@ -8,10 +8,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="css/main.css">
+      {% stylesheet main %}
       <link rel="chrome-webstore-item"
           href="https://chrome.google.com/webstore/detail/ekpipjofdicppbepocohdlgenahaneen">
-      <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
     <div id="wrapper">
@@ -56,12 +55,7 @@
       </div> <!-- /container -->
     </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/ekko-lightbox.min.js"></script>
-    <script src="js/main.js"></script>
+    {% javascript main %}
 
     <!-- Google Analytics -->
     <script>

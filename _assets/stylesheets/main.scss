@@ -1,8 +1,7 @@
----
----
+//= require vendor/bootstrap
+//= require vendor/ekko-lightbox
 
-@import "bootstrap.scss";
-@import "ekko-lightbox";
+@import "vendor/bootstrap";
 
 @mixin center-block {
   display: block;

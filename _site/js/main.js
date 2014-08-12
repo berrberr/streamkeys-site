@@ -27,11 +27,18 @@ var InstallState = (function() {
     });
   };
 
+  var setButtonsAttribute = function(key, val, type) {
+    buttons.each(function (index, el) {
+      if(type === "attr") $(el).attr(key, val);
+      if(type === "css")  $(el).css(key, val);
+    });
+  };
+
   var disableButtons = function() {
-    $(".btn-install-cta").each(function (index, el) {
+    buttons.each(function (index, el) {
       $(el).attr("disabled", "disabled");
     });
-  }
+  };
 
   return {
     setDefault: function() {
@@ -60,7 +67,8 @@ var InstallState = (function() {
       setButtons(msg);
     },
     setUnsupported: function() {
-      disableButtons();
+      setButtonsAttribute("disabled", "disabled", "attr");
+      setButtonsAttribute("display", "inline", "css");
       this.setCustom("Google Chrome Required!");
     }
   }

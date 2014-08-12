@@ -14,8 +14,9 @@ $primary: #036564;
 $primary-faded: #5B9B9A;
 $footer-height: 140px;
 
-body {
-  background-color: #FFF;
+html, body {
+  background-color: #FFFFFF;
+  height: 100%;
 }
 
 a, a:hover {
@@ -139,7 +140,7 @@ h1 {
 .btn-install-header {
   @extend .pull-right;
   width: 190px;
-  margin-top: 12px;
+  margin: 12px 0 12px 0;
   padding: 5px 10px 5px 10px;
   display: none;
 }

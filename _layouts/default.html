@@ -16,12 +16,12 @@
     <div id="wrapper">
       <div class="container nav-container">
         <div class="navbar navbar-main" role="navigation">
-          <a id="navbar-main-brand" class="navbar-brand" href="index.html">Streamkeys</a>
+          <a id="navbar-main-brand" class="navbar-brand" href="{{ site.navigation.home }}">Streamkeys</a>
           <ul class="navbar-nav navbar-links list-inline">
-            <li id="help"><a href="guide.html">Setup Guide</a></li>
-            <li id="help"><a href="faq.html">FAQ</a></li>
-            <li id="sites"><a href="sites.html">Supported Sites</a></li>
-            <li id="contact"><a href="contact.html">Contact</a></li>
+            <li id="help"><a href="{{ site.navigation.help }}">Setup Guide</a></li>
+            <li id="faq"><a href="{{ site.navigation.faq }}">FAQ</a></li>
+            <li id="sites"><a href="{{ site.navigation.sitelist }}">Supported Sites</a></li>
+            <li id="contact"><a href="{{ site.navigation.contact }}">Contact</a></li>
           </ul>
           <button class="btn-main btn-install-header btn-install-cta"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
         </div>
@@ -39,12 +39,12 @@
       <div class="container">
         <div class="row footer-row">
           <div class="col-xs-12">
-            <a href="index.html">Streamkeys</a>&nbsp;|&nbsp;
-            <a href="guide.html">Setup Guide</a>&nbsp;|&nbsp;
-            <a href="faq.html">FAQ</a>&nbsp;|&nbsp;
-            <a href="sites.html">Supported Sites</a>&nbsp;|&nbsp;
-            <a href="changelog.html">Changelog</a>&nbsp;|&nbsp;
-            <a href="contact.html">Contact</a><br><br>
+            <a href="{{ site.navigation.home }}">Streamkeys</a>&nbsp;|&nbsp;
+            <a href="{{ site.navigation.help }}">Setup Guide</a>&nbsp;|&nbsp;
+            <a href="{{ site.navigation.faq }}">FAQ</a>&nbsp;|&nbsp;
+            <a href="{{ site.navigation.sitelist }}">Supported Sites</a>&nbsp;|&nbsp;
+            <a href="{{ site.navigation.changelog }}">Changelog</a>&nbsp;|&nbsp;
+            <a href="{{ site.navigation.contact }}">Contact</a><br><br>
 
             <a href="https://github.com/berrberr/gshotkeys" target="_blank"><i class="fa fa-github-square"></i> View Source</a>&nbsp;|&nbsp;
             <a href="https://github.com/berrberr/gshotkeys/issues" target="_blank"><i class="fa fa-github-square"></i> Issue Tracker</a>&nbsp;|&nbsp;

@@ -8,6 +8,13 @@ assets:
   js_compressor: yui
   css_compressor: sass
   gzip: []
+navigation:
+  faq: faq.html
+  help: guide.html
+  sitelist: sites.html
+  home: index.html
+  contact: contact.html
+  changelog: changelog.html
 sitelist:
   - name: 8tracks
     image: img/icons/8tracks.png

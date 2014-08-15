@@ -85,7 +85,6 @@ h1 {
 
 .main-content {
   margin-bottom: 20px;
-  overflow: auto;
   min-height: 100%;
 }
 
@@ -164,6 +163,19 @@ h1 {
   height: 96px;
   border-radius: 5px;
   margin-bottom: 5px;
+}
+
+#homepage-top-row {
+  @include make-row();
+  #homepage-top-text {
+    @include make-md-column-offset(2);
+    @include make-md-column(4);
+    @include make-sm-column(6);
+  }
+  #homepage-top-image {
+    @include make-md-column(4);
+    @include make-sm-column(6);
+  }
 }
 
 #supported-sites {

@@ -87,16 +87,24 @@ var onClickInstall = function() {
       InstallState.setError();
     }
   );
-}
+};
 
+
+
+//Check if the extension is installed
 var checkInstalled = function() {
   if(!docCookies.hasItem("sk-installed")) {
-    if(!(window.chrome != null && window.navigator.vendor === "Google Inc.")) InstallState.setUnsupported();
-    else InstallState.setDefault();
+    if(!(window.chrome != null && window.navigator.vendor === "Google Inc.")) {
+      InstallState.setUnsupported();
+    } else {
+      InstallState.setDefault();
+
+    }
   } else {
+    console.log("Cookie found, installed.");
     InstallState.setInstalled();
   }
-}
+};
 
 //Message from extension
 document.addEventListener("streamkeys-installed", function(e) {

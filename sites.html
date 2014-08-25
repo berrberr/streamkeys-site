@@ -6,7 +6,8 @@ title: Streamkeys - Supported Sites
 <div class="main-jumbo" id="sitelist">
   <h1>Supported Sites</h1>
   <div class="sites">
-    {% for _site in site.sitelist order:ascending %}
+    {% assign sorted_sites = site.sitelist | sort_normalize(site.sitelist, "name") %}
+    {% for _site in sorted_sites %}
       <div class="site">
         <a href="http://{{ _site.url }}" target="_blank">
         <div class="site-image"><img src="{{ _site.image }}" alt="{{ _site.name }}"></div>

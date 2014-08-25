@@ -71,9 +71,15 @@ sitelist:
   - name: Slacker
     image: img/icons/slacker.png
     url: www.slacker.com
-  - name: TheSixtyOne
-    image: img/icons/thesixtyone.png
-    url: www.thesixtyone.com
+  - name: YouTube
+    image: img/icons/youtube.png
+    url: www.youtube.com
   - name: VK
     image: img/icons/vk.png
     url: www.vk.com
+  - name: Plex
+    image: img/icons/plex.png
+    url: www.plex.tv
+  - name: TheSixtyOne
+    image: img/icons/thesixtyone.png
+    url: www.thesixtyone.com

@@ -24,7 +24,8 @@ title: Streamkeys - Global Music Player Hotkeys for Chrome
   <h1>Works With</h1>
   <p><button type="button" id="btn-req" class="btn-main btn-install-lg" data-toggle="modal" data-target="#requestModal">Is there a site missing? Request a site to be added here.</button></p>
   <div class="row icon-row">
-    {% for _site in site.sitelist %}
+    {% assign sorted_sites = site.sitelist | sort_normalize(site.sitelist, "name") %}
+    {% for _site in sorted_sites %}
       {% if _site.image %}
         <div class="col-md-2 col-sm-3 col-xs-4">
           <a href="http://{{ _site.url }}" target="_blank">

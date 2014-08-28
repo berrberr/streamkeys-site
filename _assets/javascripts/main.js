@@ -8,6 +8,8 @@ function getParameterByName(name) {
   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 };
 
+var installURL = "http://www.streamkeys.com/guide.html?installed=true";
+
 //Lightbox setup
 $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     event.preventDefault();
@@ -76,11 +78,13 @@ var InstallState = (function() {
 
 //Install the extension
 var onClickInstall = function() {
+  sessionStorage.setItem("streamkeys-install", "site");
   InstallState.setInstalling();
   chrome.webstore.install(undefined,
     function() {
       console.log("Streamkeys installed!");
       InstallState.setInstalled();
+      window.location = installURL;
     },
     function(msg) {
       console.log("Streamkeys installed failed. Error: ", msg);

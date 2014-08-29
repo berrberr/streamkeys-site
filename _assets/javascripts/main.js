@@ -54,7 +54,7 @@ var InstallState = (function() {
       setButtons("<i class=\"fa fa-check\"></i>&nbsp;&nbsp;Installed!");
     },
     setInstalling: function() {
-      console.log("set installin" + installed);
+      console.log("Set Installing..." + installed);
       setButtons("<i class=\"fa fa-circle-o-notch fa-spin\"></i>&nbsp;&nbsp;Installing...");
     },
     setError: function() {
@@ -84,7 +84,6 @@ var onClickInstall = function() {
     function() {
       console.log("Streamkeys installed!");
       InstallState.setInstalled();
-      window.location = installURL;
     },
     function(msg) {
       console.log("Streamkeys installed failed. Error: ", msg);

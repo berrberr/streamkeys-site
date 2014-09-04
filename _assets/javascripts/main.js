@@ -125,7 +125,7 @@ var toggleDivs = function() {
 var postMessage = function(message) {
   $.ajax({
     type: "POST",
-    url: "http://contact.streamkeys.com",
+    url: "http://contact.streamkeys.com/contact",
     data: message
   })
     .always(function(jqXHR, textStatus) {

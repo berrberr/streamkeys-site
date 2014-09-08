@@ -125,7 +125,8 @@ var toggleDivs = function() {
 var postMessage = function(message) {
   $.ajax({
     type: "POST",
-    url: "http://contact.streamkeys.com",
+    url: "http://contact.streamkeys.com/contact",
+    crossDomain: true,
     data: message
   })
     .always(function(jqXHR, textStatus) {
@@ -133,7 +134,6 @@ var postMessage = function(message) {
       console.log( "response: ", jqXHR);
       $("#request-form").hide();
       $("#request-success").show();
-      //window.location.href = "sites.html?sentmessage=true";
     });
 };
 

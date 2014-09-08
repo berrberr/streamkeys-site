@@ -33,6 +33,10 @@ h1 {
   padding-left: 80px;
 }
 
+.navbar-header {
+  height: 50px;
+}
+
 .navbar-main {
   margin-bottom: 0;
  .navbar-brand {
@@ -56,18 +60,32 @@ h1 {
 }
 
 .navbar-links {
-  padding: 16px 0 16px 80px;
+  padding-left: 80px;
   li > a {
     margin-right: 20px;
+    padding: 15px 0 0 0;
     color: $primary;
     &:hover {
-      //color: #033649;
+      background-color: #FFFFFF;
+    }
+  }
+}
+
+@media (max-width: $grid-float-breakpoint) {
+  .navbar-links {
+    padding: 0 0 10px 0;
+    li {
+      padding: 0;
     }
   }
 }
 
 .navbar-nav {
   margin: 0;
+}
+
+.icon-bar {
+  background-color: black;
 }
 
 //** Main content wrapper **//
@@ -247,10 +265,11 @@ h1 {
 .hotkey-row {
   @include make-row();
   div {
-    @include make-xs-column(3);
+    @include make-xs-column(6);
+    @include make-sm-column(3);
   }
   .first {
-    @include make-xs-column-offset(3);
+    @include make-sm-column-offset(3);
   }
 }
 

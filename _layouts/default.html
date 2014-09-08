@@ -3,7 +3,7 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>{{ page.title }}</title>
+      <title>{{ site.baseTitle }} {{ page.title }}</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
@@ -15,16 +15,29 @@
     <body>
     <div id="wrapper">
       <div class="container nav-container">
-        <div class="navbar navbar-main" role="navigation">
-          <a id="navbar-main-brand" class="navbar-brand" href="{{ site.navigation.home }}">Streamkeys</a>
-          <ul class="navbar-nav navbar-links list-inline">
-            <li id="help"><a href="{{ site.navigation.help }}">Setup Guide</a></li>
-            <li id="faq"><a href="{{ site.navigation.faq }}">FAQ</a></li>
-            <li id="sites"><a href="{{ site.navigation.sitelist }}">Supported Sites</a></li>
-            <li id="contact"><a href="{{ site.navigation.contact }}">Contact</a></li>
-          </ul>
-          <button class="btn-main btn-install-header btn-install-cta"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
-        </div>
+        <nav class="navbar navbar-main" role="navigation">
+
+          <!-- Main nav text -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-content">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="navbar-main-brand" class="navbar-brand" href="{{ site.navigation.home }}">Streamkeys</a>
+          </div>
+
+          <div class="collpase navbar-collapse" id="nav-content">
+            <ul class="nav navbar-nav navbar-links list-inline">
+              <li id="help"><a href="{{ site.navigation.help }}">Setup Guide</a></li>
+              <li id="faq"><a href="{{ site.navigation.faq }}">FAQ</a></li>
+              <li id="sites"><a href="{{ site.navigation.sitelist }}">Supported Sites</a></li>
+              <li id="contact"><a href="{{ site.navigation.contact }}">Contact</a></li>
+            </ul>
+            <button class="btn-main btn-install-header btn-install-cta hidden-xs"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
+          </div>
+        </nav>
       </div>
 
       <div class="main-content">

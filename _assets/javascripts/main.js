@@ -126,10 +126,7 @@ var postMessage = function(message) {
   $.ajax({
     type: "POST",
     url: "http://contact.streamkeys.com/contact",
-<<<<<<< HEAD
     crossDomain: true,
-=======
->>>>>>> 7932b5cf1df18e1ae76a6abee4d668d2d32c543e
     data: message
   })
     .always(function(jqXHR, textStatus) {

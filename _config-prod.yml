@@ -1,4 +1,5 @@
 assets:
+  baseurl: https://s3.amazonaws.com/streamkeys
   cache: true
   js_compressor: yui
   css_compressor: sass

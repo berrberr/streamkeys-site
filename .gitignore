@@ -3,3 +3,5 @@ _site/*
 .jekyll-assets-cache/*
 .sass-cache/*
 bower_components
+node_modules/*
+aws-credentials.json

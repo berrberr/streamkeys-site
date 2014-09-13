@@ -15,7 +15,7 @@ title: Home
       </p>
     </div>
     <div class="col-sm-6 col-lg-4">
-      <img src="img/streamkeys-homepage-hotkeys-demo-2.png" alt="Streamkeys Demo" class="img-responsive hidden-xs">
+      <img src="{% asset_path streamkeys-homepage-hotkeys-demo-2.png %}" alt="Streamkeys Demo" class="img-responsive hidden-xs">
     </div>
   </div>
 </div>
@@ -29,7 +29,7 @@ title: Home
       {% if _site.image %}
         <div class="col-md-2 col-sm-3 col-xs-6">
           <a href="http://{{ _site.url }}" target="_blank">
-            <img src="{{ _site.image }}" alt="{{ _site.name }}" class="icon-image">
+            <img src="{{ _site.image | asset_path }}" alt="{{ _site.name }}" class="icon-image">
           </a>
         </div>
       {% endif %}

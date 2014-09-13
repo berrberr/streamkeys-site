@@ -10,7 +10,7 @@ title: Streamkeys - Supported Sites
     {% for _site in sorted_sites %}
       <div class="site">
         <a href="http://{{ _site.url }}" target="_blank">
-        <div class="site-image"><img src="{{ _site.image }}" alt="{{ _site.name }}"></div>
+        <div class="site-image"><img src="{{ _site.image | asset_path }}" alt="{{ _site.name }}"></div>
         <div class="site-text"><h1>{{ _site.name }}</h1><h2>{{ _site.url }}</h2></div>
         </a>
       </div>

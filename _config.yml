@@ -2,7 +2,7 @@ name: Streamkeys
 markdown: redcarpet
 highlighter: pygments
 url: http://localhost:4000
-exclude: ['sinatra', 'Guardfile', 'Gemfile', 'Gemfile.lock', 'node_modules', 'bower_components', 'streamkeys-site.sublime-project']
+exclude: ['sinatra', 'Guardfile', 'Gemfile', 'Gemfile.lock', 'node_modules', 'bower_components', 'streamkeys-site.sublime-project', 'aws-credentials.json']
 baseTitle: Streamkeys - Global Music Player Hotkeys for Chrome -
 navigation:
   faq: faq.html
@@ -13,74 +13,74 @@ navigation:
   changelog: changelog.html
 sitelist:
   - name: 8tracks
-    image: img/icons/8tracks.png
+    image: icons/8tracks.png
     url: www.8tracks.com
   - name: Bandcamp
-    image: img/icons/bandcamp.png
+    image: icons/bandcamp.png
     url: www.bandcamp.com
   - name: Deezer
-    image: img/icons/deezer.png
+    image: icons/deezer.png
     url: www.deezer.com
   - name: Di.fm
-    image: img/icons/difm.png
+    image: icons/difm.png
     url: www.di.fm
   - name: Earbits
-    image: img/icons/earbits.png
+    image: icons/earbits.png
     url: www.earbits.com
   - name: Google Play
-    image: img/icons/googleplay.png
+    image: icons/googleplay.png
     url:: play.google.com
   - name: Grooveshark
-    image: img/icons/grooveshark.png
+    image: icons/grooveshark.png
     url: www.grooveshark.com
   - name: TheHypeMachine
-    image: img/icons/hypemachine.png
+    image: icons/hypemachine.png
     url: www.hypem.com
   - name: iHeartRadio
-    image: img/icons/iheart.png
+    image: icons/iheart.png
     url: www.iheart.com
   - name: Jango
-    image: img/icons/jango.png
+    image: icons/jango.png
     url: www.jango.com
   - name: MixCloud
-    image: img/icons/mixcloud.png
+    image: icons/mixcloud.png
     url: www.mixcloud.com
   - name: Pandora
-    image: img/icons/pandora.png
+    image: icons/pandora.png
     url: www.pandora.com
   - name: RadioParadise
-    image: img/icons/radioparadise.png
+    image: icons/radioparadise.png
     url: www.radioparadise.com
   - name: Rdio
-    image: img/icons/rdio.png
+    image: icons/rdio.png
     url: www.rdio.com
   - name: Spotify
-    image: img/icons/spotify.png
+    image: icons/spotify.png
     url: www.spotify.com
   - name: Songstr
-    image: img/icons/songstr.png
+    image: icons/songstr.png
     url: www.songstr.com
   - name: Songza
-    image: img/icons/songza.png
+    image: icons/songza.png
     url: www.songza.com
   - name: Stitcher
-    image: img/icons/stitcher.png
+    image: icons/stitcher.png
     url: www.stitcher.com
   - name: Soundcloud
-    image: img/icons/soundcloud.png
+    image: icons/soundcloud.png
     url: www.soundcloud.com
   - name: Slacker
-    image: img/icons/slacker.png
+    image: icons/slacker.png
     url: www.slacker.com
   - name: YouTube
-    image: img/icons/youtube.png
+    image: icons/youtube.png
     url: www.youtube.com
   - name: VK
-    image: img/icons/vk.png
+    image: icons/vk.png
     url: www.vk.com
   - name: Plex
-    image: img/icons/plex.png
+    image: icons/plex.png
     url: www.plex.tv
   - name: TheSixtyOne
-    image: img/icons/thesixtyone.png
+    image: icons/thesixtyone.png
     url: www.thesixtyone.com

@@ -3,7 +3,7 @@ markdown: redcarpet
 highlighter: pygments
 url: http://localhost:4000
 exclude: ['sinatra', 'Guardfile', 'Gemfile', 'Gemfile.lock', 'node_modules', 'bower_components',
-  'streamkeys-site.sublime-project', 'aws-credentials.json', 'Gruntfile.js', 'package.json', 'README.md']
+  'streamkeys-site.sublime-project', 'credentials.json', 'Gruntfile.js', 'package.json', 'README.md']
 baseTitle: Streamkeys - Global Music Player Hotkeys for Chrome -
 navigation:
   faq: faq.html

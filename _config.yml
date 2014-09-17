@@ -86,3 +86,12 @@ sitelist:
   - name: TheSixtyOne
     image: icons/thesixtyone.png
     url: www.thesixtyone.com
+  - name: 7digital
+    image: icons/7digital.png
+    url: www.7digital.com
+  - name: Amazon Music
+    image: icons/amazon.png
+    url: www.amazon.com
+  - name: NPR Infinite Player
+    image: icons/npr.png
+    url: www.one.npr.org

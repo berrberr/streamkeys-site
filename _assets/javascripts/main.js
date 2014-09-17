@@ -137,9 +137,15 @@ var postMessage = function(message) {
     });
 };
 
-$("#requestModal").on("shown", function() {
+$("#requestModal").on("show.bs.modal", function(e) {
+  //Cleanup previous states
   $("#request-form").show();
   $("#request-success").hide();
+  $("#site_url_container").removeClass("has-error");
+
+  url: $("#site_url").val("");
+  email: $("#email").val("");
+  message: $("#comments").val("");
 });
 
 $(function() {
@@ -148,12 +154,18 @@ $(function() {
 
   $("#contact_button").click(function() {
     event.preventDefault();
+
     var data = {
       url: $("#site_url").val(),
       email: $("#email").val(),
       message: $("#comments").val()
     };
-    postMessage(data);
+    if(data.url === "") {
+      $("#site_url_container").addClass("has-error");
+      $("#site_url").val("Please enter a URL");
+    } else {
+      postMessage(data);
+    }
   });
 
   //$.fn.ekkoLightbox.defaults.right_arrow_class = ".fa .fa-arrow-right";

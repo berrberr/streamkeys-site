@@ -94,4 +94,4 @@ sitelist:
     url: www.amazon.com
   - name: NPR Infinite Player
     image: icons/npr.png
-    url: www.one.npr.org
+    url: one.npr.org

@@ -148,6 +148,10 @@ $("#requestModal").on("show.bs.modal", function(e) {
   message: $("#comments").val("");
 });
 
+$("[data-toggle=clear]").click(function(e) {
+  e.target.value = "";
+});
+
 $(function() {
 
   toggleDivs();
@@ -158,7 +162,8 @@ $(function() {
     var data = {
       url: $("#site_url").val(),
       email: $("#email").val(),
-      message: $("#comments").val()
+      message: $("#comments").val(),
+      timestamp: $("#timestamp").val()
     };
     if(data.url === "") {
       $("#site_url_container").addClass("has-error");
@@ -168,10 +173,7 @@ $(function() {
     }
   });
 
-  if($("#spam-timestamp")) $("#spam-timestamp").val(Date.now());
-  //$.fn.ekkoLightbox.defaults.right_arrow_class = ".fa .fa-arrow-right";
-  //$.fn.ekkoLightbox.defaults.left_arrow_class = ".fa .fa-arrow-left";
-
+  if($("#timestamp")) $("#timestamp").val(Date.now());
 });
 
 //Mozilla cookies

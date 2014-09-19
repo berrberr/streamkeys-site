@@ -27,7 +27,7 @@ title: Home
     {% assign sorted_sites = site.sitelist | sort_normalize(site.sitelist, "name") %}
     {% for _site in sorted_sites %}
       {% if _site.image %}
-        <div class="col-md-2 col-sm-3 col-xs-6">
+        <div class="col-md-2 col-sm-3 col-xs-4">
           <a href="http://{{ _site.url }}" target="_blank">
             <img src="{{ _site.image | asset_path }}" alt="{{ _site.name }}" class="icon-image">
           </a>

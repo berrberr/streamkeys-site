@@ -168,6 +168,7 @@ $(function() {
     }
   });
 
+  if($("#spam-timestamp")) $("#spam-timestamp").val(Date.now());
   //$.fn.ekkoLightbox.defaults.right_arrow_class = ".fa .fa-arrow-right";
   //$.fn.ekkoLightbox.defaults.left_arrow_class = ".fa .fa-arrow-left";
 

@@ -10,6 +10,7 @@
     "grunt-jekyll": "~0.4.2",
     "grunt-aws": "~0.3.0",
     "grunt-ssh-deploy": "~0.2.2",
-    "grunt-concurrent": ""
+    "grunt-concurrent": "",
+    "grunt-ssh": ""
   }
 }

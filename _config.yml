@@ -4,7 +4,7 @@ highlighter: pygments
 url: http://localhost:4000
 exclude: ['sinatra', 'Guardfile', 'Gemfile', 'Gemfile.lock', 'node_modules', 'bower_components',
   'streamkeys-site.sublime-project', 'streamkeys-site.sublime-workspace', 'credentials.json', 'Gruntfile.js',
-  'package.json', 'README.md']
+  'package.json', 'README.md', '*.scss']
 baseTitle: Streamkeys - Global Music Player Hotkeys for Chrome -
 navigation:
   faq: faq.html

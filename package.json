@@ -9,7 +9,7 @@
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-jekyll": "~0.4.2",
     "grunt-aws": "~0.3.0",
-    "grunt-ssh-deploy": "git://github.com/dasuchin/grunt-ssh-deploy",
+    "grunt-ssh-deploy": "git://github.com/berrberr/grunt-ssh-deploy",
     "grunt-concurrent": "",
     "grunt-ssh": ""
   },

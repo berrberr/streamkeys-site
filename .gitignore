@@ -1,6 +1,5 @@
 .DS_Store
 build/_site
-.jekyll-assets-cache
 .sass-cache
 .bundle
 bower_components

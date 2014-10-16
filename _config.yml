@@ -2,10 +2,16 @@ name: Streamkeys
 markdown: redcarpet
 highlighter: pygments
 url: http://localhost:4000
-exclude: ['sinatra', 'Guardfile', 'Gemfile', 'Gemfile.lock', 'node_modules', 'bower_components',
-  'streamkeys-site.sublime-project', 'streamkeys-site.sublime-workspace', 'credentials.json', 'Gruntfile.js',
-  'package.json', 'README.md', '*.scss']
+exclude: ['*.scss']
 baseTitle: Streamkeys - Global Music Player Hotkeys for Chrome -
+destination: ./build/_site
+gems: [jekyll-assets]
+source: ./code
+assets:
+  sources:
+    - _assets/javascripts
+    - _assets/images
+    - _assets/stylesheets
 navigation:
   faq: faq.html
   help: guide.html

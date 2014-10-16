@@ -1,7 +1,8 @@
 .DS_Store
-_site/*
-.jekyll-assets-cache/*
-.sass-cache/*
+build/_site
+.jekyll-assets-cache
+.sass-cache
+.bundle
 bower_components
-node_modules/*
+node_modules
 credentials.json

@@ -1,11 +1,10 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-guard "jekyll-plus", :serve => true, :config => ['_config.yml'] do
-  watch /.*/
-  ignore /^_site/, /sinatra/
+guard "jekyll-plus", :serve => true, :config => ["_config.yml"] do
+  watch(%r{code/.*})
 end
 
-guard 'livereload' do
-  watch /.*/
+guard "livereload" do
+  watch(%r{build/.*})
 end

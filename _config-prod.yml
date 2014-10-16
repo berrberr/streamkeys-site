@@ -4,4 +4,5 @@ assets:
   js_compressor: yui
   css_compressor: sass
   gzip: []
-destination: _site-production
+destination: ./build/_site-production
+

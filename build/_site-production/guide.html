@@ -3,12 +3,12 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Streamkeys - Global Music Player Hotkeys for Chrome - Frequently Asked Questions</title>
+      <title>Streamkeys - Global Music Player Hotkeys for Chrome - Help and Guide</title>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-385b4321267471bbb1be6b9800bdfbcb.css">
+      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-d485bf3c9be91cdb12a09010d96de199.css">
       <link rel="chrome-webstore-item"
           href="https://chrome.google.com/webstore/detail/ekpipjofdicppbepocohdlgenahaneen">
 
@@ -56,29 +56,76 @@
       <div class="main-content">
         <div class="jumbotron main-jumbo">
 
-  <h1 id="faq">Frequently Asked Questions</h1>
-  <p id="faq-questions">
-    
-      <h2 class="question">What is Streamkeys?</h2>
-      <p class="answer">Streamkeys is a Chrome extension that will allow you to control online media players from anywhere on your computer using hotkeys that you define. Check out the <a href="sites.html">sitelist</a> to see a list of available sites and the <a href="guide.html">guide</a> for setup instructions.</p>
-    
-      <h2 class="question">I just installed the extension and the hotkeys don't work?</h2>
-      <p class="answer">Make sure that you have restarted any music player tabs that you previously had open before you installed the extension.</p>
-    
-      <h2 class="question">Can you add support for a new streaming site?</h2>
-      <p class="answer">Probably! <a href="sites.html">Submit a request on the Supported Sites page.</a></p>
-    
-      <h2 class="question">Can I change the hotkeys?</h2>
-      <p class="answer">Yes. You can change all of the hotkeys on the Chrome extension's page. <a href="guide.html">See the guide here for more information.</a></p>
-    
-      <h2 class="question">Why are my new hotkeys not working?</h2>
-      <p class="answer">It is possible that you have set the hotkeys to ones that are already reserved by Chrome. For example, on Mac the hotkey Command + Y is already reserved by chrome to open the history panel and so it cannot be used by extensions. Make sure that the hotkeys you are trying to use are not already Chrome defaults.</p>
-    
-      <h2 class="question">I am trying to set a new hotkey in the keyboard shortcuts popup. Why will it not let me set a hotkey combination?</h2>
-      <p class="answer">You are probably trying to set a hotkey that is not valid. All hotkey combinations must include either Ctrl (Command on Macs) OR Alt, but NOT both. The list of supported keys are&#58; A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). <a href="https://developer.chrome.com/apps/commands" target="_blank">Read the official Chrome documentation here for more information.</a></p>
-    
-  </p>
-  
+  <div id="installed" style="display: none;" class="new-version-alert">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <h1>Streamkeys has been installed!</h1>
+    <h2>Please refresh any currently open media player tabs to connect them to Streamkeys. Read the section below for a quick start guide.</h2>
+    <h2>Note: This page will only be loaded once on update or install.</h2>
+  </div>
+
+  <div id="updated" style="display: none;" class="new-version-alert">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <h1>Streamkeys has been updated.</h1>
+    <h2>New Version:</h2>
+    <ul>
+      <li>
+        <h2>Due to recent Chrome changes you might have to re-enable the extension after update! Enter chrome://extensions in the URL bar to do so.</h2>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <h2>v1.4.0:</h2>
+        -Added support for Yandex Music, PocketCasts (thanks @Rorgy!), Ambient Sleeping Pill (thanks @inverse!)<br>
+        -Fix bugs with Jango, VK, Deezer and iHeartRadio
+      </li>
+    </ul>
+    <h2>Note: This page will only be loaded once on update.</h2>
+  </div>
+
+  <h1 id="configuration">Configuration</h1>
+  <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing. In this menu you can also set the hotkeys to be global across either Chrome or your system.</p>
+  <div class="guide-image-row">
+    <div class="guide-thumbnail">
+      <a href="https://s3.amazonaws.com/streamkeys/step1-837498f500784ccdeae59463c82cf50b.png" class="thumbnail" data-toggle="lightbox" data-title="Extensions Page" data-footer="<b>Step 1.</b> Go to Chrome extensions page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step1-837498f500784ccdeae59463c82cf50b.png" alt="Step 1"></a>
+      <div class="caption text-center">
+        <h4>Go to extensions page</h4>
+      </div>
+    </div>
+    <div class="guide-thumbnail">
+      <a href="https://s3.amazonaws.com/streamkeys/step2-724bfd97a283771b14d6f2edd65b52a5.png" class="thumbnail" data-toggle="lightbox" data-title="Keyboard Shortcuts" data-footer="<b>Step 2.</b> Click keyboard shortcuts at bottom of extension page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step2-724bfd97a283771b14d6f2edd65b52a5.png" alt="Step 2"></a>
+      <div class="caption text-center">
+        <h4>Click keyboard shortcuts</h4>
+      </div>
+    </div>
+    <div class="guide-thumbnail">
+      <a href="https://s3.amazonaws.com/streamkeys/step3-25b40b583bb5d7c925a612c114816e20.png" class="thumbnail" data-toggle="lightbox" data-title="Shortcuts Popup" data-footer="<b>Step 3.</b> Set new shortcuts" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step3-25b40b583bb5d7c925a612c114816e20.png" alt="Step 3"></a>
+      <div class="caption text-center">
+        <h4>Set new shortcuts</h4>
+      </div>
+    </div>
+  </div>
+  <br>
+  <p><b>Mac users:</b> Currently there is an issue with capturing media key presses in Chrome on macs. This issue is slated to be fixed in the next Chrome release, but until then you will have to use other keys, sorry!</p>
+  <h1>Default Hotkeys</h1>
+  <div class="hotkey-row">
+    <div class="first">
+      <h2>Mac:</h2>
+      <b>Play/Pause: </b>Alt + Shift + 2 <br>
+      <b>Next Song: </b>Alt + Shift + 3 <br>
+      <b>Previous Song: </b>Alt + Shift + E <br>
+      <b>Mute: </b>Alt + Shift + M <br>
+    </div>
+    <div>
+      <h2>Windows:</h2>
+      <b>Play/Pause: </b>Media Key Play<br>
+      <b>Next Song: </b>Media Key Next<br>
+      <b>Previous Song: </b>Media Key Previous<br>
+      <b>Mute: </b>Alt + Shift + M <br><br>
+    </div>
+  </div>
+  <h1 id="options">Options</h1>
+  <p>On the options page you can enable/disable Streamkeys for any site. To do this, go to the Chrome extension tab, find the Streamkeys extension in the list, and click on the 'options' link. This feature is useful if you have multiple different media sites open, and want Streamkeys to ignore any number of them.</p>
+
 </div>
 
       </div>
@@ -138,7 +185,7 @@
       </div> <!-- /container -->
     </footer>
 
-    <script src="https://s3.amazonaws.com/streamkeys/main-81f4bb6713f7cdff2a5e852cfa4cd2df.js"></script>
+    <script src="https://s3.amazonaws.com/streamkeys/main-6466901ca922918e518ecc4c71a7f2da.js"></script>
 
     <!-- Google Analytics -->
     <script>

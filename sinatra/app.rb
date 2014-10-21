@@ -2,7 +2,7 @@ require 'sinatra'
 require 'mandrill'
 
 post '/contact' do
-  puts "REQUEST FROM: #{request.ip}\n#{request.inspect}"
+  puts "[#{Time.now}] - REQUEST FROM: #{request.ip}\n#{request.inspect}"
   #MANDRILL_APIKEY env var must be set
   m = Mandrill::API.new ENV['MANDRILL_APIKEY']
   request_origin = request.env['HTTP_ORIGIN']
@@ -16,7 +16,7 @@ post '/contact' do
 
   #If the request was submitted too quickly it is probably a spambot
   time_diff = Time.now.to_i - (params[:timestamp].to_i / 1000)
-  unless time_diff > 5 and time_diff < 3600
+  unless time_diff > 4 and time_diff < 3600
     puts "TIMEOUT: #{time_diff}"
     halt 500
   end
@@ -35,6 +35,6 @@ post '/contact' do
   }
 
   response.headers['Access-Control-Allow-Origin'] = request_origin
-  #sending = m.messages.send message
+  sending = m.messages.send message
   halt 200
 end

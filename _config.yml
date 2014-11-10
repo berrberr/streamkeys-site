@@ -19,6 +19,11 @@ navigation:
   home: index.html
   contact: contact.html
   changelog: changelog.html
+latestChange:
+  version: v1.4.0:
+  content:
+    "-Added support for Yandex Music, PocketCasts (thanks @Rorgy!), Ambient Sleeping Pill (thanks @inverse!)<br>
+    -Fix bugs with Jango, VK, Deezer and iHeartRadio"
 sitelist:
   - name: 8tracks
     image: icons/8tracks.png

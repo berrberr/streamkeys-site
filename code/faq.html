@@ -6,6 +6,8 @@ questions:
     answer: Streamkeys is a Chrome extension that will allow you to control online media players from anywhere on your computer using hotkeys that you define. Check out the <a href="{{ site.navigation.sitelist }}">sitelist</a> to see a list of available sites and the <a href="{{ site.navigation.help }}">guide</a> for setup instructions.
   - question: I just installed the extension and the hotkeys don't work?
     answer: Make sure that you have restarted any music player tabs that you previously had open before you installed the extension. Also make sure that the extension is enabled on the Chrome extension page (chrome://extensions in URL bar)
+  - question: Why does Chrome say Streamkeys can "read and change all your data on websites you visit"?
+    answer: To make the extension work we need to make use of the <a href="https://developer.chrome.com/extensions/tabs" target="_blank">chrome.tabs API</a> which gives extension's the power to monitor a user's browser behaviour. Streamkeys does not do this! Check out <a href="https://github.com/berrberr/streamkeys" target="_blank">the source code</a> if you are interested.
   - question: Can you add support for a new streaming site?
     answer: Probably! <a href="{{ site.navigation.sitelist }}">Submit a request on the Supported Sites page.</a>
   - question: Can I change the hotkeys?

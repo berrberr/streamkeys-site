@@ -24,13 +24,16 @@ a, a:hover {
   color: #000;
 }
 
+.a-override, .a-override:hover {
+  font-weight: normal;
+}
+
 h1 {
   padding-bottom: 2px;
 }
 
 //** Navbar **//
 .nav-container {
-  padding-left: 80px;
 }
 
 .navbar-header {
@@ -155,9 +158,12 @@ h1 {
 
 .btn-install-header {
   @extend .pull-right;
-  width: 190px;
+  width: 140px;
   margin: 12px 0 12px 0;
   padding: 5px 10px 5px 10px;
+}
+
+#btn-install-header {
   display: none;
 }
 

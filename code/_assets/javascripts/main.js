@@ -45,12 +45,12 @@ var InstallState = (function() {
   return {
     setDefault: function() {
       setButtons("<i class=\"fa fa-download\"></i>&nbsp;&nbsp;Download for Chrome");
-      $(".btn-install-header").show();
+      $("#btn-install-header").show();
     },
     setInstalled: function(fromExtension) {
       installed = true;
       disableButtons();
-      if(fromExtension) $(".btn-install-header").hide();
+      if(fromExtension) $("#btn-install-header").hide();
       setButtons("<i class=\"fa fa-check\"></i>&nbsp;&nbsp;Installed!");
     },
     setInstalling: function() {

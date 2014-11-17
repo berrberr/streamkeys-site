@@ -2,7 +2,6 @@ name: Streamkeys
 markdown: redcarpet
 highlighter: pygments
 url: http://localhost:4000
-exclude: ['*.scss']
 baseTitle: Streamkeys - Global Music Player Hotkeys for Chrome -
 destination: ./build/_site
 source: ./code
@@ -100,7 +99,30 @@ sitelist:
   - name: NPR Infinite Player
     image: icons/npr.png
     url: one.npr.org
+  - name: AmbientSleepingPill
+    url: www.ambientsleepingpill.com
+  - name: Cubic.fm
+    url: www.cubic.fm
+  - name: Disco.io
+    url: www.disco.io
+  - name: OPlayer 
+    url: www.oplayer.org
+  - name: PocketCasts
+    url: www.pocketcasts.com
+  - name: Rainwave.cc
+    url: www.rainwave.cc
+  - name: TuneIn
+    url: www.tunein.com
+  - name: Yandex
+    url: www.yandex.ru
+  - name: YouAreListeningTo
+    url: www.youarelistening.to
 changelog:
+  - version: v1.4.1
+    content: >
+      -Added an icon and control window to enable/disable specific sites and tabs quickly<br>
+      -Fixed bugs with Youtube playlists, Soundcloud, Pocketcasts and lastfm.ru<br>
+      -Added support for rainwave.cc, cubic.fm, disco.io, oplayer.org
   - version: v1.4.0
     content: >
       -Added support for Yandex Music, PocketCasts (thanks <a href="https://github.com/Rorgy" target="_blank">@Rorgy</a>!), Ambient Sleeping Pill (thanks <a href="https://github.com/inverse" target="_blank">@inverse</a>!)<br>

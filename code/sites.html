@@ -5,12 +5,17 @@ title: Streamkeys - Supported Sites
 
 <div class="main-jumbo" id="sitelist">
   <h1>Supported Sites</h1>
-  <div class="sites">
+  <div class="sites row">
     {% assign sorted_sites = site.sitelist | sort_normalize(site.sitelist, "name") %}
     {% for _site in sorted_sites %}
-      <div class="site">
+      <div class="site col-xs-6 col-sm-3 col-lg-2">
         <a href="http://{{ _site.url }}" target="_blank">
-        <div class="site-image"><img src="{{ _site.image | asset_path }}" alt="{{ _site.name }}"></div>
+        <div class="site-image">
+          {% if _site.image %}
+            <img src="{{ _site.image | asset_path }}" alt="{{ _site.name }}"></div>
+          {% else %}
+            <img src="{{ "icons/sk.png" | asset_path }}" alt="{{ _site.name }}"></div>
+          {% endif %}
         <div class="site-text"><h1>{{ _site.name }}</h1><h2>{{ _site.url }}</h2></div>
         </a>
       </div>

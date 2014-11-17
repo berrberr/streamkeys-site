@@ -105,6 +105,7 @@ var checkInstalled = function() {
 
 //Message from extension means that it is installed, set the cookie
 document.addEventListener("streamkeys-installed", function(e) {
+  console.log("installed");
   InstallState.setInstalled(true);
   docCookies.setItem("sk-installed", e.detail);
 })

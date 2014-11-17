@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-d485bf3c9be91cdb12a09010d96de199.css">
+      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-8db70704f74bd8da0400ac870952369a.css">
       <link rel="chrome-webstore-item"
           href="https://chrome.google.com/webstore/detail/ekpipjofdicppbepocohdlgenahaneen">
 
@@ -47,8 +47,12 @@
               <li id="faq"><a href="faq.html">FAQ</a></li>
               <li id="sites"><a href="sites.html">Supported Sites</a></li>
               <li id="contact"><a href="contact.html">Contact</a></li>
+              <li id="github" class="visible-sm visible-xs"><a href="https://www.github.com/berrberr/streamkeys">View Source</a></li>
             </ul>
-            <button class="btn-main btn-install-header btn-install-cta hidden-sm hidden-xs"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
+            <a href="https://www.github.com/berrberr/streamkeys" target="_blank" class="a-override">
+              <button class="btn-main btn-github-header hidden-sm hidden-xs"><i class="fa fa-github-square"></i>&nbsp;&nbsp;View Source</button>
+            </a>
+            <button class="btn-main btn-install-header btn-install-cta hidden-sm hidden-xs" id="btn-install-header"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
           </div>
         </nav>
       </div>
@@ -63,7 +67,10 @@
       <p class="answer">Streamkeys is a Chrome extension that will allow you to control online media players from anywhere on your computer using hotkeys that you define. Check out the <a href="sites.html">sitelist</a> to see a list of available sites and the <a href="guide.html">guide</a> for setup instructions.</p>
     
       <h2 class="question">I just installed the extension and the hotkeys don't work?</h2>
-      <p class="answer">Make sure that you have restarted any music player tabs that you previously had open before you installed the extension.</p>
+      <p class="answer">Make sure that you have restarted any music player tabs that you previously had open before you installed the extension. Also make sure that the extension is enabled on the Chrome extension page (chrome://extensions in URL bar)</p>
+    
+      <h2 class="question">Why does Chrome say Streamkeys can "read and change all your data on websites you visit"?</h2>
+      <p class="answer">To make the extension work we need to make use of the <a href="https://developer.chrome.com/extensions/tabs" target="_blank">chrome.tabs API</a> which gives extension's the power to monitor a user's browser behaviour. Streamkeys does not do this! Check out <a href="https://github.com/berrberr/streamkeys" target="_blank">the source code</a> if you are interested.</p>
     
       <h2 class="question">Can you add support for a new streaming site?</h2>
       <p class="answer">Probably! <a href="sites.html">Submit a request on the Supported Sites page.</a></p>
@@ -138,7 +145,7 @@
       </div> <!-- /container -->
     </footer>
 
-    <script src="https://s3.amazonaws.com/streamkeys/main-6466901ca922918e518ecc4c71a7f2da.js"></script>
+    <script src="https://s3.amazonaws.com/streamkeys/main-d55404ed06dd3bdc42a6a7bb6bffcb96.js"></script>
 
     <!-- Google Analytics -->
     <script>

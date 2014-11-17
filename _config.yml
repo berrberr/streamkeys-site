@@ -35,7 +35,7 @@ sitelist:
     url: www.earbits.com
   - name: Google Play
     image: icons/googleplay.png
-    url:: play.google.com
+    url: play.google.com
   - name: Grooveshark
     image: icons/grooveshark.png
     url: www.grooveshark.com

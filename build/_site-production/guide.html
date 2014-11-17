@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-d485bf3c9be91cdb12a09010d96de199.css">
+      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-8db70704f74bd8da0400ac870952369a.css">
       <link rel="chrome-webstore-item"
           href="https://chrome.google.com/webstore/detail/ekpipjofdicppbepocohdlgenahaneen">
 
@@ -47,8 +47,12 @@
               <li id="faq"><a href="faq.html">FAQ</a></li>
               <li id="sites"><a href="sites.html">Supported Sites</a></li>
               <li id="contact"><a href="contact.html">Contact</a></li>
+              <li id="github" class="visible-sm visible-xs"><a href="https://www.github.com/berrberr/streamkeys">View Source</a></li>
             </ul>
-            <button class="btn-main btn-install-header btn-install-cta hidden-sm hidden-xs"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
+            <a href="https://www.github.com/berrberr/streamkeys" target="_blank" class="a-override">
+              <button class="btn-main btn-github-header hidden-sm hidden-xs"><i class="fa fa-github-square"></i>&nbsp;&nbsp;View Source</button>
+            </a>
+            <button class="btn-main btn-install-header btn-install-cta hidden-sm hidden-xs" id="btn-install-header"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
           </div>
         </nav>
       </div>
@@ -74,54 +78,44 @@
     </ul>
     <ul>
       <li>
-        <h2>v1.4.0:</h2>
-        -Added support for Yandex Music, PocketCasts (thanks @Rorgy!), Ambient Sleeping Pill (thanks @inverse!)<br>
-        -Fix bugs with Jango, VK, Deezer and iHeartRadio
+        <h2>v1.4.1</h2>
+        <p>-Added an icon and control window to enable/disable specific sites and tabs quickly<br> -Fixed bugs with Youtube playlists, Soundcloud, Pocketcasts and lastfm.ru<br> -Added support for rainwave.cc, cubic.fm, disco.io, oplayer.org
+</p>
       </li>
     </ul>
     <h2>Note: This page will only be loaded once on update.</h2>
   </div>
 
   <h1 id="configuration">Configuration</h1>
-  <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing. In this menu you can also set the hotkeys to be global across either Chrome or your system.</p>
+  <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there by either entering "chrome://extensions" in the URL bar or from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing. In this menu you can also set the hotkeys to be global across either Chrome or your system.</p>
   <div class="guide-image-row">
     <div class="guide-thumbnail">
-      <a href="https://s3.amazonaws.com/streamkeys/step1-837498f500784ccdeae59463c82cf50b.png" class="thumbnail" data-toggle="lightbox" data-title="Extensions Page" data-footer="<b>Step 1.</b> Go to Chrome extensions page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step1-837498f500784ccdeae59463c82cf50b.png" alt="Step 1"></a>
+      <a href="https://s3.amazonaws.com/streamkeys/step1-812b0f4b91d7b3865540f1b16ade3dcd.png" class="thumbnail" data-toggle="lightbox" data-title="Extensions Page" data-footer="<b>Step 1.</b> Go to Chrome extensions page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step1-812b0f4b91d7b3865540f1b16ade3dcd.png" alt="Step 1"></a>
       <div class="caption text-center">
         <h4>Go to extensions page</h4>
       </div>
     </div>
     <div class="guide-thumbnail">
-      <a href="https://s3.amazonaws.com/streamkeys/step2-724bfd97a283771b14d6f2edd65b52a5.png" class="thumbnail" data-toggle="lightbox" data-title="Keyboard Shortcuts" data-footer="<b>Step 2.</b> Click keyboard shortcuts at bottom of extension page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step2-724bfd97a283771b14d6f2edd65b52a5.png" alt="Step 2"></a>
+      <a href="https://s3.amazonaws.com/streamkeys/step2-cca99d4f15e2c61745a8b15a9175d7f9.png" class="thumbnail" data-toggle="lightbox" data-title="Keyboard Shortcuts" data-footer="<b>Step 2.</b> Click keyboard shortcuts at bottom of extension page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step2-cca99d4f15e2c61745a8b15a9175d7f9.png" alt="Step 2"></a>
       <div class="caption text-center">
         <h4>Click keyboard shortcuts</h4>
       </div>
     </div>
     <div class="guide-thumbnail">
-      <a href="https://s3.amazonaws.com/streamkeys/step3-25b40b583bb5d7c925a612c114816e20.png" class="thumbnail" data-toggle="lightbox" data-title="Shortcuts Popup" data-footer="<b>Step 3.</b> Set new shortcuts" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step3-25b40b583bb5d7c925a612c114816e20.png" alt="Step 3"></a>
+      <a href="https://s3.amazonaws.com/streamkeys/step3-294237f204d142e212eaf053be742ac3.png" class="thumbnail" data-toggle="lightbox" data-title="Shortcuts Popup" data-footer="<b>Step 3.</b> Set new shortcuts" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step3-294237f204d142e212eaf053be742ac3.png" alt="Step 3"></a>
       <div class="caption text-center">
         <h4>Set new shortcuts</h4>
       </div>
     </div>
   </div>
   <br>
-  <p><b>Mac users:</b> Currently there is an issue with capturing media key presses in Chrome on macs. This issue is slated to be fixed in the next Chrome release, but until then you will have to use other keys, sorry!</p>
+  <p><b>Mac users:</b> Currently there is an issue with capturing media key presses in Chrome on macs. This issue is slated to be fixed in an upcoming Chrome release, but until then you will have to use other keys, sorry!</p>
   <h1>Default Hotkeys</h1>
-  <div class="hotkey-row">
-    <div class="first">
-      <h2>Mac:</h2>
-      <b>Play/Pause: </b>Alt + Shift + 2 <br>
-      <b>Next Song: </b>Alt + Shift + 3 <br>
-      <b>Previous Song: </b>Alt + Shift + E <br>
-      <b>Mute: </b>Alt + Shift + M <br>
-    </div>
-    <div>
-      <h2>Windows:</h2>
-      <b>Play/Pause: </b>Media Key Play<br>
-      <b>Next Song: </b>Media Key Next<br>
-      <b>Previous Song: </b>Media Key Previous<br>
-      <b>Mute: </b>Alt + Shift + M <br><br>
-    </div>
+  <div>
+  <p><b>Play/Pause: </b>Media Key Play</p>
+  <p><b>Next Song: </b>Media Key Next</p>
+  <p><b>Previous Song: </b>Media Key Previous</p>
+  <p><b>Mute: </b>Ctrl+Shift+2</p>
   </div>
   <h1 id="options">Options</h1>
   <p>On the options page you can enable/disable Streamkeys for any site. To do this, go to the Chrome extension tab, find the Streamkeys extension in the list, and click on the 'options' link. This feature is useful if you have multiple different media sites open, and want Streamkeys to ignore any number of them.</p>
@@ -185,7 +179,7 @@
       </div> <!-- /container -->
     </footer>
 
-    <script src="https://s3.amazonaws.com/streamkeys/main-6466901ca922918e518ecc4c71a7f2da.js"></script>
+    <script src="https://s3.amazonaws.com/streamkeys/main-d55404ed06dd3bdc42a6a7bb6bffcb96.js"></script>
 
     <!-- Google Analytics -->
     <script>

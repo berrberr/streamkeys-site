@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-d485bf3c9be91cdb12a09010d96de199.css">
+      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-8db70704f74bd8da0400ac870952369a.css">
       <link rel="chrome-webstore-item"
           href="https://chrome.google.com/webstore/detail/ekpipjofdicppbepocohdlgenahaneen">
 
@@ -47,8 +47,12 @@
               <li id="faq"><a href="faq.html">FAQ</a></li>
               <li id="sites"><a href="sites.html">Supported Sites</a></li>
               <li id="contact"><a href="contact.html">Contact</a></li>
+              <li id="github" class="visible-sm visible-xs"><a href="https://www.github.com/berrberr/streamkeys">View Source</a></li>
             </ul>
-            <button class="btn-main btn-install-header btn-install-cta hidden-sm hidden-xs"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
+            <a href="https://www.github.com/berrberr/streamkeys" target="_blank" class="a-override">
+              <button class="btn-main btn-github-header hidden-sm hidden-xs"><i class="fa fa-github-square"></i>&nbsp;&nbsp;View Source</button>
+            </a>
+            <button class="btn-main btn-install-header btn-install-cta hidden-sm hidden-xs" id="btn-install-header"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
           </div>
         </nav>
       </div>
@@ -57,60 +61,103 @@
         <div class="main-jumbo">
   <h1>Changelog</h1><br>
   <ul class="list-group">
-    <li class="list-group-item">
-      <h3>v1.3.6:</h3>
-      -Added support for Bop.fm, Last.fm, Sony Music Unlimited (thanks <a href="https://github.com/inverse" target="_blank">@inverse!</a>), Pleer (thanks <a href="https://github.com/ulex" target="_blank">@ulex!</a>), YouAreListening.to
-    </li>
-    <li class="list-group-item">
-      <h3>v1.3.5</h3>-Fixed bugs with Jango<br>-Added support for YouTube (disabled by default, enable on options page!), Plex.tv, Amazon Cloud Player, NPR Infinite Player, 7digital
-    </li>
-    <li class="list-group-item">
-      <h3>v1.3.4</h3>-Fixed bugs with Songza and Slacker Radio<br>
-      -Added support for di.fm, player.edge.ca, RadioParadise, Songstr
-    </li>
-    <li class="list-group-item">
-      <h3>v1.3.3</h3>-Fixed bug introduced in 1.3.2 that broke functionality. Big thanks to those users who submitted bug reports!
-    </li>
-    <li class="list-group-item">
-      <h3>v1.3.2</h3>-Added an options page which lets you enable/disable sites. To get to the options page go to the extension tab in Chrome (thanks <a href="https://github.com/dreyks" target="_blank">Dreyks</a>!)<br>
-      -Added support for Seesu.me, iHeartRadio, Mixcloud<br>
-      -Fixed bug where having different players open at same time causes issues
-    </li>
-    <li class="list-group-item">
-      <h3>v1.3.1</h3>-Added support for VK, Stitcher<br>
-      -Fixed Google Music clicking inputs twice
-    </li>
-    <li class="list-group-item">
-      <h3>v1.3.0</h3>-Added support for global hotkeys across entire system. <a href="guide.html#global">Read here for more info</a><br>
-      -Added support for: Earbits, Songza<br>
-      -Fixed Google Music support (thanks <a href="https://github.com/findmory-livefyre" target="_blank">findmory</a>!)
-    </li>
-    <li class="list-group-item">
-      <h3>v1.2.0</h3>-Reworked the whole extension so that capturing works much better and from anywhere on the chrome window<br>
-      -Added support for Google Music, Jango, Thesixtyone, Slacker<br>
-      -Removed the options page
-    </li>
-    <li class="list-group-item">
-      <h3>v1.1.0</h3>-Added support for 8tracks, Deezer, Pandora, Spotify, Soundcloud, Hypemachine and Myspace<br>
-      -Media keys now default to enabled
-    </li>
-    <li class="list-group-item">
-      <h3>v1.0.5</h3>-Added support for Rdio<br>
-      -Fixed some problems with option page
-    </li>
-    <li class="list-group-item">
-      <h3>v1.0</h3>-Chrome Webstore release
-    </li>
-    <li class="list-group-item">
-      <h3>v0.9.5</h3>-Added hotkey support for Bandcamp
-    </li>
-    <li class="list-group-item">
-      <h3>v0.9:</h3>-Media key support added<br>
-      -Added an option page which can be accessed via the chrome extension tab
-    </li>
-    <li class="list-group-item">
-      <h3>v0.8:</h3>-Initial release
-    </li>
+    
+      <li class="list-group-item">
+        <h3>v1.4.1</h3>
+        <p>-Added an icon and control window to enable/disable specific sites and tabs quickly<br> -Fixed bugs with Youtube playlists, Soundcloud, Pocketcasts and lastfm.ru<br> -Added support for rainwave.cc, cubic.fm, disco.io, oplayer.org
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.4.0</h3>
+        <p>-Added support for Yandex Music, PocketCasts (thanks <a href="https://github.com/Rorgy" target="_blank">@Rorgy</a>!), Ambient Sleeping Pill (thanks <a href="https://github.com/inverse" target="_blank">@inverse</a>!)<br> -Fix bugs with Jango, VK, Deezer and iHeartRadio
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.3.6</h3>
+        <p>-Added support for Bop.fm, Last.fm, Sony Music Unlimited (thanks <a href="https://github.com/inverse" target="_blank">@inverse</a>!), Pleer (thanks <a href="https://github.com/ulex" target="_blank">@ulex</a>!), YouAreListening.to
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.3.5</h3>
+        <p>-Fixed bugs with Jango<br> -Added support for YouTube (disabled by default, enable on options page!), Plex.tv, Amazon Cloud Player, NPR Infinite Player, 7digital
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.3.4</h3>
+        <p>-Fixed bugs with Songza and Slacker Radio<br> -Added support for di.fm, player.edge.ca, RadioParadise, Songstr
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.3.3</h3>
+        <p>-Fixed bug introduced in 1.3.2 that broke functionality. Big thanks to those users who submitted bug reports!
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.3.2</h3>
+        <p>-Added an options page which lets you enable/disable sites. To get to the options page go to the extension tab in Chrome (thanks <a href="https://github.com/dreyks" target="_blank">@Dreyks</a>!)<br> -Added support for Seesu.me, iHeartRadio, Mixcloud<br> -Fixed bug where having different players open at same time causes issues
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.3.1</h3>
+        <p>-Added support for VK, Stitcher<br> -Fixed Google Music clicking inputs twice
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.3.0</h3>
+        <p>-Added support for global hotkeys across entire system. <a href="guide.html#global">Read here for more info</a><br> -Added support for: Earbits, Songza<br> -Fixed Google Music support (thanks <a href="https://github.com/findmory-livefyre" target="_blank">@findmory</a>!)
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.2.0</h3>
+        <p>-Reworked the whole extension so that capturing works much better and from anywhere on the chrome window<br> -Added support for Google Music, Jango, Thesixtyone, Slacker<br> -Removed the options page
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.1.0</h3>
+        <p>-Added support for 8tracks, Deezer, Pandora, Spotify, Soundcloud, Hypemachine and Myspace<br> -Media keys now default to enabled
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.0.5</h3>
+        <p>-Added support for Rdio<br> -Fixed some problems with option page
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v1.0</h3>
+        <p>-Chrome Webstore release
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v0.9.5</h3>
+        <p>-Added hotkey support for Bandcamp
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v0.9</h3>
+        <p>-Media key support added<br> -Added an option page which can be accessed via the chrome extension tab
+</p>
+      </li>
+    
+      <li class="list-group-item">
+        <h3>v0.8</h3>
+        <p>-Initial release
+</p>
+      </li>
+    
   </ul>
 </div>
 
@@ -171,7 +218,7 @@
       </div> <!-- /container -->
     </footer>
 
-    <script src="https://s3.amazonaws.com/streamkeys/main-6466901ca922918e518ecc4c71a7f2da.js"></script>
+    <script src="https://s3.amazonaws.com/streamkeys/main-d55404ed06dd3bdc42a6a7bb6bffcb96.js"></script>
 
     <!-- Google Analytics -->
     <script>

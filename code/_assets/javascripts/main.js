@@ -94,20 +94,19 @@ var onClickInstall = function() {
 
 //Check if the extension is installed
 var checkInstalled = function() {
-  if(!docCookies.hasItem("sk-installed")) {
+  if(sessionStorage.getItem("sk-installed")) {
+    InstallState.setInstalled(true);
+  } else {
     if(!(window.chrome != null && window.navigator.vendor === "Google Inc.")) InstallState.setUnsupported();
     else InstallState.setDefault();
-  } else {
-    console.log("Cookie found, installed.");
-    InstallState.setInstalled();
   }
 };
 
 //Message from extension means that it is installed, set the cookie
 document.addEventListener("streamkeys-installed", function(e) {
-  console.log("installed");
+  console.log("Installed.");
   InstallState.setInstalled(true);
-  docCookies.setItem("sk-installed", e.detail);
+  sessionStorage.setItem("sk-installed", true);
 })
 
 //Install button click handler
@@ -176,44 +175,5 @@ $(function() {
 
   if($("#timestamp")) $("#timestamp").val(Date.now());
 });
-
-//Mozilla cookies
-var docCookies = {
-  getItem: function (sKey) {
-    return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
-  },
-  setItem: function (sKey, sValue, vEnd, sPath, sDomain, bSecure) {
-    if (!sKey || /^(?:expires|max\-age|path|domain|secure)$/i.test(sKey)) { return false; }
-    var sExpires = "";
-    if (vEnd) {
-      switch (vEnd.constructor) {
-        case Number:
-          sExpires = vEnd === Infinity ? "; expires=Fri, 31 Dec 9999 23:59:59 GMT" : "; max-age=" + vEnd;
-          break;
-        case String:
-          sExpires = "; expires=" + vEnd;
-          break;
-        case Date:
-          sExpires = "; expires=" + vEnd.toUTCString();
-          break;
-      }
-    }
-    document.cookie = encodeURIComponent(sKey) + "=" + encodeURIComponent(sValue) + sExpires + (sDomain ? "; domain=" + sDomain : "") + (sPath ? "; path=" + sPath : "") + (bSecure ? "; secure" : "");
-    return true;
-  },
-  removeItem: function (sKey, sPath, sDomain) {
-    if (!sKey || !this.hasItem(sKey)) { return false; }
-    document.cookie = encodeURIComponent(sKey) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + ( sDomain ? "; domain=" + sDomain : "") + ( sPath ? "; path=" + sPath : "");
-    return true;
-  },
-  hasItem: function (sKey) {
-    return (new RegExp("(?:^|;\\s*)" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
-  },
-  keys: /* optional method: you can safely remove it! */ function () {
-    var aKeys = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/);
-    for (var nIdx = 0; nIdx < aKeys.length; nIdx++) { aKeys[nIdx] = decodeURIComponent(aKeys[nIdx]); }
-    return aKeys;
-  }
-};
 
 checkInstalled();

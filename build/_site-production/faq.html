@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-8db70704f74bd8da0400ac870952369a.css">
+      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-a1e8008476a81cff44fceb8e81771731.css">
       <link rel="chrome-webstore-item"
           href="https://chrome.google.com/webstore/detail/ekpipjofdicppbepocohdlgenahaneen">
 
@@ -26,136 +26,131 @@
       <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     </head>
     <body>
-    <div id="wrapper">
-      <div class="container nav-container">
-        <nav class="navbar navbar-main" role="navigation">
+    
+      <!-- Header -->
+      <header class="centered">
+        <ul id="logo">
+          <li><a href="index.html">Streamkeys</a></li>
+        </ul>
 
-          <!-- Main nav text -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-content">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a id="navbar-main-brand" class="navbar-brand" href="index.html">Streamkeys</a>
-          </div>
+        <ul>
+          <li><a href="guide.html">Setup Guide</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="sites.html">Supported Sites</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/berrberr/streamkeys" target="_blank">View Source</a></li>
+        </ul>
+      </header>
 
-          <div class="collpase navbar-collapse" id="nav-content">
-            <ul class="nav navbar-nav navbar-links list-inline">
-              <li id="help"><a href="guide.html">Setup Guide</a></li>
-              <li id="faq"><a href="faq.html">FAQ</a></li>
-              <li id="sites"><a href="sites.html">Supported Sites</a></li>
-              <li id="contact"><a href="contact.html">Contact</a></li>
-              <li id="github" class="visible-sm visible-xs"><a href="https://www.github.com/berrberr/streamkeys">View Source</a></li>
-            </ul>
-            <a href="https://www.github.com/berrberr/streamkeys" target="_blank" class="a-override">
-              <button class="btn-main btn-github-header hidden-sm hidden-xs"><i class="fa fa-github-square"></i>&nbsp;&nbsp;View Source</button>
-            </a>
-            <button class="btn-main btn-install-header btn-install-cta hidden-sm hidden-xs" id="btn-install-header"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
-          </div>
-        </nav>
-      </div>
-
-      <div class="main-content">
-        <div class="jumbotron main-jumbo">
-
+      <hr width="100%" color="#e8e8e8" height="2px"/>
+      <div id="wrapper">
+        <div class="centered faq">
   <h1 id="faq">Frequently Asked Questions</h1>
-  <p id="faq-questions">
-    
-      <h2 class="question">What is Streamkeys?</h2>
-      <p class="answer">Streamkeys is a Chrome extension that will allow you to control online media players from anywhere on your computer using hotkeys that you define. Check out the <a href="sites.html">sitelist</a> to see a list of available sites and the <a href="guide.html">guide</a> for setup instructions.</p>
-    
-      <h2 class="question">I just installed the extension and the hotkeys don't work?</h2>
-      <p class="answer">Make sure that you have restarted any music player tabs that you previously had open before you installed the extension. Also make sure that the extension is enabled on the Chrome extension page (chrome://extensions in URL bar)</p>
-    
-      <h2 class="question">Why does Chrome say Streamkeys can "read and change all your data on websites you visit"?</h2>
-      <p class="answer">To make the extension work we need to make use of the <a href="https://developer.chrome.com/extensions/tabs" target="_blank">chrome.tabs API</a> which gives extension's the power to monitor a user's browser behaviour. Streamkeys does not do this! Check out <a href="https://github.com/berrberr/streamkeys" target="_blank">the source code</a> if you are interested.</p>
-    
-      <h2 class="question">Can you add support for a new streaming site?</h2>
-      <p class="answer">Probably! <a href="sites.html">Submit a request on the Supported Sites page.</a></p>
-    
-      <h2 class="question">Can I change the hotkeys?</h2>
-      <p class="answer">Yes. You can change all of the hotkeys on the Chrome extension's page. <a href="guide.html">See the guide here for more information.</a></p>
-    
-      <h2 class="question">Why are my new hotkeys not working?</h2>
-      <p class="answer">It is possible that you have set the hotkeys to ones that are already reserved by Chrome. For example, on Mac the hotkey Command + Y is already reserved by chrome to open the history panel and so it cannot be used by extensions. Make sure that the hotkeys you are trying to use are not already Chrome defaults.</p>
-    
-      <h2 class="question">I am trying to set a new hotkey in the keyboard shortcuts popup. Why will it not let me set a hotkey combination?</h2>
-      <p class="answer">You are probably trying to set a hotkey that is not valid. All hotkey combinations must include either Ctrl (Command on Macs) OR Alt, but NOT both. The list of supported keys are&#58; A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). <a href="https://developer.chrome.com/apps/commands" target="_blank">Read the official Chrome documentation here for more information.</a></p>
-    
-  </p>
+  
+    <h2>What is Streamkeys?</h2>
+    <p>Streamkeys is a Chrome extension that will allow you to control online media players from anywhere on your computer using hotkeys that you define. Check out the <a href="sites.html">sitelist</a> to see a list of available sites and the <a href="guide.html">guide</a> for setup instructions.</p>
+  
+    <h2>I just installed the extension and the hotkeys don't work?</h2>
+    <p>Make sure that you have restarted any music player tabs that you previously had open before you installed the extension. Also make sure that the extension is enabled on the Chrome extension page (chrome://extensions in URL bar)</p>
+  
+    <h2>Why does Chrome say Streamkeys can "read and change all your data on websites you visit"?</h2>
+    <p>To make the extension work we need to make use of the <a href="https://developer.chrome.com/extensions/tabs" target="_blank">chrome.tabs API</a> which gives extension's the power to monitor a user's browser behaviour. Streamkeys does not do this! Check out <a href="https://github.com/berrberr/streamkeys" target="_blank">the source code</a> if you are interested.</p>
+  
+    <h2>Can you add support for a new streaming site?</h2>
+    <p>Probably! <a href="sites.html">Submit a request on the Supported Sites page.</a></p>
+  
+    <h2>Can I change the hotkeys?</h2>
+    <p>Yes. You can change all of the hotkeys on the Chrome extension's page. <a href="guide.html">See the guide here for more information.</a></p>
+  
+    <h2>Why are my new hotkeys not working?</h2>
+    <p>It is possible that you have set the hotkeys to ones that are already reserved by Chrome. For example, on Mac the hotkey Command + Y is already reserved by chrome to open the history panel and so it cannot be used by extensions. Make sure that the hotkeys you are trying to use are not already Chrome defaults.</p>
+  
+    <h2>I am trying to set a new hotkey in the keyboard shortcuts popup. Why will it not let me set a hotkey combination?</h2>
+    <p>You are probably trying to set a hotkey that is not valid. All hotkey combinations must include either Ctrl (Command on Macs) OR Alt, but NOT both. The list of supported keys are&#58; A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). <a href="https://developer.chrome.com/apps/commands" target="_blank">Read the official Chrome documentation here for more information.</a></p>
   
 </div>
 
-      </div>
-
-      <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="requestModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Request A Site</h4>
-      </div>
-      <div id="request-form">
-        <form role="form">
-          <div class="modal-body">
-            
-                <div id="site_url_container" class="form-group"><input type="text" class="form-control" placeholder="Site URL(s)" id="site_url" data-toggle="clear"></div>
-                <div class="form-group"><input type="text" class="form-control" placeholder="Your Email (optional)" id="email"></div>
-                <div class="form-group"><textarea class="form-control form-textarea" name="comments" id="comments" rows="4" placeholder="Additional Comments (optional)"></textarea></div>
-                <input type="hidden" id="timestamp" value="">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-main" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-main" id="contact_button">Request</button>
-          </div>
-        </form>
-      </div>
-      <div id="request-success" style="display:none">
-        <div class="modal-body">
-          <h1>Message Received</h1>
-          <h3>Thanks for your interest, your request has been sent! <a href="contact.html">Contact me</a> with any further questions.</h3>
-        </div>
-      </div>
+<hr width="100%" color="#e8e8e8" height="2px"/>
+<!-- Div for requesting sites -->
+<div class="blue-banner">
+  <div class="centered" id="request-container">      
+    <div id="request-form-text" class="main-container-left">
+      <h1>Is your favorite site still missing?</h1>
+      <h3>Get in touch and we'll add it.</h3>
     </div>
+    
+    <div class="main-container-right request-form" id="request-form">
+      <form role="form">
+        <div>
+         <input type="text" id="site_url" placeholder="Site URL(s)">
+        </div>
+        
+        <div>
+          <input type="text" id="email" placeholder="Your Email (optional)">
+        </div>
+        
+        <div>
+          <textarea name="comments" id="comments" placeholder="Additional Comments (optional)"></textarea>
+        </div>
+        <input type="hidden" id="timestamp" value="">
+        <button id="site-submit-button" type="submit">Please Add My Site!</button>
+       </form>
+    </div>
+  </div>
+  <div class="centered request-success" id="request-success">
+    <h1>Message Received</h1>
+    <p>Thanks for your interest, your request has been sent! <a href="contact.html">Contact me</a> with any further questions.</p>
   </div>
 </div>
 
 
-    </div>
+      </div>
 
-    <footer id="footer">
-      <div class="container">
-        <div class="row footer-row">
-          <div class="col-xs-12">
-            <a href="index.html">Streamkeys</a>&nbsp;|&nbsp;
-            <a href="guide.html">Setup Guide</a>&nbsp;|&nbsp;
-            <a href="faq.html">FAQ</a>&nbsp;|&nbsp;
-            <a href="sites.html">Supported Sites</a>&nbsp;|&nbsp;
-            <a href="changelog.html">Changelog</a>&nbsp;|&nbsp;
-            <a href="contact.html">Contact</a><br><br>
+      <!-- Footer -->
+      <hr width="100%" color="#e8e8e8" height="2px"/>
+      <footer class="centered">
+          <ul>
+            <li><a href="index.html">Streamkeys</a></li>
+            <li><a href="guide.html">Setup Guide</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="sites.html">Supported Sites</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
 
-            <a href="https://github.com/berrberr/gshotkeys" target="_blank"><i class="fa fa-github-square"></i> View Source</a>&nbsp;|&nbsp;
-            <a href="https://github.com/berrberr/gshotkeys/issues" target="_blank"><i class="fa fa-github-square"></i> Issue Tracker</a>&nbsp;|&nbsp;
-            <a href="mailto:alex@aegabriel.com">alex@aegabriel.com</a>
+          <ul>
+            <li><a href="https://github.com/berrberr/gshotkeys" target="_blank">View Source</a></li>
+            <li><a href="https://github.com/berrberr/gshotkeys/issues" target="_blank">Issue Tracker</a></li>
+            <li><a href="mailto:alex@aegabriel.com">alex@aegabriel.com</a></li>
+            <li><a href="https://github.com/lalwanivikas" target="_blank">Design By Vikas</a></li>
+          </ul>
+      </footer>
+      
+      <script src="https://s3.amazonaws.com/streamkeys/main-0fa2aa75f0542c59c0435b32483beac1.js"></script>
 
-          </div>
-        </div>
-      </div> <!-- /container -->
-    </footer>
+      <!-- Walkway Animation -->
+      <script>
+        var svg2 = new Walkway({
+              selector: '#Layer_1',
+              duration: 1000,
+              // linear easing
+              easing: 'linear'
+            });
 
-    <script src="https://s3.amazonaws.com/streamkeys/main-1498e002eac6d1786d3b02a4042f0dd4.js"></script>
+            svg2.draw(function() {
+              console.log('Finished test shape!');
+            });
+      </script>
 
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      <!-- Google Analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-45141647-1', 'streamkeys.com');
-      ga('send', 'pageview');
-    </script>
+        ga('create', 'UA-45141647-1', 'streamkeys.com');
+        ga('send', 'pageview');
+      </script>
     </body>
 </html>

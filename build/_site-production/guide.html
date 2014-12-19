@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-8db70704f74bd8da0400ac870952369a.css">
+      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-a1e8008476a81cff44fceb8e81771731.css">
       <link rel="chrome-webstore-item"
           href="https://chrome.google.com/webstore/detail/ekpipjofdicppbepocohdlgenahaneen">
 
@@ -26,172 +26,178 @@
       <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     </head>
     <body>
-    <div id="wrapper">
-      <div class="container nav-container">
-        <nav class="navbar navbar-main" role="navigation">
+    
+      <!-- Header -->
+      <header class="centered">
+        <ul id="logo">
+          <li><a href="index.html">Streamkeys</a></li>
+        </ul>
 
-          <!-- Main nav text -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-content">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a id="navbar-main-brand" class="navbar-brand" href="index.html">Streamkeys</a>
-          </div>
+        <ul>
+          <li><a href="guide.html">Setup Guide</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="sites.html">Supported Sites</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/berrberr/streamkeys" target="_blank">View Source</a></li>
+        </ul>
+      </header>
 
-          <div class="collpase navbar-collapse" id="nav-content">
-            <ul class="nav navbar-nav navbar-links list-inline">
-              <li id="help"><a href="guide.html">Setup Guide</a></li>
-              <li id="faq"><a href="faq.html">FAQ</a></li>
-              <li id="sites"><a href="sites.html">Supported Sites</a></li>
-              <li id="contact"><a href="contact.html">Contact</a></li>
-              <li id="github" class="visible-sm visible-xs"><a href="https://www.github.com/berrberr/streamkeys">View Source</a></li>
-            </ul>
-            <a href="https://www.github.com/berrberr/streamkeys" target="_blank" class="a-override">
-              <button class="btn-main btn-github-header hidden-sm hidden-xs"><i class="fa fa-github-square"></i>&nbsp;&nbsp;View Source</button>
-            </a>
-            <button class="btn-main btn-install-header btn-install-cta hidden-sm hidden-xs" id="btn-install-header"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
-          </div>
-        </nav>
-      </div>
+      <hr width="100%" color="#e8e8e8" height="2px"/>
+      <div id="wrapper">
+        <!-- Installed/Upated alerts -->
+<div id="version-container" style="display: none;" class="blue-banner version-banner">
+  <div class="centered">
+    <div id="installed" style="display: none;" class="new-version-alert">
+      <h1>Streamkeys has been installed!</h1>
+      <h2>Please refresh any currently open media player tabs to connect them to Streamkeys. Read the section below for a quick start guide.</h2>
+      <h2>Note: This page will only be loaded once on update or install.</h2>
+    </div>
 
-      <div class="main-content">
-        <div class="jumbotron main-jumbo">
-
-  <div id="installed" style="display: none;" class="new-version-alert">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <h1>Streamkeys has been installed!</h1>
-    <h2>Please refresh any currently open media player tabs to connect them to Streamkeys. Read the section below for a quick start guide.</h2>
-    <h2>Note: This page will only be loaded once on update or install.</h2>
-  </div>
-
-  <div id="updated" style="display: none;" class="new-version-alert">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <h1>Streamkeys has been updated.</h1>
-    <h2>New Version:</h2>
-    <ul>
-      <li>
-        <h2>Due to recent Chrome changes you might have to re-enable the extension after update! Enter chrome://extensions in the URL bar to do so.</h2>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <h2>v1.4.2</h2>
-        <p>Fixed bugs with Amazon (thanks <a href="https://github.com/Tito1337" target="_blank">@Tito1337</a>!) and Bop.fm<br> Added support for Beats Music (thanks <a href="https://github.com/joero4" target="_blank">@joero4</a>!) and RadioSwissJazz.ch
+    <div id="updated" style="display: none;" class="new-version-alert">
+      <h1>Streamkeys has been updated.</h1>
+      <ul>
+        <li>
+          <h2>Due to recent Chrome changes you might have to re-enable the extension after update! Enter chrome://extensions in the URL bar to do so.</h2>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <h2>v1.4.2</h2>
+          <p>Fixed bugs with Amazon (thanks <a href="https://github.com/Tito1337" target="_blank">@Tito1337</a>!) and Bop.fm<br> Added support for Beats Music (thanks <a href="https://github.com/joero4" target="_blank">@joero4</a>!) and RadioSwissJazz.ch
 </p>
-      </li>
-    </ul>
-    <h2>Note: This page will only be loaded once on update.</h2>
-  </div>
-
-  <h1 id="configuration">Configuration</h1>
-  <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there by either entering "chrome://extensions" in the URL bar or from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing. In this menu you can also set the hotkeys to be global across either Chrome or your system.</p>
-  <div class="guide-image-row">
-    <div class="guide-thumbnail">
-      <a href="https://s3.amazonaws.com/streamkeys/step1-812b0f4b91d7b3865540f1b16ade3dcd.png" class="thumbnail" data-toggle="lightbox" data-title="Extensions Page" data-footer="<b>Step 1.</b> Go to Chrome extensions page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step1-812b0f4b91d7b3865540f1b16ade3dcd.png" alt="Step 1"></a>
-      <div class="caption text-center">
-        <h4>Go to extensions page</h4>
-      </div>
-    </div>
-    <div class="guide-thumbnail">
-      <a href="https://s3.amazonaws.com/streamkeys/step2-cca99d4f15e2c61745a8b15a9175d7f9.png" class="thumbnail" data-toggle="lightbox" data-title="Keyboard Shortcuts" data-footer="<b>Step 2.</b> Click keyboard shortcuts at bottom of extension page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step2-cca99d4f15e2c61745a8b15a9175d7f9.png" alt="Step 2"></a>
-      <div class="caption text-center">
-        <h4>Click keyboard shortcuts</h4>
-      </div>
-    </div>
-    <div class="guide-thumbnail">
-      <a href="https://s3.amazonaws.com/streamkeys/step3-294237f204d142e212eaf053be742ac3.png" class="thumbnail" data-toggle="lightbox" data-title="Shortcuts Popup" data-footer="<b>Step 3.</b> Set new shortcuts" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step3-294237f204d142e212eaf053be742ac3.png" alt="Step 3"></a>
-      <div class="caption text-center">
-        <h4>Set new shortcuts</h4>
-      </div>
-    </div>
-  </div>
-  <h1 id="popup">Popup Window</h1>
-  <p>Once Streamkeys is installed you will see an "sk" icon in your browser window next to the URL bar (and any other extension icons that you may have installed). Clicking on this icon will open up the extension popup window. The extension icon color will be green if the tab you are on is a music site and Streamkeys is connected to it. The extension icon color will be grey if the tab you are on is either not a supported music site or a music site that is currently disabled. From the popup window inside a music player tab you can enable and disable support for either the current music site (across all tabs) or just the current tab.</p>
-  <h1 id="options">Options</h1>
-  <p>On the options page you can enable/disable Streamkeys for any site. You can get to the options page from either the Chrome extensions tab (chrome://extensions) or from the Streamkeys popup window. This page is useful if you have multiple different media sites open, and want Streamkeys to ignore any number of them.</p>
-  <h1 id="remove">Remove</h1>
-  <p>To remove Streamkeys (or any other Chrome extension) go to the Chrome extensions tab (chrome://extensions) and click the trash icon next to the Streamkeys listing.</p>
-  <h1 id="hotkeys">Default Hotkeys</h1>
-  <div>
-  <p><b>Play/Pause: </b>Media Key Play</p>
-  <p><b>Next Song: </b>Media Key Next</p>
-  <p><b>Previous Song: </b>Media Key Previous</p>
-  <p><b>Mute: </b>Ctrl+Shift+2</p>
-  </div>
-
-</div>
-
-      </div>
-
-      <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="requestModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Request A Site</h4>
-      </div>
-      <div id="request-form">
-        <form role="form">
-          <div class="modal-body">
-            
-                <div id="site_url_container" class="form-group"><input type="text" class="form-control" placeholder="Site URL(s)" id="site_url" data-toggle="clear"></div>
-                <div class="form-group"><input type="text" class="form-control" placeholder="Your Email (optional)" id="email"></div>
-                <div class="form-group"><textarea class="form-control form-textarea" name="comments" id="comments" rows="4" placeholder="Additional Comments (optional)"></textarea></div>
-                <input type="hidden" id="timestamp" value="">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-main" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-main" id="contact_button">Request</button>
-          </div>
-        </form>
-      </div>
-      <div id="request-success" style="display:none">
-        <div class="modal-body">
-          <h1>Message Received</h1>
-          <h3>Thanks for your interest, your request has been sent! <a href="contact.html">Contact me</a> with any further questions.</h3>
-        </div>
-      </div>
+        </li>
+      </ul>
+      <h2>Note: This page will only be loaded once on update.</h2>
     </div>
   </div>
 </div>
 
+<!-- Main content -->
+<div class="centered guide">
+  <h1>Setup Guide</h1> 
+  
+  <h2>Configuration</h2>
+    <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there by either entering "chrome://extensions" in the URL bar or from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing. In this menu you can also set the hotkeys to be global across either Chrome or your system.</p>
+  
+    <div>
+
+      <div class="image-container">
+        <a href="https://s3.amazonaws.com/streamkeys/step1-812b0f4b91d7b3865540f1b16ade3dcd.png" class="thumbnail" data-toggle="lightbox" data-title="Extensions Page" data-footer="<b>Step 1.</b> Go to Chrome extensions page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step1-812b0f4b91d7b3865540f1b16ade3dcd.png" alt="Step 1"></a>
+        <p>1. Go to extensions page.</p>
+      </div>
+
+      <div class="image-container">
+        <a href="https://s3.amazonaws.com/streamkeys/step2-cca99d4f15e2c61745a8b15a9175d7f9.png" class="thumbnail" data-toggle="lightbox" data-title="Keyboard Shortcuts" data-footer="<b>Step 2.</b> Click keyboard shortcuts at bottom of extension page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step2-cca99d4f15e2c61745a8b15a9175d7f9.png" alt="Step 2"></a>
+        <p>2. Click keyboard shortcuts.</p>
+      </div>
+
+      <div class="image-container">
+        <a href="https://s3.amazonaws.com/streamkeys/step3-294237f204d142e212eaf053be742ac3.png" class="thumbnail" data-toggle="lightbox" data-title="Shortcuts Popup" data-footer="<b>Step 3.</b> Set new shortcuts" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step3-294237f204d142e212eaf053be742ac3.png" alt="Step 3"></a>
+        <p>3. Set new shortcuts.</p>
+      </div>
 
     </div>
 
-    <footer id="footer">
-      <div class="container">
-        <div class="row footer-row">
-          <div class="col-xs-12">
-            <a href="index.html">Streamkeys</a>&nbsp;|&nbsp;
-            <a href="guide.html">Setup Guide</a>&nbsp;|&nbsp;
-            <a href="faq.html">FAQ</a>&nbsp;|&nbsp;
-            <a href="sites.html">Supported Sites</a>&nbsp;|&nbsp;
-            <a href="changelog.html">Changelog</a>&nbsp;|&nbsp;
-            <a href="contact.html">Contact</a><br><br>
+  <h2>Popup Window</h2>
+    <p>Once Streamkeys is installed you will see an "sk" icon in your browser window next to the URL bar (and any other extension icons that you may have installed). Clicking on this icon will open up the extension popup window. The extension icon color will be green if the tab you are on is a music site and Streamkeys is connected to it. The extension icon color will be grey if the tab you are on is either not a supported music site or a music site that is currently disabled. From the popup window inside a music player tab you can enable and disable support for either the current music site (across all tabs) or just the current tab.</p>
 
-            <a href="https://github.com/berrberr/gshotkeys" target="_blank"><i class="fa fa-github-square"></i> View Source</a>&nbsp;|&nbsp;
-            <a href="https://github.com/berrberr/gshotkeys/issues" target="_blank"><i class="fa fa-github-square"></i> Issue Tracker</a>&nbsp;|&nbsp;
-            <a href="mailto:alex@aegabriel.com">alex@aegabriel.com</a>
+  <h2>Options</h2>
+    <p>On the options page you can enable/disable Streamkeys for any site. You can get to the options page from either the Chrome extensions tab (chrome://extensions) or from the Streamkeys popup window. This page is useful if you have multiple different media sites open, and want Streamkeys to ignore any number of them.</p>
 
-          </div>
+  <h2>Remove</h2>
+    <p>To remove Streamkeys (or any other Chrome extension) go to the Chrome extensions tab (chrome://extensions) and click the trash icon next to the Streamkeys listing.</p>
+
+  <h2>Default Hotkeys</h2>
+  <ul id="hotkeys">
+    <li><p><b>Play/Pause: </b>Media Key Play</p></li>
+    <li><p><b>Next Song: </b>Media Key Next</p></li>
+    <li><p><b>Previous Song: </b>Media Key Previous</p></li>
+    <li><p><b>Mute: </b>Ctrl+Shift+2</p></li>
+  </ul>
+
+</div>
+
+<hr width="100%" color="#e8e8e8" height="2px"/>
+<!-- Div for requesting sites -->
+<div class="blue-banner">
+  <div class="centered" id="request-container">      
+    <div id="request-form-text" class="main-container-left">
+      <h1>Is your favorite site still missing?</h1>
+      <h3>Get in touch and we'll add it.</h3>
+    </div>
+    
+    <div class="main-container-right request-form" id="request-form">
+      <form role="form">
+        <div>
+         <input type="text" id="site_url" placeholder="Site URL(s)">
         </div>
-      </div> <!-- /container -->
-    </footer>
+        
+        <div>
+          <input type="text" id="email" placeholder="Your Email (optional)">
+        </div>
+        
+        <div>
+          <textarea name="comments" id="comments" placeholder="Additional Comments (optional)"></textarea>
+        </div>
+        <input type="hidden" id="timestamp" value="">
+        <button id="site-submit-button" type="submit">Please Add My Site!</button>
+       </form>
+    </div>
+  </div>
+  <div class="centered request-success" id="request-success">
+    <h1>Message Received</h1>
+    <p>Thanks for your interest, your request has been sent! <a href="contact.html">Contact me</a> with any further questions.</p>
+  </div>
+</div>
 
-    <script src="https://s3.amazonaws.com/streamkeys/main-1498e002eac6d1786d3b02a4042f0dd4.js"></script>
 
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      </div>
 
-      ga('create', 'UA-45141647-1', 'streamkeys.com');
-      ga('send', 'pageview');
-    </script>
+      <!-- Footer -->
+      <hr width="100%" color="#e8e8e8" height="2px"/>
+      <footer class="centered">
+          <ul>
+            <li><a href="index.html">Streamkeys</a></li>
+            <li><a href="guide.html">Setup Guide</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="sites.html">Supported Sites</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="https://github.com/berrberr/gshotkeys" target="_blank">View Source</a></li>
+            <li><a href="https://github.com/berrberr/gshotkeys/issues" target="_blank">Issue Tracker</a></li>
+            <li><a href="mailto:alex@aegabriel.com">alex@aegabriel.com</a></li>
+            <li><a href="https://github.com/lalwanivikas" target="_blank">Design By Vikas</a></li>
+          </ul>
+      </footer>
+      
+      <script src="https://s3.amazonaws.com/streamkeys/main-0fa2aa75f0542c59c0435b32483beac1.js"></script>
+
+      <!-- Walkway Animation -->
+      <script>
+        var svg2 = new Walkway({
+              selector: '#Layer_1',
+              duration: 1000,
+              // linear easing
+              easing: 'linear'
+            });
+
+            svg2.draw(function() {
+              console.log('Finished test shape!');
+            });
+      </script>
+
+      <!-- Google Analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-45141647-1', 'streamkeys.com');
+        ga('send', 'pageview');
+      </script>
     </body>
 </html>

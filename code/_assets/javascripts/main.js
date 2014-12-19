@@ -12,45 +12,38 @@ var installURL = "http://www.streamkeys.com/guide.html?installed=true";
 
 //Lightbox setup
 $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
+  event.preventDefault();
+  $(this).ekkoLightbox();
 }); 
 
 //Install button states
 var InstallState = (function() {
 
   var installed = false,
-      buttons = $(".btn-install-cta"),
-      unsupported = $("#unsupported-browser");
+      button = "#download-button",
+      unsupported = $("#unsupported-browser"),
+      error_message = ".install-error";
 
   var setButtons = function(text) {
-    buttons.each(function (index, el) {
-      el.innerHTML = text;
-    });
+    $(button).html(text);
   };
 
   var setButtonsAttribute = function(key, val, type) {
-    buttons.each(function (index, el) {
-      if(type === "attr") $(el).attr(key, val);
-      if(type === "css")  $(el).css(key, val);
-    });
+    if(type === "attr") $(button).attr(key, val);
+    if(type === "css")  $(button).css(key, val);
   };
 
   var disableButtons = function() {
-    buttons.each(function (index, el) {
-      $(el).attr("disabled", "disabled");
-    });
+    $(button).attr("disabled", "disabled");
   };
 
   return {
     setDefault: function() {
       setButtons("<i class=\"fa fa-download\"></i>&nbsp;&nbsp;Download for Chrome");
-      $("#btn-install-header").show();
     },
     setInstalled: function(fromExtension) {
       installed = true;
       disableButtons();
-      if(fromExtension) $("#btn-install-header").hide();
       setButtons("<i class=\"fa fa-check\"></i>&nbsp;&nbsp;Installed!");
     },
     setInstalling: function() {
@@ -59,11 +52,9 @@ var InstallState = (function() {
     },
     setError: function() {
       disableButtons();
-      $(".btn-install-cta").each(function (index, el) {
-        $(el)
-          .removeClass("btn-install-homepage")
-          .html("<i class=\"fa fa-exclamation\"></i>&nbsp;&nbsp;Install failed. Refresh to try again.");
-      })
+      $(button).removeClass("btn-install-homepage")
+            .html("<i class=\"fa fa-exclamation\"></i>&nbsp;&nbsp;Install failed. Refresh page.");
+      $(error_message).toggle();
     },
     setCustom: function(msg) {
       setButtons(msg);
@@ -109,16 +100,17 @@ document.addEventListener("streamkeys-installed", function(e) {
   sessionStorage.setItem("sk-installed", true);
 })
 
-//Install button click handler
-$(document).on("click", ".btn-install-cta", function(e) {
-  onClickInstall();
-});
-
 //Parse query string and toggle any hidden divs
 var toggleDivs = function() {
   var pageName = window.location.href.toString().split(window.location.host)[1].split('?')[0];
-  if(getParameterByName("installed")) $("#installed").toggle();
-  if(getParameterByName("updated")) $("#updated").toggle();
+  if(getParameterByName("installed")) {
+    $("#version-container").toggle();
+    $("#installed").toggle();
+  }
+  if(getParameterByName("updated")) {
+    $("#version-container").toggle();
+    $("#updated").toggle();
+  }
 }
 
 //Post requested site to contact backend
@@ -132,21 +124,10 @@ var postMessage = function(message) {
     .always(function(jqXHR, textStatus) {
       console.log( "textStatus: ", textStatus );
       console.log( "response: ", jqXHR);
-      $("#request-form").hide();
+      $("#request-container").hide();
       $("#request-success").show();
     });
 };
-
-$("#requestModal").on("show.bs.modal", function(e) {
-  //Cleanup previous states
-  $("#request-form").show();
-  $("#request-success").hide();
-  $("#site_url_container").removeClass("has-error");
-
-  url: $("#site_url").val("");
-  email: $("#email").val("");
-  message: $("#comments").val("");
-});
 
 $("[data-toggle=clear]").click(function(e) {
   e.target.value = "";
@@ -156,7 +137,12 @@ $(function() {
 
   toggleDivs();
 
-  $("#contact_button").click(function() {
+  //Install button click handler
+  $("#download-button").click(function() {
+    onClickInstall();
+  });
+
+  $("#site-submit-button").click(function() {
     event.preventDefault();
 
     var data = {
@@ -166,14 +152,15 @@ $(function() {
       timestamp: $("#timestamp").val()
     };
     if(data.url === "") {
-      $("#site_url_container").addClass("has-error");
-      $("#site_url").val("Please enter a URL");
+      $("#site_url").addClass("input-error");
+      $("#site_url").attr("placeholder", "Please enter a URL");
     } else {
       postMessage(data);
     }
   });
 
   if($("#timestamp")) $("#timestamp").val(Date.now());
+
+  checkInstalled();
 });
 
-checkInstalled();

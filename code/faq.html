@@ -18,14 +18,13 @@ questions:
     answer: You are probably trying to set a hotkey that is not valid. All hotkey combinations must include either Ctrl (Command on Macs) OR Alt, but NOT both. The list of supported keys are&#58; A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). <a href="https://developer.chrome.com/apps/commands" target="_blank">Read the official Chrome documentation here for more information.</a>
 ---
 
-<div class="jumbotron main-jumbo">
-
+<div class="centered faq">
   <h1 id="faq">Frequently Asked Questions</h1>
-  <p id="faq-questions">
-    {% for q in page.questions %}
-      <h2 class="question">{{ q.question }}</h2>
-      <p class="answer">{{ q.answer | liquify }}</p>
-    {% endfor %}
-  </p>
-  
+  {% for q in page.questions %}
+    <h2>{{ q.question }}</h2>
+    <p>{{ q.answer | liquify }}</p>
+  {% endfor %}
 </div>
+
+<hr width="100%" color="#e8e8e8" height="2px"/>
+{% include request_form.html %}

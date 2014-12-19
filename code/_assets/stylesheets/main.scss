@@ -3,242 +3,498 @@
 
 @import "vendor/bootstrap";
 
+$primary: #77A3C7;
+$primary-faded: #5B9B9A;
+$footer-height: 140px;
+
 @mixin center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-$primary: #036564;
-$primary-faded: #5B9B9A;
-$footer-height: 140px;
+/* General rules to modify browser default styles */
 
-html, body {
-  background-color: #FFFFFF;
-  height: 100%;
-}
-
-a, a:hover {
-  font-weight: bold;
-  text-decoration: none;
-  color: #000;
-}
-
-.a-override, .a-override:hover {
-  font-weight: normal;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-  padding-bottom: 2px;
+  margin: 15px 0 15px;
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-//** Navbar **//
-.nav-container {
+h2 {
+  font-size: 25px;
+  font-weight: 200;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.navbar-header {
-  height: 50px;
+h3 {
+  margin: 15px 0 40px;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.navbar-main {
-  margin-bottom: 0;
- .navbar-brand {
-    color: $primary;
-    &:hover {
-      color: #033649;
-    }
-  }
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: #8B8989;
 }
 
-.active-brand {
-  color: $primary !important;
+a:visited {
+  color: #8B8989;
 }
 
-.brand-col {
+hr {
+  padding: 0;
+  margin: 0;
+  height: 2px;
+}
+
+/* Class to keep content centered and within 960px */
+
+.centered {
+  margin: 0px auto;
+  width: 980px;
+  min-width: 980px;
+  padding: 0 10px 0 10px;
+}
+
+
+/* Styles for header elements */
+
+header ul {
+  margin: 25px 0px 20px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1.5px;
+  list-style-type: none;
   text-align: right;
 }
 
-.navbar-nav > .active > a {
-  color: #D9A626;
+header li {
+  display: inline;
+  padding-left: 15px;
 }
 
-.navbar-links {
-  padding-left: 40px;
-  li > a {
-    margin-right: 20px;
-    padding: 15px 0 0 0;
-    color: $primary;
-    &:hover {
-      background-color: #FFFFFF;
-    }
-  }
+header li a:hover {
+  border-top: 2px solid #3A539B;
+  padding-top: 8px;
 }
 
-@media (max-width: $grid-float-breakpoint - 1) {
-  .navbar-links {
-    padding: 0 0 10px 0;
-    li {
-      padding: 0;
-    }
-  }
+#logo li{
+  display: inline;
+  float: left;
+  font-size: 22px;
+  font-weight: 800;
 }
 
-.navbar-nav {
-  margin: 0;
+#logo li a {
+  color: #2574A9;
 }
 
-.icon-bar {
-  background-color: black;
+#logo li a:hover {
+  border-top: 2px solid #3A539B;
+  border-bottom: 2px solid #3A539B;
+  padding: 8px 0;
+  transition: all .25s linear;
 }
 
-//** Main content wrapper **//
-#wrapper {
-  min-height: calc(100vh - #{$footer-height});
-  margin-bottom: $footer-height;
+/* Class to apply blue background to div elements */
+
+.blue-banner {
+  background-color: #2880C7;
+  padding: 60px 0 70px 0;
+  min-width: 1000px;
 }
 
-.main-jumbo {
-  @extend .jumbotron;
-  background-color: #FFF;
-  border-top: 1px solid;
-  border-color: #000;
+.blue-banner-svg {
+  background-color: #2880C7;
+  padding: 0 0 25px 0;
+  min-width: 1000px;
 }
 
-.main-content {
-  margin-bottom: 20px;
-  min-height: 100%;
+/* Styles for two column content and main/hero content of home page */
+
+.main-container-left {
+  width: 48%;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 0 0 20px;
 }
 
+.main-container-right{
+  padding: 0 0 0 10px;
+  width: 48%;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #eee;
+}
 
-//** Footer **//
-#footer {
-  height: $footer-height;
-  margin-top: -$footer-height;
+.main-container-left h1, h3{  
+  color: #eee;
+}
+
+#download-button {
+  padding: 15px;
+  border: 1px solid #EEE;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #EEE;
+  background-color: #19486A;
+  border-radius: 5px;
   width: 100%;
-  background-color: $primary;
-  color: #FFF;
-
-  .footer-row {
-    margin-top: 40px;
-    div {
-      text-align: center;
-      a {
-        color: #FFF;
-        &:hover {
-          text-decoration: none;
-        }
-      }
-    }
-  }
 }
 
-//** Request a site modal **//
-#request-success {
-  h1 {
-    margin-top: 0;
-  }
+#download-button:hover, #download-button:disabled {
+  background-color: #EEE;
+  color: #19486A;
+  transition-duration: 0.4s;
 }
 
-//** Buttons **//
-.btn-main, .btn-main[disabled] {
-  @include button-variant(#FFF, $primary, #000);
-  border-radius: 4px;
-  border: 1px solid #000;
-}
-
-.btn-install-lg {
-  margin-top: 10px;
-  padding: 15px 25px 15px 25px;
-  font-size: 1.2em;
-}
-
-.btn-install-homepage {
-  width: 330px;
-}
-
-.btn-install-header {
-  @extend .pull-right;
-  width: 190px;
-  margin: 12px 5px 12px 0;
-  padding: 5px 10px 5px 10px;
-}
-
-.btn-github-header {
-  @extend .pull-right;
-  width: 140px;
-  margin: 12px 5px 12px 0;
-  padding: 5px 10px 5px 10px;
-}
-
-#btn-install-header {
+.install-error {
+  margin-top: 40px;
+  padding: 15px;
+  width: 100%;
+  border: 1px solid red;
+  border-radius: 5px;
+  color: #EEE;
+  background-color: #19486A;
+  font-size: 24px;
+  font-weight: 100;
   display: none;
 }
 
-.form-textarea {
-  resize: none;
+object {
   width: 100%;
+  display: block;
+  height: auto;
+  position: relative;
+  padding-top: 100%;
 }
 
-//** Homepage **//
-.logo-image {
-  width: 48px;
-  height: 48px;
+svg {
+  width: 100%;
+  height: 475px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.icon-row {
-  margin: 5px 14% 25px 14%;
-}
-@media (max-width: $screen-sm-min) {
-  .icon-row {
-    margin-left: 0;
-    margin-right: 0;
-  }
+/* Styles for list of sites */
+
+.site-list {
+  margin-bottom: 50px;
 }
 
-.icon-image {
-  width: 96px;
-  height: 96px;
-  border-radius: 5px;
-  margin-bottom: 5px;
-}
-
-#homepage-top-row {
-  @include make-row();
-  #homepage-top-text {
-    @include make-md-column-offset(2);
-    @include make-md-column(4);
-    @include make-sm-column(6);
-  }
-  #homepage-top-image {
-    @include make-md-column(4);
-    @include make-sm-column(6);
-  }
-}
-
-#supported-sites {
+.site-list h1{
+  margin: 50px 0;
   text-align: center;
+  font-weight: 200;
+}
+
+.site-list h2{
+  margin: 50px 0 50px 0;
+  padding-right: 350px;
+  text-align: right;
+}
+
+.site-list h2 a:hover{
+  border-bottom: 2px dotted #000;
+}
+
+td {
+  width: 192px;
+  height: 200px;
+  text-align: center;
+}
+td img {
+  border: 2px solid transparent;
+  border-radius: 25px;
+}
+
+td p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  padding-top: 10px;
+  color: #8B8989;
+}
+
+.site-list a:hover{
+  -webkit-filter: grayscale(1);
+  transition-duration: 0.25s;
+}
+
+
+/* Styles for request form */
+
+.request-form input {
+  height: 40px;
+  width: 400px;
+  margin: 10px 0;
+  padding-left: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  outline: none;
+  color: #000;
+}
+
+.request-form input.input-error {
+  border: 2px solid red;
+}
+
+.request-form textarea{
+  height: 100px;
+  width: 400px;
+  margin: 10px 0;
+  padding: 10px 0 0 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  border: 2px solid #FFF;
+  border-radius: 5px;
+  outline: none;
+}
+
+.request-form input:focus, textarea:focus {
+  box-shadow: 0 0 10px #22313F;
+}
+
+#site-submit-button {
+  margin: 20px 0 0 0;
+  padding: 15px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: #eee;
+  background-color: #19486a;
+  border-radius: 5px;
+}
+
+#site-submit-button:hover {
+  background-color: #eee;
+  color: #19486a;
+  transition-duration: 0.4s;
+}
+
+.request-success {
+  display: none;
+  font-size: 26px;
+  font-weight: 150;
+  letter-spacing: 2px;
+  padding: 25px;
+  color: #FFFFFF;
   h1 {
-    margin: 0;
+    font-weight: 200;
   }
-  p {
-    margin-bottom: 20px;
-  }
-  button {
-    padding-right: 35px;
-    padding-left: 35px;
-  }
-  a, a:hover {
-    color: #000;
-    text-decoration: none;
+  a {
+    color: #FFFFFF;
+    text-decoration: underline;
   }
 }
 
-//** Setup guide page **//
+/* Styles for footer */
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer ul {
+  margin: 50px 0;
+}
+
+footer li {
+  display: inline;
+  list-style-type: none;
+  padding: 20px 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #000;
+}
+
+footer a:hover {
+  padding-bottom: 2px;
+  border-bottom: 1px dotted #8B8989;
+}
+
+
+/*********************************
+**********************************
+********* FAQ page ***************
+********************************** */
+
+
+.faq {
+  margin-bottom: 50px;
+}
+
+.faq h1 {
+  font-weight: 200;
+}
+
+.faq h1, h2{
+  padding: 25px 250px 10px 10px;
+}
+
+.faq p {
+  padding: 0 20px 10px 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+
+/*********************************
+**********************************
+********* Contact Page ***********
+********************************** */
+
+
+.contact {
+  margin-bottom: 50px;
+}
+
+.contact h1{
+  padding: 25px 250px 10px 10px;
+  font-weight: 200;
+
+}
+
+.contact p {
+  padding: 0 20px 10px 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+
+/*********************************
+**********************************
+********* Guide Page *************
+********************************** */
+
+.guide h1 {
+  font-weight: 200;
+}
+
+.gudie ul li{
+  list-style-type: none; 
+}
+
+.guide h1, h2{
+  padding: 25px 250px 10px 10px;
+}
+
+.guide p, h4 {
+  padding: 0 20px 10px 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.guide h4 {
+  font-weight: bold;
+}
+
+#hotkeys{
+  margin-bottom: 50px;
+}
+
+#hotkeys li{
+  list-style-type: none;
+}
+
+.image-container {
+  display: inline-block;
+  width: 30%;
+  margin: 20px 0 20px 20px;
+  text-align: center;
+  vertical-align: bottom;
+  border-radius: 5px;
+  border: 5px solid transparent;
+}
+
+.image-container img {
+  padding: 10px 10px;
+  width: 90%;
+  height: 220px;
+}
+
+.image-container hover {
+  border: 5px solid #2880C7;
+}
+
+.image-container p{
+  padding: 10px 0;
+  width: 90%;
+  height: auto;
+}
+
+/*********************************
+**********************************
+********* Changelog page *************
+********************************** */
+
+.list-group h1 {
+  font-weight: 200;
+}
+
+.list-group {
+  list-style-type: none;
+}
+
+.list-group h3 {
+  padding-left: 20px;
+  color: #000;
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.list-group p {
+  padding-left: 30px;
+}
+
+.version-banner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*********************************
+**********************************
+********* New version box ********
+********************************** */
 .new-version-alert {
-  @extend .alert, .alert-danger, .alert-dismissable;
-  margin-top: -20px; //Removes some of the padding from main-jumbo;
-  background-color: $primary;
-  color: #FFFFFF;
+  color: #FFF;
   border: none;
 
   a, a:hover {
@@ -249,88 +505,27 @@ h1 {
   h1 {
     font-size: 3em;
     margin-top: 0;
+    font-weight: bold;
   }
   h2 {
     font-size: 2em;
+    padding: 5px 0 5px 0;
   }
 
   ul {
     @extend .list-group;
     li {
       @extend .list-group-item;
-      background-color: $primary-faded;
-      border-color: $primary-faded;
+      background-color: $primary;
       font-size: 1.2em;
       h2 {
         margin-top: 5px;
       }
-    }
-  }
-}
-
-.guide-image-row {
-  @include make-row();
-
-  .guide-thumbnail {
-    @include make-sm-column(4);
-    img {
-      height: 220px;
-      max-width: 100%;
-      overflow: hidden;
-    }
-  }
-}
-
-.hotkey-row {
-  @include make-row();
-  div {
-    @include make-xs-column(6);
-    @include make-sm-column(3);
-  }
-  .first {
-    @include make-sm-column-offset(3);
-  }
-}
-
-//** Supported Sites page **//
-#sitelist {
-  .request {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  .sites {
-    padding-top: 10px;
-    vertical-align: top;
-    .site {
-      padding: 5px;
-
-      .site-image {
-        float: left;
-        width: 45px;
-        img {
-          width: 45px;
-          height: 45px;
-          border-radius: 4px;
-        }
-      }
-
-      .site-text {
-        clear: right;
-        position: relative;
-        margin-left: 50px;
-        h1 {
-          font-size: 1.2em;
-          margin: 0;
-        }
-        h2 {
-          font-size: 1em;
-          margin: 0;
-        }
+      p {
+        font-size: 1.4em;
       }
     }
   }
-  button {
-    padding-right: 35px;
-    padding-left: 35px;
-  }
 }
+
+

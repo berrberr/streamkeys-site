@@ -100,6 +100,7 @@ sitelist:
     image: icons/npr.png
     url: one.npr.org
   - name: AmbientSleepingPill
+    image: icons/ambientsleepingpill.png
     url: www.ambientsleepingpill.com
   - name: Cubic.fm
     image: icons/cubicfm.png
@@ -127,7 +128,38 @@ sitelist:
     image: icons/beats.png
     url: http://www.beatsmusic.com
   - name: Radio Swiss Jazz
+    image: icons/radioswissjazz.png
     url: http://www.radioswissjazz.ch
+  - name: Bop.fm
+    image: icons/bopfm.jpg
+    url: http://www.bop.fm
+  - name: Edge Player
+    image: icons/edgeplayer.png
+    url: http://player.edge.ca
+  - name: Gaana
+    image: icons/gaana.png
+    url: http://www.gaana.com
+  - name: Laracasts
+    image: icons/laracasts.png
+    url: http://www.laracasts.com
+  - name: Last.fm
+    image: icons/lastfm.png
+    url: http://www.last.fm
+  - name: Myspace
+    image: icons/myspace.png
+    url: http://www.myspace.com
+  - name: Pleer
+    image: icons/pleer.png
+    url: http://www.pleer.com
+  - name: Saavn
+    image: icons/saavn.png
+    url: http://www.saavn.com
+  - name: Seesu
+    image: icons/seesu.png
+    url: http://www.seesu.me
+  - name: Sony Music Unlimited
+    image: icons/sonymusicunlimited.png
+    url: https://music.sonyentertainmentnetwork.com
 changelog:
   - version: v1.4.2
     content: >

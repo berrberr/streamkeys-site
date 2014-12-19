@@ -26,76 +26,72 @@
       <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     </head>
     <body>
-    <div id="wrapper">
-      <div class="container nav-container">
-        <nav class="navbar navbar-main" role="navigation">
+    
+      <!-- Header -->
+      <header class="centered">
+        <ul id="logo">
+          <li><a href="index.html">Streamkeys</a></li>
+        </ul>
 
-          <!-- Main nav text -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-content">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a id="navbar-main-brand" class="navbar-brand" href="{{ site.navigation.home }}">Streamkeys</a>
-          </div>
+        <ul>
+          <li><a href="guide.html">Setup Guide</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="sites.html">Supported Sites</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/berrberr/streamkeys" target="_blank">View Source</a></li>
+        </ul>
+      </header>
 
-          <div class="collpase navbar-collapse" id="nav-content">
-            <ul class="nav navbar-nav navbar-links list-inline">
-              <li id="help"><a href="{{ site.navigation.help }}">Setup Guide</a></li>
-              <li id="faq"><a href="{{ site.navigation.faq }}">FAQ</a></li>
-              <li id="sites"><a href="{{ site.navigation.sitelist }}">Supported Sites</a></li>
-              <li id="contact"><a href="{{ site.navigation.contact }}">Contact</a></li>
-              <li id="github" class="visible-sm visible-xs"><a href="https://www.github.com/berrberr/streamkeys">View Source</a></li>
-            </ul>
-            <a href="https://www.github.com/berrberr/streamkeys" target="_blank" class="a-override">
-              <button class="btn-main btn-github-header hidden-sm hidden-xs"><i class="fa fa-github-square"></i>&nbsp;&nbsp;View Source</button>
-            </a>
-            <button class="btn-main btn-install-header btn-install-cta hidden-sm hidden-xs" id="btn-install-header"><i class="fa fa-download"></i>&nbsp;&nbsp;Download for Chrome</button>
-          </div>
-        </nav>
-      </div>
-
-      <div class="main-content">
+      <hr width="100%" color="#e8e8e8" height="2px"/>
+      <div id="wrapper">
         {{ content }}
       </div>
 
-      {% include request_modal.html %}
+      <!-- Footer -->
+      <hr width="100%" color="#e8e8e8" height="2px"/>
+      <footer class="centered">
+          <ul>
+            <li><a href="index.html">Streamkeys</a></li>
+            <li><a href="guide.html">Setup Guide</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="sites.html">Supported Sites</a></li>
+            <li><a href="changelog.html">Changelog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
 
-    </div>
+          <ul>
+            <li><a href="https://github.com/berrberr/gshotkeys" target="_blank">View Source</a></li>
+            <li><a href="https://github.com/berrberr/gshotkeys/issues" target="_blank">Issue Tracker</a></li>
+            <li><a href="mailto:alex@aegabriel.com">alex@aegabriel.com</a></li>
+            <li><a href="https://github.com/lalwanivikas" target="_blank">Design By Vikas</a></li>
+          </ul>
+      </footer>
+      
+      {% javascript main %}
 
-    <footer id="footer">
-      <div class="container">
-        <div class="row footer-row">
-          <div class="col-xs-12">
-            <a href="{{ site.navigation.home }}">Streamkeys</a>&nbsp;|&nbsp;
-            <a href="{{ site.navigation.help }}">Setup Guide</a>&nbsp;|&nbsp;
-            <a href="{{ site.navigation.faq }}">FAQ</a>&nbsp;|&nbsp;
-            <a href="{{ site.navigation.sitelist }}">Supported Sites</a>&nbsp;|&nbsp;
-            <a href="{{ site.navigation.changelog }}">Changelog</a>&nbsp;|&nbsp;
-            <a href="{{ site.navigation.contact }}">Contact</a><br><br>
+      <!-- Walkway Animation -->
+      <script>
+        var svg2 = new Walkway({
+              selector: '#Layer_1',
+              duration: 1000,
+              // linear easing
+              easing: 'linear'
+            });
 
-            <a href="https://github.com/berrberr/gshotkeys" target="_blank"><i class="fa fa-github-square"></i> View Source</a>&nbsp;|&nbsp;
-            <a href="https://github.com/berrberr/gshotkeys/issues" target="_blank"><i class="fa fa-github-square"></i> Issue Tracker</a>&nbsp;|&nbsp;
-            <a href="mailto:alex@aegabriel.com">alex@aegabriel.com</a>
+            svg2.draw(function() {
+              console.log('Finished test shape!');
+            });
+      </script>
 
-          </div>
-        </div>
-      </div> <!-- /container -->
-    </footer>
+      <!-- Google Analytics -->
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    {% javascript main %}
-
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-45141647-1', 'streamkeys.com');
-      ga('send', 'pageview');
-    </script>
+        ga('create', 'UA-45141647-1', 'streamkeys.com');
+        ga('send', 'pageview');
+      </script>
     </body>
 </html>

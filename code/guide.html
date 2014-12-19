@@ -3,67 +3,77 @@ layout: default
 title: Help and Guide
 ---
 
-<div class="jumbotron main-jumbo">
-
-  <div id="installed" style="display: none;" class="new-version-alert">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <h1>Streamkeys has been installed!</h1>
-    <h2>Please refresh any currently open media player tabs to connect them to Streamkeys. Read the section below for a quick start guide.</h2>
-    <h2>Note: This page will only be loaded once on update or install.</h2>
-  </div>
-
-  <div id="updated" style="display: none;" class="new-version-alert">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-    <h1>Streamkeys has been updated.</h1>
-    <h2>New Version:</h2>
-    <ul>
-      <li>
-        <h2>Due to recent Chrome changes you might have to re-enable the extension after update! Enter chrome://extensions in the URL bar to do so.</h2>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <h2>{{ site.changelog[0].version }}</h2>
-        <p>{{ site.changelog[0].content }}</p>
-      </li>
-    </ul>
-    <h2>Note: This page will only be loaded once on update.</h2>
-  </div>
-
-  <h1 id="configuration">Configuration</h1>
-  <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there by either entering "chrome://extensions" in the URL bar or from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing. In this menu you can also set the hotkeys to be global across either Chrome or your system.</p>
-  <div class="guide-image-row">
-    <div class="guide-thumbnail">
-      <a href="{% asset_path step1.png %}" class="thumbnail" data-toggle="lightbox" data-title="Extensions Page" data-footer="<b>Step 1.</b> Go to Chrome extensions page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="{% asset_path step1.png %}" alt="Step 1"></a>
-      <div class="caption text-center">
-        <h4>Go to extensions page</h4>
-      </div>
+<!-- Installed/Upated alerts -->
+<div id="version-container" style="display: none;" class="blue-banner version-banner">
+  <div class="centered">
+    <div id="installed" style="display: none;" class="new-version-alert">
+      <h1>Streamkeys has been installed!</h1>
+      <h2>Please refresh any currently open media player tabs to connect them to Streamkeys. Read the section below for a quick start guide.</h2>
+      <h2>Note: This page will only be loaded once on update or install.</h2>
     </div>
-    <div class="guide-thumbnail">
-      <a href="{% asset_path step2.png %}" class="thumbnail" data-toggle="lightbox" data-title="Keyboard Shortcuts" data-footer="<b>Step 2.</b> Click keyboard shortcuts at bottom of extension page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="{% asset_path step2.png %}" alt="Step 2"></a>
-      <div class="caption text-center">
-        <h4>Click keyboard shortcuts</h4>
-      </div>
-    </div>
-    <div class="guide-thumbnail">
-      <a href="{% asset_path step3.png %}" class="thumbnail" data-toggle="lightbox" data-title="Shortcuts Popup" data-footer="<b>Step 3.</b> Set new shortcuts" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="{% asset_path step3.png %}" alt="Step 3"></a>
-      <div class="caption text-center">
-        <h4>Set new shortcuts</h4>
-      </div>
+
+    <div id="updated" style="display: none;" class="new-version-alert">
+      <h1>Streamkeys has been updated.</h1>
+      <ul>
+        <li>
+          <h2>Due to recent Chrome changes you might have to re-enable the extension after update! Enter chrome://extensions in the URL bar to do so.</h2>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <h2>{{ site.changelog[0].version }}</h2>
+          <p>{{ site.changelog[0].content }}</p>
+        </li>
+      </ul>
+      <h2>Note: This page will only be loaded once on update.</h2>
     </div>
   </div>
-  <h1 id="popup">Popup Window</h1>
-  <p>Once Streamkeys is installed you will see an "sk" icon in your browser window next to the URL bar (and any other extension icons that you may have installed). Clicking on this icon will open up the extension popup window. The extension icon color will be green if the tab you are on is a music site and Streamkeys is connected to it. The extension icon color will be grey if the tab you are on is either not a supported music site or a music site that is currently disabled. From the popup window inside a music player tab you can enable and disable support for either the current music site (across all tabs) or just the current tab.</p>
-  <h1 id="options">Options</h1>
-  <p>On the options page you can enable/disable Streamkeys for any site. You can get to the options page from either the Chrome extensions tab (chrome://extensions) or from the Streamkeys popup window. This page is useful if you have multiple different media sites open, and want Streamkeys to ignore any number of them.</p>
-  <h1 id="remove">Remove</h1>
-  <p>To remove Streamkeys (or any other Chrome extension) go to the Chrome extensions tab (chrome://extensions) and click the trash icon next to the Streamkeys listing.</p>
-  <h1 id="hotkeys">Default Hotkeys</h1>
-  <div>
-  <p><b>Play/Pause: </b>Media Key Play</p>
-  <p><b>Next Song: </b>Media Key Next</p>
-  <p><b>Previous Song: </b>Media Key Previous</p>
-  <p><b>Mute: </b>Ctrl+Shift+2</p>
-  </div>
+</div>
+
+<!-- Main content -->
+<div class="centered guide">
+  <h1>Setup Guide</h1> 
+  
+  <h2>Configuration</h2>
+    <p>All hotkeys can be changed. Simply go to the chrome extensions tab (get there by either entering "chrome://extensions" in the URL bar or from Chrome menu -> tools -> extensions). At the bottom there is a button for "Keboard Shortcuts" where you can change the hotkeys to those of your choosing. In this menu you can also set the hotkeys to be global across either Chrome or your system.</p>
+  
+    <div>
+
+      <div class="image-container">
+        <a href="https://s3.amazonaws.com/streamkeys/step1-812b0f4b91d7b3865540f1b16ade3dcd.png" class="thumbnail" data-toggle="lightbox" data-title="Extensions Page" data-footer="<b>Step 1.</b> Go to Chrome extensions page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step1-812b0f4b91d7b3865540f1b16ade3dcd.png" alt="Step 1"></a>
+        <p>1. Go to extensions page.</p>
+      </div>
+
+      <div class="image-container">
+        <a href="https://s3.amazonaws.com/streamkeys/step2-cca99d4f15e2c61745a8b15a9175d7f9.png" class="thumbnail" data-toggle="lightbox" data-title="Keyboard Shortcuts" data-footer="<b>Step 2.</b> Click keyboard shortcuts at bottom of extension page" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step2-cca99d4f15e2c61745a8b15a9175d7f9.png" alt="Step 2"></a>
+        <p>2. Click keyboard shortcuts.</p>
+      </div>
+
+      <div class="image-container">
+        <a href="https://s3.amazonaws.com/streamkeys/step3-294237f204d142e212eaf053be742ac3.png" class="thumbnail" data-toggle="lightbox" data-title="Shortcuts Popup" data-footer="<b>Step 3.</b> Set new shortcuts" data-gallery="guide-gallery" data-parent=".guide-image-row"><img src="https://s3.amazonaws.com/streamkeys/step3-294237f204d142e212eaf053be742ac3.png" alt="Step 3"></a>
+        <p>3. Set new shortcuts.</p>
+      </div>
+
+    </div>
+
+  <h2>Popup Window</h2>
+    <p>Once Streamkeys is installed you will see an "sk" icon in your browser window next to the URL bar (and any other extension icons that you may have installed). Clicking on this icon will open up the extension popup window. The extension icon color will be green if the tab you are on is a music site and Streamkeys is connected to it. The extension icon color will be grey if the tab you are on is either not a supported music site or a music site that is currently disabled. From the popup window inside a music player tab you can enable and disable support for either the current music site (across all tabs) or just the current tab.</p>
+
+  <h2>Options</h2>
+    <p>On the options page you can enable/disable Streamkeys for any site. You can get to the options page from either the Chrome extensions tab (chrome://extensions) or from the Streamkeys popup window. This page is useful if you have multiple different media sites open, and want Streamkeys to ignore any number of them.</p>
+
+  <h2>Remove</h2>
+    <p>To remove Streamkeys (or any other Chrome extension) go to the Chrome extensions tab (chrome://extensions) and click the trash icon next to the Streamkeys listing.</p>
+
+  <h2>Default Hotkeys</h2>
+  <ul id="hotkeys">
+    <li><p><b>Play/Pause: </b>Media Key Play</p></li>
+    <li><p><b>Next Song: </b>Media Key Next</p></li>
+    <li><p><b>Previous Song: </b>Media Key Previous</p></li>
+    <li><p><b>Mute: </b>Ctrl+Shift+2</p></li>
+  </ul>
 
 </div>
+
+<hr width="100%" color="#e8e8e8" height="2px"/>
+{% include request_form.html %}

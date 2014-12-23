@@ -3,19 +3,32 @@ layout: default
 title: Frequently Asked Questions
 questions:
   - question: What is Streamkeys?
-    answer: Streamkeys is a Chrome extension that will allow you to control online media players from anywhere on your computer using hotkeys that you define. Check out the <a href="{{ site.navigation.sitelist }}">sitelist</a> to see a list of available sites and the <a href="{{ site.navigation.help }}">guide</a> for setup instructions.
+    answer: >
+      Streamkeys is a Chrome extension that will allow you to control online media players from anywhere on your computer using hotkeys that you define. Check out the <a href="{{ site.navigation.sitelist }}">sitelist</a> to see a list of available sites and the <a href="{{ site.navigation.help }}">guide</a> for setup instructions.
+  - question: What features does it support?
+    answer: >
+      Streamkeys supports these music player features (where available): play, pause, next, previous, mute, like, dislike.
+  - question: What browsers does it work on?
+    answer: >
+      Currently Streamkeys is a Chrome extension only. If you would like it to be ported over to another browser <a href="{{ site.navigation.contact }}">contact me</a> and if there is enough interest I'll see what I can do.
   - question: I just installed the extension and the hotkeys don't work?
-    answer: Make sure that you have restarted any music player tabs that you previously had open before you installed the extension. Also make sure that the extension is enabled on the Chrome extension page (chrome://extensions in URL bar)
+    answer: > 
+      Make sure that you have restarted any music player tabs that you previously had open before you installed the extension. Also make sure that the extension is enabled on the Chrome extension page (chrome://extensions in URL bar)
   - question: Why does Chrome say Streamkeys can "read and change all your data on websites you visit"?
-    answer: To make the extension work we need to make use of the <a href="https://developer.chrome.com/extensions/tabs" target="_blank">chrome.tabs API</a> which gives extension's the power to monitor a user's browser behaviour. Streamkeys does not do this! Check out <a href="https://github.com/berrberr/streamkeys" target="_blank">the source code</a> if you are interested.
+    answer: > 
+      To make the extension work we need to make use of the <a href="https://developer.chrome.com/extensions/tabs" target="_blank">chrome.tabs API</a> which gives extension's the power to monitor a user's browser behaviour. Streamkeys does not do this! Check out <a href="https://github.com/berrberr/streamkeys" target="_blank">the source code</a> if you are interested.
   - question: Can you add support for a new streaming site?
-    answer: Probably! <a href="{{ site.navigation.sitelist }}">Submit a request on the Supported Sites page.</a>
+    answer: > 
+      Probably! You can submit a request using the form found and the bottom of this page.
   - question: Can I change the hotkeys?
-    answer: Yes. You can change all of the hotkeys on the Chrome extension's page. <a href="{{ site.navigation.help }}">See the guide here for more information.</a>
+    answer: > 
+      Yes. You can change all of the hotkeys on the Chrome extension's page. <a href="{{ site.navigation.help }}">See the guide here for more information.</a>
   - question: Why are my new hotkeys not working?
-    answer: It is possible that you have set the hotkeys to ones that are already reserved by Chrome. For example, on Mac the hotkey Command + Y is already reserved by chrome to open the history panel and so it cannot be used by extensions. Make sure that the hotkeys you are trying to use are not already Chrome defaults.
+    answer: > 
+      It is possible that you have set the hotkeys to ones that are already reserved by Chrome. For example, on Mac the hotkey Command + Y is already reserved by chrome to open the history panel and so it cannot be used by extensions. Make sure that the hotkeys you are trying to use are not already Chrome defaults.
   - question: I am trying to set a new hotkey in the keyboard shortcuts popup. Why will it not let me set a hotkey combination?
-    answer: You are probably trying to set a hotkey that is not valid. All hotkey combinations must include either Ctrl (Command on Macs) OR Alt, but NOT both. The list of supported keys are&#58; A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). <a href="https://developer.chrome.com/apps/commands" target="_blank">Read the official Chrome documentation here for more information.</a>
+    answer: > 
+      You are probably trying to set a hotkey that is not valid. All hotkey combinations must include either Ctrl (Command on Macs) OR Alt, but NOT both. The list of supported keys are&#58; A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). <a href="https://developer.chrome.com/apps/commands" target="_blank">Read the official Chrome documentation here for more information.</a>
 ---
 
 <div class="centered faq">

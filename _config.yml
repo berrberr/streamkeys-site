@@ -163,74 +163,74 @@ sitelist:
 changelog:
   - version: v1.4.3
     content: >
-      Added support for Xbox Music, Hypster, Laracasts, Gaana and Saavn(thanks <a href="https://github.com/lalwanivikas" target="_blank">@lalwanivikas</a>!)<br>
-      Fixed bugs with Slacker and Cubic.fm<br>
-      Added like/dislike feature for: 8tracks, Cubic, Deezer, Di.fm, Earbits, Google Music, Grooveshark, Hypem, Jango, Mixcloud, OPlayer, Pandora, Spotify, Yandex, Youtube. Set the hotkeys on the Chrome extensions settings page or use the popup player. Thanks to <a href="https://github.com/y-gagar1n" target="_blank">@y-gagar1n</a> for the help! Get in touch with me if there is a site missing.<br>
-      New site! Thanks to <a href="https://github.com/lalwanivikas" target="_blank">@lalwanivikas</a> for the design.
+      <p>Added support for Xbox Music, Hypster, Laracasts, Gaana and Saavn(thanks <a href="https://github.com/lalwanivikas" target="_blank">@lalwanivikas</a>!)</p>
+      <p>Fixed bugs with Slacker and Cubic.fm</p>
+      <p>Added like/dislike feature for: 8tracks, Cubic, Deezer, Di.fm, Earbits, Google Music, Grooveshark, Hypem, Jango, Mixcloud, OPlayer, Pandora, Spotify, Yandex, Youtube. Set the hotkeys on the Chrome extensions settings page or use the popup player. Thanks to <a href="https://github.com/y-gagar1n" target="_blank">@y-gagar1n</a> for the help! Get in touch with me if there is a site missing.</p>
+      <p>New site! Thanks to <a href="https://github.com/lalwanivikas" target="_blank">@lalwanivikas</a> for the design.</p>
   - version: v1.4.2
     content: >
-      Fixed bugs with Amazon (thanks <a href="https://github.com/Tito1337" target="_blank">@Tito1337</a>!) and Bop.fm<br>
-      Added support for Beats Music (thanks <a href="https://github.com/joero4" target="_blank">@joero4</a>!) and RadioSwissJazz.ch
+      <p>Fixed bugs with Amazon (thanks <a href="https://github.com/Tito1337" target="_blank">@Tito1337</a>!) and Bop.fm</p>
+      <p>Added support for Beats Music (thanks <a href="https://github.com/joero4" target="_blank">@joero4</a>!) and RadioSwissJazz.ch</p>
   - version: v1.4.1
     content: >
-      Added an icon and control window to enable/disable specific sites and tabs quickly<br>
-      Fixed bugs with Youtube playlists, Soundcloud, Pocketcasts and lastfm.ru<br>
-      Added support for rainwave.cc, cubic.fm, disco.io, oplayer.org
+      <p>Added an icon and control window to enable/disable specific sites and tabs quickly</p>
+      <p>Fixed bugs with Youtube playlists, Soundcloud, Pocketcasts and lastfm.ru</p>
+      <p>Added support for rainwave.cc, cubic.fm, disco.io, oplayer.org</p>
   - version: v1.4.0
     content: >
-      Added support for Yandex Music, PocketCasts (thanks <a href="https://github.com/Rorgy" target="_blank">@Rorgy</a>!), Ambient Sleeping Pill (thanks <a href="https://github.com/inverse" target="_blank">@inverse</a>!)<br>
-      Fix bugs with Jango, VK, Deezer and iHeartRadio
+      <p>Added support for Yandex Music, PocketCasts (thanks <a href="https://github.com/Rorgy" target="_blank">@Rorgy</a>!), Ambient Sleeping Pill (thanks <a href="https://github.com/inverse" target="_blank">@inverse</a>!)</p>
+      <p>Fix bugs with Jango, VK, Deezer and iHeartRadio</p>
   - version: v1.3.6
     content: >
-      Added support for Bop.fm, Last.fm, Sony Music Unlimited (thanks <a href="https://github.com/inverse" target="_blank">@inverse</a>!), Pleer (thanks <a href="https://github.com/ulex" target="_blank">@ulex</a>!), YouAreListening.to
+      <p>Added support for Bop.fm, Last.fm, Sony Music Unlimited (thanks <a href="https://github.com/inverse" target="_blank">@inverse</a>!), Pleer (thanks <a href="https://github.com/ulex" target="_blank">@ulex</a>!), YouAreListening.to</p>
   - version: v1.3.5
     content: >
-      Fixed bugs with Jango<br>
-      Added support for YouTube (disabled by default, enable on options page!), Plex.tv, Amazon Cloud Player, NPR Infinite Player, 7digital
+      <p>Fixed bugs with Jango</p>
+      <p>Added support for YouTube (disabled by default, enable on options page!), Plex.tv, Amazon Cloud Player, NPR Infinite Player, 7digital</p>
   - version: v1.3.4
     content: >
-      Fixed bugs with Songza and Slacker Radio<br>
-      Added support for di.fm, player.edge.ca, RadioParadise, Songstr
+      <p>Fixed bugs with Songza and Slacker Radio</p>
+      <p>Added support for di.fm, player.edge.ca, RadioParadise, Songstr</p>
   - version: v1.3.3
     content: >
-      Fixed bug introduced in 1.3.2 that broke functionality. Big thanks to those users who submitted bug reports!
+      <p>Fixed bug introduced in 1.3.2 that broke functionality. Big thanks to those users who submitted bug reports!</p>
   - version: v1.3.2
     content: >
-      Added an options page which lets you enable/disable sites. To get to the options page go to the extension tab in Chrome (thanks <a href="https://github.com/dreyks" target="_blank">@Dreyks</a>!)<br>
-      Added support for Seesu.me, iHeartRadio, Mixcloud<br>
-      Fixed bug where having different players open at same time causes issues
+      <p>Added an options page which lets you enable/disable sites. To get to the options page go to the extension tab in Chrome (thanks <a href="https://github.com/dreyks" target="_blank">@Dreyks</a>!)</p>
+      <p>Added support for Seesu.me, iHeartRadio, Mixcloud</p>
+      <p>Fixed bug where having different players open at same time causes issues</p>
   - version: v1.3.1
     content: >
-      Added support for VK, Stitcher<br>
-      Fixed Google Music clicking inputs twice
+      <p>Added support for VK, Stitcher</p>
+      <p>Fixed Google Music clicking inputs twice</p>
   - version: v1.3.0
     content: >
-      Added support for global hotkeys across entire system. <a href="guide.html#global">Read here for more info</a><br>
-      Added support for: Earbits, Songza<br>
-      Fixed Google Music support (thanks <a href="https://github.com/findmory-livefyre" target="_blank">@findmory</a>!)
+      <p>Added support for global hotkeys across entire system. <a href="guide.html#global">Read here for more info</a></p>
+      <p>Added support for: Earbits, Songza</p>
+      <p>Fixed Google Music support (thanks <a href="https://github.com/findmory-livefyre" target="_blank">@findmory</a>!)</p>
   - version: v1.2.0
     content: >
-      Reworked the whole extension so that capturing works much better and from anywhere on the chrome window<br>
-      Added support for Google Music, Jango, Thesixtyone, Slacker<br>
-      Removed the options page
+      <p>Reworked the whole extension so that capturing works much better and from anywhere on the chrome window</p>
+      <p>Added support for Google Music, Jango, Thesixtyone, Slacker</p>
+      <p>Removed the options page</p>
   - version: v1.1.0
     content: >
-      Added support for 8tracks, Deezer, Pandora, Spotify, Soundcloud, Hypemachine and Myspace<br>
-      Media keys now default to enabled
+      <p>Added support for 8tracks, Deezer, Pandora, Spotify, Soundcloud, Hypemachine and Myspace</p>
+      <p>Media keys now default to enabled</p>
   - version: v1.0.5
     content: >
-      Added support for Rdio<br>
-      Fixed some problems with option page
+      <p>Added support for Rdio</p>
+      <p>Fixed some problems with option page</p>
   - version: v1.0
     content: >
-      Chrome Webstore release
+      <p>Chrome Webstore release</p>
   - version: v0.9.5
     content: >
-      Added hotkey support for Bandcamp
+      <p>Added hotkey support for Bandcamp</p>
   - version: v0.9
     content: >
-      Media key support added<br>
-      Added an option page which can be accessed via the chrome extension tab
+      <p>Media key support added</p>
+      <p>Added an option page which can be accessed via the chrome extension tab</p>
   - version: v0.8
     content: >
-      Initial release
+      <p>Initial release</p>

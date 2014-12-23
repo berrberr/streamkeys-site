@@ -1,5 +1,6 @@
 .DS_Store
 build/_site
+build/_site-production
 .sass-cache
 .bundle
 bower_components

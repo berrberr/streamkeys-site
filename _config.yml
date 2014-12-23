@@ -161,6 +161,12 @@ sitelist:
     image: icons/sonymusicunlimited.png
     url: music.sonyentertainmentnetwork.com
 changelog:
+  - version: v1.4.3
+    content: >
+      Added support for Xbox Music, Hypster, Laracasts, Gaana and Saavn(thanks <a href="https://github.com/lalwanivikas" target="_blank">@lalwanivikas</a>!)<br>
+      Fixed bugs with Slacker and Cubic.fm<br>
+      Added like/dislike feature for: 8tracks, Cubic, Deezer, Di.fm, Earbits, Google Music, Grooveshark, Hypem, Jango, Mixcloud, OPlayer, Pandora, Spotify, Yandex, Youtube. Set the hotkeys on the Chrome extensions settings page or use the popup player. Thanks to <a href="https://github.com/y-gagar1n" target="_blank">@y-gagar1n</a> for the help! Get in touch with me if there is a site missing.<br>
+      New site! Thanks to <a href="https://github.com/lalwanivikas" target="_blank">@lalwanivikas</a> for the design.
   - version: v1.4.2
     content: >
       Fixed bugs with Amazon (thanks <a href="https://github.com/Tito1337" target="_blank">@Tito1337</a>!) and Bop.fm<br>

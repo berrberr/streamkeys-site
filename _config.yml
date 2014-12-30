@@ -34,7 +34,7 @@ sitelist:
     image: icons/earbits.png
     url: www.earbits.com
   - name: Google Play
-    image: icons/googleplay.png
+    image: icons/gplay.png
     url: play.google.com
   - name: Grooveshark
     image: icons/grooveshark.png
@@ -79,7 +79,7 @@ sitelist:
     image: icons/slacker.png
     url: www.slacker.com
   - name: YouTube
-    image: icons/youtube.png
+    image: icons/yt.png
     url: www.youtube.com
   - name: VK
     image: icons/vk.png

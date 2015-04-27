@@ -181,7 +181,30 @@ sitelist:
   - name: Reverb Nation
     image: icons/reverbnation.png
     url: www.reverbnation.com
+  - name: Shuffler.fm
+    image: icons/shuffler.png
+    url: www.shuffler.fm
+  - name: Ivoox
+    image: icons/ivoox.png
+    url: www.ivoox.com
+  - name: Tidal
+    image: icons/tidal.png
+    url: www.tidal.com
+  - name: Sound.is
+    url: www.sound.is
+  - name: Soundsgood.co
+    image: icons/soundsgood.png
+    url: www.soundsgood.co
+  - name: ASoftMurmur
+    url: www.asoftmurmur.com
+  - name: The Drop Club
+    image: icons/thedropclub.png
+    url: www.thedrop.club
 changelog:
+  - version: v1.4.5
+    content: >
+      <p>Added support for Shuffler.fm, Ivoox, Tidal, Sound.is, Soundsgood.co, ASoftMurmur, The Drop Club (thanks <a href="https://github.com/brandonjyuhas" target="_blank">@brandonjyuhas</a>!)</p>
+      <p>Fixed problems with Yandex (thanks <a href="https://github.com/Guria" target="_blank">@Guria</a>)</p>
   - version: v1.4.4
     content: >
       <p>Added support for Player.fm, Kollekt.fm, My Cloud Player, Spreaker, PalcoMP3, ShortOrange and Reverb Nation</p>

@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-af2a76ced455d49780ed5fadf9054ed3.css">
+      <link rel="stylesheet" href="https://s3.amazonaws.com/streamkeys/main-e6862ca534885a043818d13e95e1339e.css">
       <link rel="chrome-webstore-item"
           href="https://chrome.google.com/webstore/detail/ekpipjofdicppbepocohdlgenahaneen">
 
@@ -61,6 +61,12 @@
   
     <h2>Why does Chrome say Streamkeys can "read and change all your data on websites you visit"?</h2>
     <p>To make the extension work we need to make use of the <a href="https://developer.chrome.com/extensions/tabs" target="_blank">chrome.tabs API</a> which gives extension's the power to monitor a user's browser behaviour. Streamkeys does not do this! Check out <a href="https://github.com/berrberr/streamkeys" target="_blank">the source code</a> if you are interested.
+</p>
+  
+    <h2>Why do my iTunes/Windows Media Player/etc media keys not work after I install this extension?</h2>
+    <p>This is unfortunately a limitation with how Chrome currently handles global hotkeys. As soon as a global hotkey is set it will hijack that hotkey (as long as Chrome remains open). There are a couple of possible solutions:<br><br>
+1. Disable Streamkeys when you are not using it/using desktop apps that require the media keys. This will free up the media keys as long as it remains disabled.<br><br> 2. Change the hotkeys to something else. If you change the hotkeys to something other than the media keys, the media keys will be freed up for other apps to use.As an example, I currently use Cmd+Shift+2 to play/pause (on mac).<br><br>
+To change all these settings go to the Chrome extension page (chrome://extensions in the URL bar).
 </p>
   
     <h2>Can you add support for a new streaming site?</h2>

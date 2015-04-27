@@ -17,6 +17,14 @@ questions:
   - question: Why does Chrome say Streamkeys can "read and change all your data on websites you visit"?
     answer: > 
       To make the extension work we need to make use of the <a href="https://developer.chrome.com/extensions/tabs" target="_blank">chrome.tabs API</a> which gives extension's the power to monitor a user's browser behaviour. Streamkeys does not do this! Check out <a href="https://github.com/berrberr/streamkeys" target="_blank">the source code</a> if you are interested.
+  - question: Why do my iTunes/Windows Media Player/etc media keys not work after I install this extension?
+    answer: >
+      This is unfortunately a limitation with how Chrome currently handles global hotkeys. As soon as a global hotkey is set it will hijack that hotkey (as long as Chrome remains open). There are a couple of possible solutions:<br><br>
+
+      1. Disable Streamkeys when you are not using it/using desktop apps that require the media keys. This will free up the media keys as long as it remains disabled.<br><br>
+      2. Change the hotkeys to something else. If you change the hotkeys to something other than the media keys, the media keys will be freed up for other apps to use.As an example, I currently use Cmd+Shift+2 to play/pause (on mac).<br><br>
+
+      To change all these settings go to the Chrome extension page (chrome://extensions in the URL bar).
   - question: Can you add support for a new streaming site?
     answer: > 
       Probably! You can submit a request using the form found and the bottom of this page.

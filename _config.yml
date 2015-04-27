@@ -160,7 +160,33 @@ sitelist:
   - name: Sony Music Unlimited
     image: icons/sonymusicunlimited.png
     url: music.sonyentertainmentnetwork.com
+  - name: Player.fm
+    image: icons/playerfm.png
+    url: www.player.fm
+  - name: Kollekt.fm
+    image: icons/kollektfm.png
+    url: www.kollekt.fm
+  - name: My Cloud Player
+    image: icons/mycloudplayer.png
+    url: www.mycloudplayers.com
+  - name: Spreaker
+    image: icons/spreaker.png
+    url: www.spreaker.com
+  - name: PalcoMP3
+    image: icons/palcomp3.png
+    url: www.palcomp3.com
+  - name: ShortOrange
+    image: icons/shortorange.png
+    url: www.shortorange.com
+  - name: Reverb Nation
+    image: icons/reverbnation.png
+    url: www.reverbnation.com
 changelog:
+  - version: v1.4.4
+    content: >
+      <p>Added support for Player.fm, Kollekt.fm, My Cloud Player, Spreaker, PalcoMP3, ShortOrange and Reverb Nation</p>
+      <p>Fixed problems with new Di.fm and Last.fm players</p>
+      <p>Big improvements to the player popup! Added player controls for each tab, song/artist name tracking and individual tab settings. You can now quickly toggle support for specific tabs from the extension popup</p>
   - version: v1.4.3
     content: >
       <p>Added support for Xbox Music, Hypster, Laracasts, Gaana and Saavn(thanks <a href="https://github.com/lalwanivikas" target="_blank">@lalwanivikas</a>!)</p>

@@ -272,6 +272,7 @@ td p {
   border: 2px solid #FFF;
   border-radius: 5px;
   outline: none;
+  color: #000;
 }
 
 .request-form input:focus, textarea:focus {
@@ -386,7 +387,7 @@ footer a:hover {
 }
 
 .contact p {
-  padding: 0 200px 10px 20px;
+  padding: 0 100px 10px 20px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 200;

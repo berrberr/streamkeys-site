@@ -200,7 +200,20 @@ sitelist:
   - name: The Drop Club
     image: icons/thedropclub.png
     url: www.thedrop.club
+  - name: Audiosplitter
+    image: icons/audiosplitter.png
+    url: www.audiosplitter.fm
+  - name: Zonga
+    image: icons/zonga.png
+    url: www.zonga.ro
+  - name: Blitzr
+    url: www.blitzr.com
 changelog:
+  - version: v1.4.6
+    content: >
+      <p>Added support for new YouTube HTML5 player</p>
+      <p>Fixed problems with Google Music, Pockcasts
+      <p>Added support for Blitzr, Audiosplitter, Zonga (thanks <a href="https://github.com/dsilvius" target="_blank">@dsilvius</a>)</p>
   - version: v1.4.5
     content: >
       <p>Added support for Shuffler.fm, Ivoox, Tidal, Sound.is, Soundsgood.co, ASoftMurmur, The Drop Club (thanks <a href="https://github.com/brandonjyuhas" target="_blank">@brandonjyuhas</a>!)</p>

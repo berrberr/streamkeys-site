@@ -1,0 +1,32 @@
+---
+layout: default
+title: Donate
+---
+
+<!-- Div for Contact Details -->
+<div class="centered contact">
+  <h1>Donate</h1>
+  <p>
+    Streamkeys is a labor of love, and a lot of hard work goes into it's development and maintenance. A donation of your choosing is a great way to give back and say thanks!
+  </p>
+
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="form-inline donate-form">
+      <input type="hidden" name="business" value="minilogo@gmail.com">
+      <input type="hidden" name="cmd" value="_donations">
+
+      <input type="hidden" name="item_name" value="Streamkeys">
+      <input type="hidden" name="item_number" value="Donation">
+      <select name="currency_code" class="form-control">
+        <option value="USD">U.S. Dollar</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="EUR">Euro</option>
+      </select>
+      <input type="text" name="amount" value="5.00" class="form-control">
+
+      <button type="submit" class="btn btn-default">Donate with PayPal</button>
+  </form>
+
+</div>
+
+<hr width="100%" color="#e8e8e8" height="2px"/>
+{% include request_form.html %}

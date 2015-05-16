@@ -17,6 +17,7 @@ navigation:
   home: index.html
   contact: contact.html
   changelog: changelog.html
+  donate: donate.html
 sitelist:
   - name: 8tracks
     image: icons/8tracks.png
@@ -212,7 +213,7 @@ changelog:
   - version: v1.4.6
     content: >
       <p>Added support for new YouTube HTML5 player</p>
-      <p>Fixed problems with Google Music, Pockcasts
+      <p>Fixed problems with Google Music, Pockcasts and Soundcloud</p>
       <p>Added support for Blitzr, Audiosplitter, Zonga (thanks <a href="https://github.com/dsilvius" target="_blank">@dsilvius</a>)</p>
   - version: v1.4.5
     content: >

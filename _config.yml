@@ -209,12 +209,22 @@ sitelist:
     url: www.zonga.ro
   - name: Blitzr
     url: www.blitzr.com
+  - name: Emby
+    url: www.emby.media
+  - name: Twitch
+    url: www.twitch.tv
+  - name: Netflix
+    url: www.netflix.com
 changelog:
+  - version: v1.4.8
+    content: >
+      <p>Added support for Twitch.tv, Netflix and new Cubic.fm player</p>
+      <p>Fixed bugs with NPR player</p>
   - version: v1.4.6
     content: >
-      <p>Added support for new YouTube HTML5 player</p>
-      <p>Fixed problems with Google Music, Pockcasts and Soundcloud</p>
-      <p>Added support for Blitzr, Audiosplitter, Zonga (thanks <a href="https://github.com/dsilvius" target="_blank">@dsilvius</a>)</p>
+      <p>Added support for new YouTube player (<a href="http://www.youtube.com/testtube" target="_blank">youtube.com/testtube</a>)</p>
+      <p>Fixed problems with Google Music, Pockcasts, 8tracks and Soundcloud</p>
+      <p>Added support for Blitzr, Audiosplitter, Zonga (thanks <a href="https://github.com/dsilvius" target="_blank">@dsilvius</a>), Emby (thanks <a href="https://github.com/SkylerLipthay" target="_blank">@SkylerLipthay</a>)</p>
   - version: v1.4.5
     content: >
       <p>Added support for Shuffler.fm, Ivoox, Tidal, Sound.is, Soundsgood.co, ASoftMurmur, The Drop Club (thanks <a href="https://github.com/brandonjyuhas" target="_blank">@brandonjyuhas</a>!)</p>

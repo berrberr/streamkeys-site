@@ -215,8 +215,9 @@ sitelist:
     url: www.twitch.tv
   - name: Netflix
     url: www.netflix.com
-  - name: Reddit Music Player
-    url: reddit.music.player.il.ly
+  - name: Music Player for Reddit
+    image: icons/musicplayer.png
+    url: reddit.musicplayer.io
 changelog:
   - version: v1.4.9
     content: >

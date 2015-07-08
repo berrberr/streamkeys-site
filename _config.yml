@@ -37,9 +37,6 @@ sitelist:
   - name: Google Play
     image: icons/gplay.png
     url: play.google.com
-  - name: Grooveshark
-    image: icons/grooveshark.png
-    url: www.grooveshark.com
   - name: TheHypeMachine
     image: icons/hypemachine.png
     url: www.hypem.com
@@ -218,7 +215,20 @@ sitelist:
   - name: Music Player for Reddit
     image: icons/musicplayer.png
     url: reddit.musicplayer.io
+  - name: BBC Radio
+    url: www.bbc.co.uk/radio
+  - name: Yandex Radio
+    url: radio.yandex.ru
+  - name: Guvera
+    url: www.guvera.com
+  - name: Noise.Supply
+    url: www.noise.supply
 changelog:
+  - version: v1.5.0
+    content: >
+      <p>Added support for Guvera, BBC Radio, Yandex Radio, Noise.supply, Last.fm beta player</p>
+      <p>Fixed bugs with Soundcloud, Reddit Music Player</p>
+      <p>Improvements to the extension popup. Sites that are not on a music player page (ie: Amazon) will no longer be added to the popup. Features that are not supported for players will be disabled</p>
   - version: v1.4.9
     content: >
       <p>Added support for new Spotify player UI (thanks <a href="https://github.com/matteosecli" target="_blank">@matteosecli</a> & <a href="https://github.com/henriquetorres" target="_blank">@henriquetorres</a>), RedditMusicPlayer</p>

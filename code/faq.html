@@ -37,6 +37,9 @@ questions:
   - question: Why are my new hotkeys not working?
     answer: > 
       It is possible that you have set the hotkeys to ones that are already reserved by Chrome. For example, on Mac the hotkey Command + Y is already reserved by chrome to open the history panel and so it cannot be used by extensions. Make sure that the hotkeys you are trying to use are not already Chrome defaults.
+  - question: Why do my hotkeys only work inside Chrome?
+    answer: > 
+      Make sure that inside the keyboard shortcuts popup your keys are set to "Global" and not "In Chrome".
   - question: I am trying to set a new hotkey in the keyboard shortcuts popup. Why will it not let me set a hotkey combination?
     answer: > 
       You are probably trying to set a hotkey that is not valid. All hotkey combinations must include either Ctrl (Command on Macs) OR Alt, but NOT both. The list of supported keys are&#58; A-Z, 0-9, Comma, Period, Home, End, PageUp, PageDown, Insert, Delete, Arrow keys (Up, Down, Left, Right) and the Media Keys (MediaNextTrack, MediaPlayPause, MediaPrevTrack, MediaStop). <a href="https://developer.chrome.com/apps/commands" target="_blank">Read the official Chrome documentation here for more information.</a>

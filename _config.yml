@@ -207,23 +207,55 @@ sitelist:
   - name: Blitzr
     url: www.blitzr.com
   - name: Emby
+    image: icons/emby.png
     url: www.emby.media
   - name: Twitch
+    image: icons/twitch.png
     url: www.twitch.tv
   - name: Netflix
+    image: icons/netflix.png
     url: www.netflix.com
   - name: Music Player for Reddit
     image: icons/musicplayer.png
     url: reddit.musicplayer.io
   - name: BBC Radio
+    image: icons/bbc.png
     url: www.bbc.co.uk/radio
   - name: Yandex Radio
     url: radio.yandex.ru
   - name: Guvera
+    image: icons/guvera.png
     url: www.guvera.com
   - name: Noise.Supply
     url: www.noise.supply
+  - name: Audible
+    image: icons/audible.png
+    url: www.audible.com
+  - name: Rhapsody
+    image: icons/rhapsody.png
+    url: www.rhapsody.com
+  - name: Beatport
+    image: icons/beatport.png
+    url: www.beatport.com
+  - name: DemoDrop
+    image: icons/demodrop.png
+    url: www.demodrop.com
+  - name: Feedly
+    url: www.feedly.com
+  - name: Playmoss
+    url: www.playmoss.com
 changelog:
+  - version: v1.5.2
+    content: >
+      <p>Fixed bugs with Deezer, 7digital, BBC Radio, Jango</p>
+      <p>Changed Xbox Music to Microsoft Groove</p>
+      <p>Added support for Feedly, Playmoss</p>
+      <p>Added option to disable loading this page on update</p>
+  - version: v1.5.1
+    content: >
+      <p>Sorry for another update so soon - v1.5.0 introduced a YouTube bug that needed fixing ASAP</p>
+      <p>Fixed bugs with YouTube, Deezer and the extension popup</p>
+      <p>Added support for Auidible, Rhapsody, Beatport, DemoDrop</p>
   - version: v1.5.0
     content: >
       <p>Added support for Guvera, BBC Radio, Yandex Radio, Noise.supply, Last.fm beta player</p>

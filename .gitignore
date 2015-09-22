@@ -6,3 +6,4 @@ build/_site-production
 bower_components
 node_modules
 credentials.json
+.jekyll-assets-cache

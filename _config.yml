@@ -137,9 +137,6 @@ sitelist:
   - name: Gaana
     image: icons/gaana.png
     url: www.gaana.com
-  - name: Laracasts
-    image: icons/laracasts.png
-    url: www.laracasts.com
   - name: Last.fm
     image: icons/lastfm.png
     url: www.last.fm
@@ -244,7 +241,17 @@ sitelist:
     url: www.feedly.com
   - name: Playmoss
     url: www.playmoss.com
+  - name: Noon Pacific
+    url: www.noonpacific.com
+  - name: Overcast.fm
+    url: www.overcast.fm
+  - name: Xiami
+    url: www.Xiami.com
 changelog:
+  - version: v1.5.3
+    content: >
+      <p>Fixed bugs with YouTube, Player.fm, BBC Radio, Twitch, Rhapsody, Beatport, Tidal, Stitcher</p>
+      <p>Added support for NoonPacific, Overcast.fm, Xiami</p>
   - version: v1.5.2
     content: >
       <p>Fixed bugs with Deezer, 7digital, BBC Radio, Jango</p>

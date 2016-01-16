@@ -108,6 +108,7 @@ sitelist:
     url: www.disco.io
   - name: OPlayer 
     url: www.oplayer.org
+    image: icon/oplayer.png
   - name: PocketCasts
     image: icons/pocketcasts.png
     url: www.pocketcasts.com
@@ -122,6 +123,7 @@ sitelist:
     url: www.yandex.ru
   - name: YouAreListeningTo
     url: www.youarelistening.to
+    image: icons/youarelisteningto.png
   - name: Beats Music
     image: icons/beats.png
     url: www.beatsmusic.com
@@ -190,11 +192,13 @@ sitelist:
     url: www.tidal.com
   - name: Sound.is
     url: www.sound.is
+    image: icons/soundis.png
   - name: Soundsgood.co
     image: icons/soundsgood.png
     url: www.soundsgood.co
   - name: ASoftMurmur
     url: www.asoftmurmur.com
+    image: icons/asoftmurmur.png
   - name: The Drop Club
     image: icons/thedropclub.png
     url: www.thedrop.club
@@ -206,6 +210,7 @@ sitelist:
     url: www.zonga.ro
   - name: Blitzr
     url: www.blitzr.com
+    image: icons/blitzr.png
   - name: Emby
     image: icons/emby.png
     url: www.emby.media
@@ -223,11 +228,13 @@ sitelist:
     url: www.bbc.co.uk/radio
   - name: Yandex Radio
     url: radio.yandex.ru
+    image: icons/yandexradio.png
   - name: Guvera
     image: icons/guvera.png
     url: www.guvera.com
   - name: Noise.Supply
     url: www.noise.supply
+    image: icons/noisesupply.png
   - name: Audible
     image: icons/audible.png
     url: www.audible.com
@@ -242,8 +249,10 @@ sitelist:
     url: www.demodrop.com
   - name: Feedly
     url: www.feedly.com
+    image: icons/feedly.png
   - name: Playmoss
     url: www.playmoss.com
+    image: icons/playmoss.png
 changelog:
   - version: v1.5.2
     content: >

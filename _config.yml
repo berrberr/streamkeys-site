@@ -248,6 +248,10 @@ sitelist:
   - name: Xiami
     url: www.Xiami.com
 changelog:
+  - version: v1.5.4
+    content: >
+      <p>Fix problems with Spotify introduced in v1.5.3.</p>
+      <p>Sorry for another update so soon!</p>
   - version: v1.5.3
     content: >
       <p>Fixed bugs with YouTube, Player.fm, BBC Radio, Twitch, Rhapsody, Beatport, Tidal, Stitcher</p>

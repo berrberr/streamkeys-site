@@ -108,7 +108,7 @@ sitelist:
     url: www.disco.io
   - name: OPlayer 
     url: www.oplayer.org
-    image: icon/oplayer.png
+    image: icons/oplayer.png
   - name: PocketCasts
     image: icons/pocketcasts.png
     url: www.pocketcasts.com
@@ -256,7 +256,26 @@ sitelist:
     url: www.overcast.fm
   - name: Xiami
     url: www.Xiami.com
+  - name: Accuradio
+    url: www.accuradio.com
+  - name: 22tracks
+    url: www.22tracks.com
+  - name: Pluralsight
+    url: www.pluralsight.com
+  - name: ListenOnRepeat
+    url: www.listenonrepeat.com
+  - name: LivePhish
+    url: www.livephish.com
+  - name: Coursera
+    url: www.coursera.org
+  - name: Egghead.io
+    url: www.egghead.io
 changelog:
+  - version: v1.5.5
+    content: >
+      <p>Fixed bugs with TheSixtyOne, Google Play Music, Pandora</p>
+      <p>Added support for Accuradio, 22tracks, Pluralsight, ListenOnRepeat, LivePhish, Coursera and Egghead.io</p>
+      <p>Improved popup and options page layout</p>
   - version: v1.5.4
     content: >
       <p>Fix problems with Spotify introduced in v1.5.3.</p>

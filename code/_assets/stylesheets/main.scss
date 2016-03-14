@@ -434,20 +434,41 @@ footer a:hover {
   list-style-type: none;
 }
 
-.image-container {
-  display: inline-block;
-  width: 30%;
-  margin: 20px 0 20px 20px;
+.centered-row {
   text-align: center;
-  vertical-align: bottom;
+}
+
+.image-container {
   border-radius: 5px;
   border: 5px solid transparent;
+  display: inline-block;
+  height: 320px;
+  margin: 20px 0 20px 20px;
+  text-align: center;
+  width: 30%;
+  vertical-align: bottom;
+
+  &.image-container-col-2 {
+    width: 40%;
+  }
+
+  a {
+    height: 230px;
+
+    #popup-step-2 {
+      margin-top: 30px;
+    }
+    
+    #extension-step-2 {
+      margin-top: 24px;
+    }
+  }
 }
 
 .image-container img {
   padding: 10px 10px;
-  width: 90%;
-  height: 220px;
+  max-width: 90%;
+  max-height: 220px;
 }
 
 .image-container hover {

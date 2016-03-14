@@ -3,7 +3,6 @@ layout: default
 title: Home
 ---
 
-
 <!-- Div for main/hero image -->
 <div class="blue-banner-svg">
   <div class="centered">
@@ -75,12 +74,10 @@ title: Home
 <!-- Div for list of sites -->
 <hr width="100%" color="#e8e8e8" height="2px"/>
 <div class="site-list centered">
-  <h1>Works with more than 50 sites.</h1>
+  <h1>Works with your favorite site</h1>
   
   <table>
-    {% assign sorted_sites = site.sitelist | sort_normalize(site.sitelist, "name") %}
-    {% assign sites_with_images = sorted_sites | filter_exist(sorted_sites, "image") %}
-    {% tablerow _site in sites_with_images cols:5 %}
+    {% tablerow _site in site.homepageSites cols:5 %}
       {% if _site.image %}
         <a href="http://{{ _site.url }}" target="_blank">
           <img src="{{ _site.image | asset_path }}" alt="{{ _site.name }}">
@@ -90,7 +87,8 @@ title: Home
     {% endtablerow %}
   </table>
 
-  <h2><a href="{{ site.navigation.sitelist }}">and more. See full sitelist.</a></h2>
+  {% assign sitelistLength = site.sitelist | size | minus:10 %}
+  <h2><a href="{{ site.navigation.sitelist }}">and {{ sitelistLength }} more. See full sitelist.</a></h2>
 </div>
 
 <hr width="100%" color="#e8e8e8" height="2px"/>

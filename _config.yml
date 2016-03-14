@@ -18,6 +18,37 @@ navigation:
   contact: contact.html
   changelog: changelog.html
   donate: donate.html
+homepageSites:
+  - name: 8tracks
+    image: icons/8tracks.png
+    url: www.8tracks.com
+  - name: Bandcamp
+    image: icons/bandcamp.png
+    url: www.bandcamp.com
+  - name: Deezer
+    image: icons/deezer.png
+    url: www.deezer.com
+  - name: Google Play
+    image: icons/gplay.png
+    url: play.google.com
+  - name: iHeartRadio
+    image: icons/iheart.png
+    url: www.iheart.com
+  - name: Pandora
+    image: icons/pandora.png
+    url: www.pandora.com
+  - name: Spotify
+    image: icons/spotify.png
+    url: www.spotify.com
+  - name: Soundcloud
+    image: icons/soundcloud.png
+    url: www.soundcloud.com
+  - name: Last.fm
+    image: icons/lastfm.png
+    url: www.last.fm
+  - name: Amazon Music
+    image: icons/amazon.png
+    url: www.amazon.com
 sitelist:
   - name: 8tracks
     image: icons/8tracks.png
@@ -55,9 +86,6 @@ sitelist:
   - name: RadioParadise
     image: icons/radioparadise.png
     url: www.radioparadise.com
-  - name: Rdio
-    image: icons/rdio.png
-    url: www.rdio.com
   - name: Spotify
     image: icons/spotify.png
     url: www.spotify.com

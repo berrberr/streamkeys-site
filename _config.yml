@@ -299,6 +299,11 @@ sitelist:
   - name: Egghead.io
     url: www.egghead.io
 changelog:
+  - version: v1.6.0
+    content: >
+      <p>Fixed bugs with Amazon Cloud Player. Added YOUZEEK</p>
+      <p>Added site priority and custom aliases! These new features will help you control which tabs receive hotkey input and also let Streamkeys work on locally running sites. Check out the guide below for more information</p>
+      <p>Updated popup and options page designs</p>
   - version: v1.5.5
     content: >
       <p>Fixed bugs with TheSixtyOne, Google Play Music, Pandora</p>

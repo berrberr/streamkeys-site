@@ -134,7 +134,7 @@ sitelist:
   - name: Disco.io
     image: icons/discoio.png
     url: www.disco.io
-  - name: OPlayer 
+  - name: OPlayer
     url: www.oplayer.org
     image: icons/oplayer.png
   - name: PocketCasts
@@ -298,7 +298,29 @@ sitelist:
     url: www.coursera.org
   - name: Egghead.io
     url: www.egghead.io
+  - name: Brain.fm
+    url: www.brain.fm
+  - name: Hoopla
+    url: www.hoopladigital.com
+  - name: Devchat
+    url: www.devchat.tv
+  - name: Soma.fm
+    url: www.soma.fm
+  - name: Napster
+    url: www.napster.com
+  - name: HearThis.at
+    url: www.hearthis.at
+  - name: Grooveshark.org
+    url: www.grooveshark.org
+  - name: Subsonic.org
+    url: www.subsonic.org
+  - name: Jamendo
+    url: www.jamendo.com
 changelog:
+  - version: v1.6.1
+    content: >
+      <p>Fixed bugs with Coursera, VK, Rainwave.cc, NPR, Pandora</p>
+      <p>Added support for Napster, Brain.fm, Hoopla, Devchat.tv, Soma.fm, HearThis.at, Grooveshark.org, Subsonic.org, Jamendo</p>
   - version: v1.6.0
     content: >
       <p>Fixed bugs with Amazon Cloud Player. Added YOUZEEK</p>

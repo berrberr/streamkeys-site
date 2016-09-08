@@ -317,6 +317,9 @@ sitelist:
   - name: Jamendo
     url: www.jamendo.com
 changelog:
+  - version: v1.6.2
+    content: >
+      <p>Fixed bugs with Deezer and iHeartRadio</p>
   - version: v1.6.1
     content: >
       <p>Fixed bugs with Coursera, VK, Rainwave.cc, NPR, Pandora</p>

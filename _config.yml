@@ -316,7 +316,15 @@ sitelist:
     url: www.subsonic.org
   - name: Jamendo
     url: www.jamendo.com
+  - name: focusmusic.fm
+    url: www.focusmusic.fm
+  - name: Patari
+    url: www.patari.pk
 changelog:
+  - version: v1.6.3
+    content: >
+      <p>Fixed bugs with Pandora, Netflix, Spotify, SomaFM</p>
+      <p>Added support for FocusMusic.fm, Patari</p>
   - version: v1.6.2
     content: >
       <p>Fixed bugs with Deezer and iHeartRadio</p>
